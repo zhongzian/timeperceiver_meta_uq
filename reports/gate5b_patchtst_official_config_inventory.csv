@@ -1,0 +1,4 @@
+dataset,official_batch_size,official_seq_len,official_source_config,overridden_fields,pred_len,resolved_batch_size,resolved_seq_len,selection_rule,status
+ETTh1,128,336,upstream/PatchTST/PatchTST_supervised/scripts/PatchTST/etth1.sh,"seq_len,batch_size,data pipeline,split,normalization,seed,artifact paths",96,32,384,same dataset + pred_len96 official supervised config,PASS
+Weather,128,336,upstream/PatchTST/PatchTST_supervised/scripts/PatchTST/weather.sh,"seq_len,batch_size,data pipeline,split,normalization,seed,artifact paths",96,16,384,same dataset + pred_len96 official supervised config,PASS
+Electricity,32,336,upstream/PatchTST/PatchTST_supervised/scripts/PatchTST/electricity.sh,"seq_len,batch_size,data pipeline,split,normalization,seed,artifact paths",96,8,384,same dataset + pred_len96 official supervised config,PASS

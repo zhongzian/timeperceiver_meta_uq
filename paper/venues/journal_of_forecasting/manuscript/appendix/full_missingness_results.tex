@@ -1,0 +1,19 @@
+\section{Full Fixed-Mask Matrix}
+\label{supp:fixed-mask}
+
+The following tables retain all fixed-mask deterministic evaluations by dataset. Only historical inputs are masked; targets are unchanged.
+
+\begin{table}[ht]\centering\caption{Full ETTh1 fixed-mask matrix.}\label{tab:supp-etth1}\scriptsize\resizebox{\linewidth}{!}{\input{../manuscript/tables/tableA1_etth1}}\end{table}
+\begin{table}[ht]\centering\caption{Full Weather fixed-mask matrix.}\label{tab:supp-weather}\scriptsize\resizebox{\linewidth}{!}{\input{../manuscript/tables/tableA1_weather}}\end{table}
+\begin{table}[ht]\centering\caption{Full Electricity fixed-mask matrix.}\label{tab:supp-electricity}\scriptsize\resizebox{\linewidth}{!}{\input{../manuscript/tables/tableA1_electricity}}\end{table}
+
+\section{TimePerceiver Seed-Level Summaries}
+\label{supp:timeperceiver-seeds}
+The four probability-head seeds are 2021, 2022, 2023, and 2025 on fixed official backbone checkpoints. The panels summarize the dataset-level means and variability; the main manuscript preserves all paired NLL deltas.
+\begin{figure}[ht]\centering
+\includegraphics[width=0.32\linewidth]{fig3a_multiseed_nll.pdf}
+\includegraphics[width=0.32\linewidth]{fig3b_multiseed_crps.pdf}
+\includegraphics[width=0.32\linewidth]{fig3c_multiseed_mse.pdf}
+\caption{TimePerceiver probability-head seed summaries for NLL, CRPS, and MSE.}\label{fig:supp-multiseed}
+\end{figure}
+\begin{table}[ht]\centering\caption{ETTh1 paired results across additional missing-history conditions. Negative deltas favor fixed \StudentT{}.}\label{tab:supp-etth1-conditions}\scriptsize\resizebox{\linewidth}{!}{\input{../manuscript/tables/table5_etth1_cross_condition}}\end{table}

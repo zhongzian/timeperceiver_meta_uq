@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "training_distribution_space": "official normalized space",
+  "validation_nll_space": "official normalized space",
+  "test_nll_space": "official normalized space",
+  "point_metric_space": "official normalized space",
+  "interval_metric_space": "official normalized space",
+  "normalization_transform": "StandardScaler fit on official train split",
+  "inverse_transform_enabled": false,
+  "scale_transform_rule": "not applicable because metrics remain normalized",
+  "normalization_reference": "artifacts/normalization/etth1/official_train_standard_scaler.json",
+  "evidence": "Gate 2 config inverse=false and Gate 3b full evaluator compares normalized outputs and targets directly"
+}

@@ -1,0 +1,251 @@
+{
+  "assets": [
+    {
+      "destination": "paper/manuscript/tables/table1_clean_baselines.tex",
+      "destination_sha256": "0e9d3dc1074c8b3c27af11d30e97c4331725807fd289348ac1e5dd25ac089269",
+      "kind": "table",
+      "row_count": 3,
+      "source": "paper/tables/table1_official_clean_baselines.csv",
+      "source_sha256": "c56e26b90b3164065c8fa5e36f2e997d8c9ba84ad6dcead24fcb4a628c7fe9e6"
+    },
+    {
+      "destination": "paper/manuscript/tables/table2_fixed_mask_degradation.tex",
+      "destination_sha256": "b06cc983adbecce26c88a95de000c79872f853343c0a363bc108c2e94078f55c",
+      "kind": "table",
+      "row_count": 18,
+      "source": "paper/tables/table2_fixed_mask_degradation.csv",
+      "source_sha256": "831228ce35f05e0a3858157ad42c400f63cdb48210a9281172b95c64ae751316"
+    },
+    {
+      "destination": "paper/manuscript/tables/table3_adapter_ablation.tex",
+      "destination_sha256": "af163c6a247664a3b58c714b98a8c5fb9b91a5ae652f785469125d0d8da532a5",
+      "kind": "table",
+      "row_count": 3,
+      "source": "paper/tables/table3_adapter_ablation.csv",
+      "source_sha256": "2cbf25a1c3a983fcd610e1abc8a12ad6bedac11e4988deb0c1a215e94f715acc"
+    },
+    {
+      "destination": "paper/manuscript/tables/table4_timeperceiver_multiseed.tex",
+      "destination_sha256": "5303a8c78c1404d77a64c88c83d4b06ac20058252ee2328bd548a652c1ac1904",
+      "kind": "table",
+      "row_count": 3,
+      "source": "paper/tables/table4_student_t_multiseed.csv",
+      "source_sha256": "b579dcb93f55f723aee52125d1fd04b137acb74a89b8de82f8a464a4b1874230"
+    },
+    {
+      "destination": "paper/manuscript/tables/table5_etth1_cross_condition.tex",
+      "destination_sha256": "5b8534103e99299e1db810f12e00a88b3bd12018013de661b54a799b2fee1a68",
+      "kind": "table",
+      "row_count": 6,
+      "source": "paper/tables/table5_etth1_cross_condition.csv",
+      "source_sha256": "19d1493e563b77822b985807f43e329d9ee10213d0debe02a756f03dadf0b7c4"
+    },
+    {
+      "destination": "paper/manuscript/tables/table6_conformal.tex",
+      "destination_sha256": "efa4330f66ccf637bd22d25bfa8f6ae0b0d51abd475e6933687877da3abec6a0",
+      "kind": "table",
+      "row_count": 6,
+      "source": "paper/tables/table6_conformal_calibration.csv",
+      "source_sha256": "aa8c047b1237e8ff015edd9ee19f0edb0ceab85b1cfdc9a7d5f827bc80cb6046"
+    },
+    {
+      "destination": "paper/manuscript/tables/table7_conformal_mechanism.tex",
+      "destination_sha256": "f9aa1934cd70b73c4df47477191ce01a5b39a2e5d75d227f1c42de3c4f7012f5",
+      "kind": "table",
+      "row_count": 4,
+      "source": "paper/tables/table7_conformal_mechanism.csv",
+      "source_sha256": "9466ddcfc9a0784bfefb1814188301888862eaf258a669b5545a4861377d2ab8"
+    },
+    {
+      "destination": "paper/manuscript/tables/table8_distribution_ablation.tex",
+      "destination_sha256": "967901fe2c0d6eb9fa1eae65e7374bcb4c69ff8483fce09822af34e2fdd9432b",
+      "kind": "table",
+      "row_count": 12,
+      "source": "paper/tables/table8_distribution_head_ablation.csv",
+      "source_sha256": "f879790054f3495c661718a72b01797843cf2b4c94c3ba4eb3aa3a4982c72fda"
+    },
+    {
+      "destination": "paper/manuscript/tables/table9_efficiency.tex",
+      "destination_sha256": "c16f4afea0ada0fc90fc5e193c80f0756143a8af582d0f8911d235c7ce13401e",
+      "kind": "table",
+      "row_count": 12,
+      "source": "paper/tables/table9_distribution_efficiency.csv",
+      "source_sha256": "16c49430c3084cf6699cace074bfa8b5c31b6bfb03b9bd61eb51ee85f6ba7cf0"
+    },
+    {
+      "destination": "paper/manuscript/tables/table10_second_backbone.tex",
+      "destination_sha256": "ae4848815ddc4b48718b6539a6a61273ad36f8d7d0f46526b9ee5f92cf6fee22",
+      "kind": "table",
+      "row_count": 6,
+      "source": "paper/tables/table10_second_backbone_replication.csv",
+      "source_sha256": "7494e37b10937ed89e7546b7e0fc08ff82dd5187812165793f54dd6af566643c"
+    },
+    {
+      "destination": "paper/manuscript/tables/tableA1_etth1.tex",
+      "destination_sha256": "2ac5742ea1f1d83ff326f9e8f434a79056a23b17a6515b32f80f987892bc958e",
+      "kind": "table",
+      "row_count": 16,
+      "source": "paper/appendix/tableA1_full_gate3b_matrix.csv",
+      "source_sha256": "e33480911d6f97ddb9ad7d5ebc208173488537b41635c7c5095807f21e543232"
+    },
+    {
+      "destination": "paper/manuscript/tables/tableA1_weather.tex",
+      "destination_sha256": "adf97bf80a659e0e31dc827f1af08fba0266d934176af8e688a7991c9fc5106c",
+      "kind": "table",
+      "row_count": 16,
+      "source": "paper/appendix/tableA1_full_gate3b_matrix.csv",
+      "source_sha256": "e33480911d6f97ddb9ad7d5ebc208173488537b41635c7c5095807f21e543232"
+    },
+    {
+      "destination": "paper/manuscript/tables/tableA1_electricity.tex",
+      "destination_sha256": "5662269d768959f16cd09c53efc63d034e892f315b3c858d1ab67c6fea380f1b",
+      "kind": "table",
+      "row_count": 16,
+      "source": "paper/appendix/tableA1_full_gate3b_matrix.csv",
+      "source_sha256": "e33480911d6f97ddb9ad7d5ebc208173488537b41635c7c5095807f21e543232"
+    },
+    {
+      "destination": "paper/manuscript/tables/tableA2_conformal_all_heads.tex",
+      "destination_sha256": "8f1fb173a64de553272ebf68c019c79e81bc448278c7e372d6c064f33217c0d5",
+      "kind": "table",
+      "row_count": 12,
+      "source": "paper/appendix/tableA2_gate4c_all_heads.csv",
+      "source_sha256": "ed314f508c2540207c2d2f75127be8aa07c389441d153e22282f933b07e6792b"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig1_missingness_degradation.pdf",
+      "destination_sha256": "cebde53754faa1c6ea1a50405c8355de929c4645bc26cf994721439d6482c98a",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/fig1_missingness_degradation.pdf",
+      "source_sha256": "cebde53754faa1c6ea1a50405c8355de929c4645bc26cf994721439d6482c98a"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig2_multiseed_nll_deltas.pdf",
+      "destination_sha256": "06c5a73e7ce56660b5fad255d789d081e2191ca5a682e16e045898b82e193cdc",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/fig2_multiseed_nll_deltas.pdf",
+      "source_sha256": "06c5a73e7ce56660b5fad255d789d081e2191ca5a682e16e045898b82e193cdc"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig3a_multiseed_nll.pdf",
+      "destination_sha256": "3a69ef3992edd1c8ad92c30c4a63aac28415575b0c3f6b607fe638856e798570",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/fig3a_multiseed_nll.pdf",
+      "source_sha256": "3a69ef3992edd1c8ad92c30c4a63aac28415575b0c3f6b607fe638856e798570"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig3b_multiseed_crps.pdf",
+      "destination_sha256": "3c596d5999a96bd8555bd63083f06ecd10bf15fe2f4ae1240877a9623ca1aa48",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/fig3b_multiseed_crps.pdf",
+      "source_sha256": "3c596d5999a96bd8555bd63083f06ecd10bf15fe2f4ae1240877a9623ca1aa48"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig3c_multiseed_mse.pdf",
+      "destination_sha256": "cd2fb2f951114d0e8280677bb40eef0d0e0a7fe309b23756561c083df66a7c17",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/fig3c_multiseed_mse.pdf",
+      "source_sha256": "cd2fb2f951114d0e8280677bb40eef0d0e0a7fe309b23756561c083df66a7c17"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig5_conformal_tradeoff.pdf",
+      "destination_sha256": "f5204a89e25aa9e6de0e2aae3a5a37af90158ccff68dd20601f3f5d0220f954e",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/fig5_conformal_tradeoff.pdf",
+      "source_sha256": "f5204a89e25aa9e6de0e2aae3a5a37af90158ccff68dd20601f3f5d0220f954e"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig6_calibration_test_shift.pdf",
+      "destination_sha256": "78dc75be7bdc8f50bc6d014db6806d2016b3382ec9ea4e7ad2fbdc74e8f78222",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/fig6_calibration_test_shift.pdf",
+      "source_sha256": "78dc75be7bdc8f50bc6d014db6806d2016b3382ec9ea4e7ad2fbdc74e8f78222"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig_gate5a_tail_nll_gain.pdf",
+      "destination_sha256": "a3f263da608065941e2185ff73c81d856f6ad9ed0bc1570ef0f97cf38c277422",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/gate5a/fig_gate5a_tail_nll_gain.pdf",
+      "source_sha256": "a3f263da608065941e2185ff73c81d856f6ad9ed0bc1570ef0f97cf38c277422"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig_gate5a_pit_histograms.pdf",
+      "destination_sha256": "fde08bcd87fd49cc61d163cdea3d8d4640d5fa531e0c4bbf42b06e667c0bf7b4",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/gate5a/fig_gate5a_pit_histograms.pdf",
+      "source_sha256": "fde08bcd87fd49cc61d163cdea3d8d4640d5fa531e0c4bbf42b06e667c0bf7b4"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig_gate5a_qq.pdf",
+      "destination_sha256": "7ad083f0faa6b6c1e064ac166706efc21f181297e9b06dda9eeaf08fce7c7352",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/gate5a/fig_gate5a_qq.pdf",
+      "source_sha256": "7ad083f0faa6b6c1e064ac166706efc21f181297e9b06dda9eeaf08fce7c7352"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig_gate5a_kurtosis_df.pdf",
+      "destination_sha256": "af682615d80813dbc54024a69cef6019032351be7befbdae6ff54dfd242ccb20",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/gate5a/fig_gate5a_kurtosis_df.pdf",
+      "source_sha256": "af682615d80813dbc54024a69cef6019032351be7befbdae6ff54dfd242ccb20"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig_gate5b_cross_backbone_deltas.pdf",
+      "destination_sha256": "c93d8e483b84de528129a6955e0239f5ff04437c53903f770ac40b995e46a049",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/gate5b/fig_gate5b_cross_backbone_deltas.pdf",
+      "source_sha256": "c93d8e483b84de528129a6955e0239f5ff04437c53903f770ac40b995e46a049"
+    },
+    {
+      "destination": "paper/manuscript/figures/fig_gate5b_patchtst_tail_nll_gain.pdf",
+      "destination_sha256": "8f78cb60eabf22fb8db31edcd2c48a0cb161d7b7c5c464a0bbcaf98b73d3f92c",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/figures/gate5b/fig_gate5b_patchtst_tail_nll_gain.pdf",
+      "source_sha256": "8f78cb60eabf22fb8db31edcd2c48a0cb161d7b7c5c464a0bbcaf98b73d3f92c"
+    },
+    {
+      "destination": "paper/manuscript/figures/figA1_gate4a_adapter.pdf",
+      "destination_sha256": "aa9f1152aefafa3206e103134e5fab2382465af0cf87c1fed63bc7e649021c71",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/appendix/figA1_gate4a_adapter.pdf",
+      "source_sha256": "aa9f1152aefafa3206e103134e5fab2382465af0cf87c1fed63bc7e649021c71"
+    },
+    {
+      "destination": "paper/manuscript/figures/figA2_gate4c_channel_coverage.pdf",
+      "destination_sha256": "a6f78d47b4ca87c077bc7a815fe712246a812782283273e3f76da78505c61c12",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/appendix/figA2_gate4c_channel_coverage.pdf",
+      "source_sha256": "a6f78d47b4ca87c077bc7a815fe712246a812782283273e3f76da78505c61c12"
+    },
+    {
+      "destination": "paper/manuscript/figures/figA3_gate4c_horizon_coverage.pdf",
+      "destination_sha256": "b75b4c867d3eab83149567a434b8bf4b2110c812ce105e8e38fdebffa7740026",
+      "identical_copy": true,
+      "kind": "figure",
+      "source": "paper/appendix/figA3_gate4c_horizon_coverage.pdf",
+      "source_sha256": "b75b4c867d3eab83149567a434b8bf4b2110c812ce105e8e38fdebffa7740026"
+    }
+  ],
+  "errors": [],
+  "figure_count": 16,
+  "generated_at": "2026-07-22T09:16:42.352499+00:00",
+  "source_policy": "frozen Gate 6 tables and figures; no metric recomputation",
+  "stage": "Gate 7A manuscript assembly",
+  "status": "PASS",
+  "table_count": 14
+}

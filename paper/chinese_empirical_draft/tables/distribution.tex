@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering\small
+\caption{TimePerceiver 分布消融，种子2025。所有结果为 random 0.3、$L=384,H=96$；单种子不报告标准差。}\label{tab:distribution}
+\begin{tabular}{llrrr}
+\toprule
+数据集 & 分布头/主干 & NLL & CRPS & MSE \\
+\midrule
+ETTh1 & Gaussian & 0.918535 & 0.344127 & 0.420332 \\
+ETTh1 & Laplace & 0.879116 & 0.341785 & 0.424149 \\
+ETTh1 & Student-t (fixed 8) & 0.864949 & 0.336548 & 0.413927 \\
+ETTh1 & Student-t (learned) & 0.877154 & 0.340263 & 0.419177 \\
+Weather & Gaussian & 0.586325 & 0.245442 & 0.212237 \\
+Weather & Laplace & 0.204399 & 0.209589 & 0.210051 \\
+Weather & Student-t (fixed 8) & 0.136165 & 0.208461 & 0.210994 \\
+Weather & Student-t (learned) & 0.129293 & 0.208276 & 0.210836 \\
+Electricity & Gaussian & 0.440598 & 0.209453 & 0.167881 \\
+Electricity & Laplace & 0.370388 & 0.208768 & 0.170436 \\
+Electricity & Student-t (fixed 8) & 0.367009 & 0.207797 & 0.168473 \\
+Electricity & Student-t (learned) & 0.366449 & 0.207786 & 0.168486 \\
+\bottomrule
+\end{tabular}
+\end{table*}

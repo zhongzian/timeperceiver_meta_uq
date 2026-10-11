@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "evaluated_batches": 8,
+  "evaluated_samples": 256,
+  "results": {
+    "adapter_disabled": {
+      "forecast_max_abs_diff": 0.0,
+      "mse_diff": 0.0,
+      "mae_diff": 0.0,
+      "rmse_diff": 0.0,
+      "mse": 0.4120240495318458,
+      "mae": 0.4251030683517456,
+      "rmse": 0.6418909950543361
+    },
+    "gaussian_head": {
+      "forecast_max_abs_diff": 0.0,
+      "mse_diff": 0.0,
+      "mae_diff": 0.0,
+      "rmse_diff": 0.0,
+      "mse": 0.4120240495318458,
+      "mae": 0.4251030683517456,
+      "rmse": 0.6418909950543361,
+      "initial_scale_max_error": 0.0
+    },
+    "student_t_head": {
+      "forecast_max_abs_diff": 0.0,
+      "mse_diff": 0.0,
+      "mae_diff": 0.0,
+      "rmse_diff": 0.0,
+      "mse": 0.4120240495318458,
+      "mae": 0.4251030683517456,
+      "rmse": 0.6418909950543361,
+      "initial_scale_max_error": 0.0,
+      "initial_df_max_error": 0.0
+    }
+  }
+}

@@ -1,0 +1,4 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+This study evaluates a matched-capacity fixed \StudentT{} forecast head under fixed masks applied only to historical observations. Proper probabilistic scores improve consistently across the evaluated TimePerceiver probability-head seeds, and a distribution ablation supports fixed heavy tails over learned degrees of freedom in this setting. PatchTST reproduces the NLL and CRPS direction on all three datasets but retains a small Electricity MSE tradeoff that exceeds the prespecified tolerance. The resulting conclusion is deliberately bounded: fixed heavy-tailed predictive marginals are a lightweight way to improve probabilistic forecast quality under the evaluated missing-history protocol, but point behavior and broader generalization must be checked for each backbone and condition.

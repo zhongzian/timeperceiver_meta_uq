@@ -1,0 +1,117 @@
+{
+  "status": "WAITING_AUTHOR_INPUT",
+  "blocking_code": null,
+  "yaml": {
+    "parse_pass": true,
+    "parser": "PyYAML 6.0",
+    "parse_error": null,
+    "required_fields_pass": true,
+    "missing_top_level_fields": [],
+    "schema_errors": []
+  },
+  "authors": {
+    "author_ids": [
+      "A1",
+      "A2"
+    ],
+    "duplicate_author_ids": [],
+    "duplicate_author_order": [],
+    "A1_identity_status": "SUPPLIED_IDENTITY",
+    "A2_identity_status": "CANDIDATE_AUTHOR_PENDING_CONFIRMATION",
+    "corresponding_author_unresolved": true
+  },
+  "affiliations": {
+    "duplicate_affiliation_ids": [],
+    "invalid_affiliation_references": [],
+    "complete": false,
+    "missing_fields_by_affiliation": {
+      "AFF1": [
+        "department",
+        "institution",
+        "city",
+        "state_or_region",
+        "postal_code"
+      ]
+    }
+  },
+  "email_validation": {
+    "valid_author_ids": [],
+    "missing_author_ids": [
+      "A1",
+      "A2"
+    ],
+    "invalid_author_ids": []
+  },
+  "orcid_validation": {
+    "optional_if_missing": true,
+    "valid_author_ids": [],
+    "missing_author_ids": [
+      "A1",
+      "A2"
+    ],
+    "invalid_author_ids": []
+  },
+  "credit": {
+    "unknown_roles": [],
+    "missing_roles": [],
+    "unknown_author_ids": [],
+    "authors_without_confirmed_role": [
+      "A1",
+      "A2"
+    ],
+    "proposal_only_outside_final_metadata": true
+  },
+  "funding": {
+    "funder_count": 3,
+    "grant_count": 5,
+    "grant_numbers_preserved": true,
+    "funding_statement_exact": true,
+    "recipient_authors_assigned": false,
+    "invalid_recipient_author_ids": [],
+    "statement_confirmed": false
+  },
+  "declarations": {
+    "funding_complete": false,
+    "acknowledgements_complete": false,
+    "conflict_complete": false,
+    "credit_complete": false,
+    "data_availability_complete": false,
+    "code_availability_complete": false,
+    "ethics_complete": false,
+    "ai_disclosure_complete": false
+  },
+  "submission_confirmations_complete": false,
+  "placeholder_counts": {
+    "AUTHOR_INPUT_REQUIRED": 25,
+    "AUTHOR_CONFIRMATION_REQUIRED": 18,
+    "MANUAL_PORTAL_VERIFICATION_REQUIRED": 6
+  },
+  "formal_integrity": {
+    "gate7b1_sources_unchanged": true,
+    "formal_assets_unchanged": true,
+    "anonymous_package_isolated": true,
+    "failures": []
+  },
+  "preview_inventory_pass": true,
+  "gates": {
+    "GATE7B2_AUTHOR_SCHEMA_PASS": true,
+    "GATE7B2_AUTHOR_IDENTITY_PASS": true,
+    "GATE7B2_AFFILIATION_PASS": true,
+    "GATE7B2_ORCID_PASS": true,
+    "GATE7B2_CREDIT_PASS": true,
+    "GATE7B2_FUNDING_METADATA_PASS": true,
+    "GATE7B2_DECLARATION_PASS": true,
+    "GATE7B2_AI_DISCLOSURE_PASS": true,
+    "GATE7B2_VERSION_DIFF_PASS": true,
+    "GATE7B2_COMPILE_PASS": true,
+    "GATE7B2_PACKAGE_PASS": true,
+    "GATE7B2_FORMAL_INTEGRITY_PASS": true,
+    "GATE7B2_PRIVACY_PASS": true
+  },
+  "AUTHOR_METADATA_COMPLETE": false,
+  "FUNDING_COMPLETE": false,
+  "DECLARATIONS_COMPLETE": false,
+  "SUBMISSION_CONFIRMATIONS_COMPLETE": false,
+  "READY_FOR_SUBMISSION_PORTAL": false,
+  "SUBMISSION_PERFORMED": false
+}

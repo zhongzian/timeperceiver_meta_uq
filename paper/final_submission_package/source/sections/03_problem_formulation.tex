@@ -1,0 +1,30 @@
+\section{Problem Formulation}
+\label{sec:problem}
+
+Let $X \in \mathbb{R}^{L \times C}$ denote a historical multivariate sequence with input length $L$ and $C$ channels. Let $Y \in \mathbb{R}^{H \times C}$ denote the future target over forecast horizon $H$. A binary historical observation mask $M \in \{0,1\}^{L \times C}$ indicates which elements of $X$ are observed. The masked historical input is
+\begin{equation}
+    \widetilde{X} = M \odot X + (1-M) \odot v_{\mathrm{miss}},
+    \label{eq:masked-input}
+\end{equation}
+where $v_{\mathrm{miss}}$ is the protocol's missing-value representation and $\odot$ denotes elementwise multiplication.
+
+The mask acts only on historical inputs. The future target $Y$ is never masked, copied into $\widetilde{X}$, or used to construct the input mask. Normalization parameters are fitted on the training split only and then reused for validation and test data. Validation and test masks are fixed assets, so matched methods receive identical observed histories.
+
+A backbone maps $\widetilde{X}$, time features, and the observation mask to forecast features $Z$. A probability head then defines a marginal predictive density for each target element:
+\begin{equation}
+    p(Y \mid \widetilde{X}, M)
+    = \prod_{h=1}^{H}\prod_{c=1}^{C}
+      p\!\left(Y_{h,c}\mid Z_{h,c}\right).
+    \label{eq:marginal-factorization}
+\end{equation}
+Equation~\ref{eq:marginal-factorization} is a modeling factorization for marginal target distributions. It does not represent cross-channel or cross-horizon covariance, and its marginal intervals do not imply simultaneous coverage.
+
+We evaluate point accuracy with mean squared error (MSE), mean absolute error (MAE), and root mean squared error (RMSE). We evaluate predictive distributions with negative log-likelihood (NLL), CRPS, interval coverage, interval width, and interval score. Lower values are better for all listed metrics except coverage, which is compared with its nominal target.
+
+For a candidate head $a$ and a matched Gaussian reference $g$, point noninferiority requires
+\begin{equation}
+    \frac{\mathrm{MSE}_{a}-\mathrm{MSE}_{g}}{\mathrm{MSE}_{g}}
+    \leq 0.01.
+    \label{eq:point-gate}
+\end{equation}
+The 1\% threshold is pre-registered for the paired comparisons and is not changed after observing test results.

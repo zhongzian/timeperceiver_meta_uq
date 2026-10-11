@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "backbone": "patchtst",
+  "datasets": {
+    "electricity": {
+      "experiment_id": "patchtst__electricity__gate5b0_backbone__clean__seed2025__20260720_184734",
+      "run_dir": "runs/patchtst__electricity__gate5b0_backbone__clean__seed2025__20260720_184734",
+      "checkpoint": "runs/patchtst__electricity__gate5b0_backbone__clean__seed2025__20260720_184734/checkpoints/best_backbone.pt",
+      "checkpoint_sha256": "716f715eee0798b373135b81bb70165c2df698f57534b7ae18e5b6bc03b1009d",
+      "best_epoch": 55,
+      "selection_metric": "validation_mse",
+      "test_used_for_model_selection": false,
+      "strict_reload": true
+    },
+    "etth1": {
+      "experiment_id": "patchtst__etth1__gate5b0_backbone__clean__seed2025__20260720_201509",
+      "run_dir": "runs/patchtst__etth1__gate5b0_backbone__clean__seed2025__20260720_201509",
+      "checkpoint": "runs/patchtst__etth1__gate5b0_backbone__clean__seed2025__20260720_201509/checkpoints/best_backbone.pt",
+      "checkpoint_sha256": "de276de1767f3199ef759c0aba172f7915a8b8a619219c5db00038ddac69b203",
+      "best_epoch": 92,
+      "selection_metric": "validation_mse",
+      "test_used_for_model_selection": false,
+      "strict_reload": true
+    },
+    "weather": {
+      "experiment_id": "patchtst__weather__gate5b0_backbone__clean__seed2025__20260720_222732",
+      "run_dir": "runs/patchtst__weather__gate5b0_backbone__clean__seed2025__20260720_222732",
+      "checkpoint": "runs/patchtst__weather__gate5b0_backbone__clean__seed2025__20260720_222732/checkpoints/best_backbone.pt",
+      "checkpoint_sha256": "e581b59dbb59fadeac18a6d0f97a49d39b1e85d64ca43a1a3d58b3b793488045",
+      "best_epoch": 9,
+      "selection_metric": "validation_mse",
+      "test_used_for_model_selection": false,
+      "strict_reload": true
+    }
+  },
+  "selection_metric": "validation_mse",
+  "test_used_for_model_selection": false
+}

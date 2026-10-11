@@ -1,0 +1,47 @@
+\begin{thebibliography}{1}
+
+\bibitem{cao2018brits}
+Wei Cao, Dong Wang, Jian Li, Hao Zhou, Lei Li, and Yitan Li.
+\newblock {BRITS}: Bidirectional recurrent imputation for time series.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~31, pages 6776--6786, 2018.
+
+\bibitem{gneiting2007proper}
+Tilmann Gneiting and Adrian~E. Raftery.
+\newblock Strictly proper scoring rules, prediction, and estimation.
+\newblock {\em Journal of the American Statistical Association},
+  102(477):359--378, 2007.
+
+\bibitem{lee2025timeperceiver}
+Jaebin Lee and Hankook Lee.
+\newblock Timeperceiver: An encoder-decoder framework for generalized
+  time-series forecasting.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~38, 2025.
+
+\bibitem{nie2023patchtst}
+Yuqi Nie, Nam~H. Nguyen, Phanwadee Sinthong, and Jayant Kalagnanam.
+\newblock A time series is worth 64 words: Long-term forecasting with
+  transformers.
+\newblock In {\em International Conference on Learning Representations}, 2023.
+
+\bibitem{salinas2020deepar}
+David Salinas, Valentin Flunkert, Jan Gasthaus, and Tim Januschowski.
+\newblock {DeepAR}: Probabilistic forecasting with autoregressive recurrent
+  networks.
+\newblock {\em International Journal of Forecasting}, 36(3):1181--1191, 2020.
+
+\bibitem{stankeviciute2021conformal}
+Kamile Stankeviciute, Ahmed~M. Alaa, and Mihaela van~der Schaar.
+\newblock Conformal time-series forecasting.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~34, 2021.
+
+\bibitem{tashiro2021csdi}
+Yusuke Tashiro, Jiaming Song, Yang Song, and Stefano Ermon.
+\newblock {CSDI}: Conditional score-based diffusion models for probabilistic
+  time series imputation.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~34, pages 24804--24816, 2021.
+
+\end{thebibliography}

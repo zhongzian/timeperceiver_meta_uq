@@ -1,0 +1,4 @@
+dataset,status,target_channels,gaussian_trainable_params,laplace_trainable_params,fixed_t8_trainable_params,learnable_t_trainable_params,learnable_t_extra_params,gaussian_total_params,laplace_total_params,fixed_t8_total_params,learnable_t_total_params
+etth1,PASS,7,6168,6168,6168,6175,7,1142564,1142564,1142564,1142571
+weather,PASS,21,24624,24624,24624,24645,21,4518472,4518472,4518472,4518493
+electricity,PASS,321,24624,24624,24624,24945,321,4672072,4672072,4672072,4672393

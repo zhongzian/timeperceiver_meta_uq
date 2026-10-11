@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "pairs_pass": "3/3",
+  "allowed_differences": [
+    "command",
+    "distribution",
+    "fixed_t_df",
+    "reuse_allowed",
+    "task_id",
+    "variant"
+  ],
+  "datasets": [
+    {
+      "dataset": "etth1",
+      "status": "PASS",
+      "same_backbone_checkpoint_path_and_hash": true,
+      "same_deterministic_loc_initialization": true,
+      "same_train_mask_sequence": true,
+      "same_validation_mask_sha256": true,
+      "same_test_mask_sha256": true,
+      "same_batch_order_seed": true,
+      "same_normalization": true,
+      "same_batch_size": true,
+      "same_optimizer_protocol": true,
+      "same_metric_protocol": true,
+      "unexpected_differences": []
+    },
+    {
+      "dataset": "weather",
+      "status": "PASS",
+      "same_backbone_checkpoint_path_and_hash": true,
+      "same_deterministic_loc_initialization": true,
+      "same_train_mask_sequence": true,
+      "same_validation_mask_sha256": true,
+      "same_test_mask_sha256": true,
+      "same_batch_order_seed": true,
+      "same_normalization": true,
+      "same_batch_size": true,
+      "same_optimizer_protocol": true,
+      "same_metric_protocol": true,
+      "unexpected_differences": []
+    },
+    {
+      "dataset": "electricity",
+      "status": "PASS",
+      "same_backbone_checkpoint_path_and_hash": true,
+      "same_deterministic_loc_initialization": true,
+      "same_train_mask_sequence": true,
+      "same_validation_mask_sha256": true,
+      "same_test_mask_sha256": true,
+      "same_batch_order_seed": true,
+      "same_normalization": true,
+      "same_batch_size": true,
+      "same_optimizer_protocol": true,
+      "same_metric_protocol": true,
+      "unexpected_differences": []
+    }
+  ]
+}

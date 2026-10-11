@@ -1,0 +1,40 @@
+{
+  "document_type": "PREVIEW_WITH_PLACEHOLDERS",
+  "authoritative_source": "paper/venues/journal_of_forecasting/author_input/author_metadata.yaml",
+  "target_venue": "Journal of Forecasting",
+  "publisher": "Wiley",
+  "article_type": "Research Article",
+  "title": "Fixed Heavy-Tailed Probabilistic Forecasting under Missing Historical Observations",
+  "short_title": "Heavy-Tailed Forecasts with Missingness",
+  "authors": [
+    {
+      "author_id": "A1",
+      "display_name": "Zian Zhong",
+      "status": "SUPPLIED_NAME"
+    },
+    {
+      "author_id": "A2",
+      "display_name": "Jianqun Cui",
+      "status": "AUTHORSHIP_CONFIRMATION_REQUIRED"
+    }
+  ],
+  "author_order": "AUTHOR_CONFIRMATION_REQUIRED",
+  "affiliations": "AUTHOR_INPUT_REQUIRED",
+  "corresponding_author": "AUTHOR_INPUT_REQUIRED",
+  "emails": "AUTHOR_INPUT_REQUIRED",
+  "orcid": "AUTHOR_INPUT_REQUIRED",
+  "funding_statement": "This work was supported by the National Natural Science Foundation of China (Nos. 62272189, 62372206, and 62402193), the Hubei Provincial Natural Science Foundation of China (No. 2024AFB421), and the Fundamental Research Funds for the Central Universities, Central China Normal University (No. XJ2026001501).",
+  "funding_statement_confirmed": false,
+  "funding_recipients": "AUTHOR_INPUT_REQUIRED",
+  "credit_roles": "AUTHOR_CONFIRMATION_REQUIRED",
+  "acknowledgements": "AUTHOR_INPUT_REQUIRED",
+  "conflict_of_interest": "AUTHOR_INPUT_REQUIRED",
+  "data_availability": "AUTHOR_INPUT_REQUIRED",
+  "code_availability": "AUTHOR_INPUT_REQUIRED",
+  "ethics": "AUTHOR_INPUT_REQUIRED",
+  "generative_ai_disclosure": "AUTHOR_CONFIRMATION_REQUIRED",
+  "submission_confirmations": "AUTHOR_CONFIRMATION_REQUIRED",
+  "manual_portal_verification": "MANUAL_PORTAL_VERIFICATION_REQUIRED",
+  "ready_for_submission_portal": false,
+  "submission_performed": false
+}

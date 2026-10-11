@@ -1,0 +1,19 @@
+{
+  "GATE7A_SUBMISSION_PACKAGE_PASS": true,
+  "anonymization_violations": [],
+  "anonymous": true,
+  "content_file_count": 63,
+  "file_count": 66,
+  "forbidden_package_files": [],
+  "generated_at": "2026-07-22T09:38:42.686466+00:00",
+  "manifest": "paper/final_submission_package/manifest/submission_manifest.json",
+  "missing_files": [],
+  "package_directory": "paper/final_submission_package",
+  "status": "PASS",
+  "tarball": "paper/final_submission_package.tar.gz",
+  "tarball_sha256": "3f7f1b168add9ae2263b88aed24232e05437fef06d8864e36b72f81e3d5d8e89",
+  "tarball_sha256_sidecar": "paper/final_submission_package.tar.gz.sha256",
+  "tarball_size_bytes": 319442,
+  "unexpected_files": [],
+  "venue_neutral": true
+}

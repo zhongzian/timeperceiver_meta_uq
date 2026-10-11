@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "GATE4A_TRAINING_SMOKE_PASS": true,
+  "static_adapter": {"status":"SUCCESS","run_id":"timeperceiver__etth1__gate4a_smoke__static_adapter__random_rate0.3__seed2025__20260711_205200","train_batches_total":64,"train_batches_per_epoch":32,"val_batches":8,"test_batches":8,"peak_gpu_memory_mib":239.51953125,"trainable_parameters":33600},
+  "missingness_aware_adapter": {"status":"SUCCESS","run_id":"timeperceiver__etth1__gate4a_smoke__missingness_aware_adapter__random_rate0.3__seed2025__20260711_205300","train_batches_total":64,"train_batches_per_epoch":32,"val_batches":8,"test_batches":8,"peak_gpu_memory_mib":239.58544921875,"trainable_parameters":39136},
+  "finite_losses_and_metrics": true,
+  "all_new_gradients_finite": true,
+  "backbone_non_null_gradients": 0,
+  "optimizer_backbone_parameters": 0,
+  "checkpoints_reloaded": true,
+  "batch_y_modified": false,
+  "test_mask_used_during_training": false,
+  "no_leakage": true
+}

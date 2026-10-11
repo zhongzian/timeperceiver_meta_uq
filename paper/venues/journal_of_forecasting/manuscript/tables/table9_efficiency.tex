@@ -1,0 +1,18 @@
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Dataset & Head & Params & Forward ms & NLL ms & CRPS ms & Peak MiB \\
+\midrule
+etth1 & Gaussian & 6,168 & 29.997997 & 51.514500 & 86.934799 & 215.033691 \\
+etth1 & Laplace & 6,168 & 29.996887 & 30.016349 & 63.189127 & 215.033691 \\
+etth1 & Fixed Student-t (df=8) & 6,168 & 29.902914 & 65.900001 & 90.256716 & 215.034180 \\
+etth1 & Learned Student-t & 6,175 & 29.982518 & 69.371223 & 103.335362 & 215.034180 \\
+weather & Gaussian & 24,624 & 59.357760 & 79.919755 & 188.685383 & 630.664551 \\
+weather & Laplace & 24,624 & 58.485584 & 59.293318 & 133.341993 & 630.664551 \\
+weather & Fixed Student-t (df=8) & 24,624 & 58.181018 & 98.037041 & 211.123562 & 630.665039 \\
+weather & Learned Student-t & 24,645 & 59.026097 & 97.896011 & 212.516092 & 630.665039 \\
+electricity & Gaussian & 24,624 & 356.894562 & 359.007118 & 1248.479182 & 4626.902832 \\
+electricity & Laplace & 24,624 & 345.290164 & 343.346301 & 895.849843 & 4626.902832 \\
+electricity & Fixed Student-t (df=8) & 24,624 & 343.877731 & 374.742924 & 1477.667372 & 4626.904297 \\
+electricity & Learned Student-t & 24,945 & 420.384170 & 473.496327 & 1890.070674 & 4626.904297 \\
+\bottomrule
+\end{tabular}

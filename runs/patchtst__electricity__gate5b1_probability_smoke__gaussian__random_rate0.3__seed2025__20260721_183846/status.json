@@ -1,0 +1,16 @@
+{
+  "status": "FAILED",
+  "stage": "gate5b",
+  "substage": "probability_replication_smoke",
+  "experiment_id": "patchtst__electricity__gate5b1_probability_smoke__gaussian__random_rate0.3__seed2025__20260721_183846",
+  "dataset": "electricity",
+  "backbone": "patchtst",
+  "variant": "gaussian_head",
+  "distribution": "gaussian",
+  "smoke_only": true,
+  "training_and_evaluation_completed_before_failure": true,
+  "formal_evidence": false,
+  "error_type": "CODE_ERROR",
+  "error_summary": "metrics.json serialization failed because numpy.bool_ was not converted to Python bool",
+  "superseded_by_retry": true
+}

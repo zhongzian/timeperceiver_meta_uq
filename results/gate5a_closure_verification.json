@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE",
+  "GATE5A_STRICT_CLOSURE_PASS": true,
+  "checks": {
+    "gate5a_status_complete": true,
+    "gate5a_postprocess_status_complete": true,
+    "gate5a_decision_preserved": true,
+    "gate5a_implementation_pass": true,
+    "gate5a_diagnostics_complete": true,
+    "gate5a_efficiency_complete": true,
+    "gate5a_paper_update_complete": true,
+    "gate5a_final_evidence_rebuild_pass": true,
+    "gate5a_formal_integrity_pass": true,
+    "gate5a_postprocess_complete": true,
+    "final_synthesis_pass": true,
+    "ready_for_second_backbone_planning": true,
+    "postprocess_integrity_json_pass": true,
+    "postprocess_integrity_markdown_exists": true,
+    "related_process_count_zero": true,
+    "gpu_work_started_by_closure_false": true,
+    "formal_source_hash_mismatch_zero": true,
+    "upstream_commit_unchanged": true,
+    "upstream_tracked_diff_empty": true
+  },
+  "related_processes": [],
+  "gpu_work_started_by_closure": false,
+  "formal_source_hash_mismatches": 0,
+  "upstream_commit": "7e30cc07b51c709f408409fd60a34c81ae8990be",
+  "upstream_tracked_status": [],
+  "upstream_untracked": [
+    "?? __pycache__/",
+    "?? data_provider/__pycache__/",
+    "?? exp/__pycache__/",
+    "?? models/__pycache__/",
+    "?? utils/__pycache__/"
+  ],
+  "generated_at": "2026-07-20T17:23:15+08:00",
+  "generated_by": "scripts/gate5a_finalize_closure.py"
+}

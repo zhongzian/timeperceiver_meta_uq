@@ -1,0 +1,12 @@
+# Venue Requirements Matrix
+
+Unknown and changing items remain explicitly marked for manual verification.
+
+| Venue | Article type | Abstract | Length | Initial format | Review | Data statement | AI disclosure | OA model |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Applied Intelligence | Original Research Article | 150-250 words | NOT_STATED | Editable Word or LaTeX source; LaTeX submissions include source and PDF and should avoid subfolders. | NOT_STATED | REQUIRED for original research articles | Substantive generative-AI use must be documented; an LLM cannot be an author; AI-assisted copy editing alone need not be declared. | Hybrid; optional Open Choice |
+| Neural Computing and Applications | Original Article | 150-250 words; up to 450 words may be justified for some original research | NOT_STATED | Double-blind submission with an anonymized manuscript and separate title page; Word is preferred and mathematical LaTeX is accepted. | DOUBLE_BLIND | REQUIRED for original research articles | Substantive generative-AI use must be documented; an LLM cannot be an author; AI-assisted copy editing alone need not be declared. | Hybrid; optional Open Choice |
+| Journal of Forecasting | Research article; exact portal taxonomy MANUAL_VERIFICATION_REQUIRED | NOT_STATED | NOT_STATED | Free Format; editable Word, PDF, or LaTeX is accepted initially, with LaTeX source and supporting files supplied as required. | SINGLE_BLIND | Expected under the journal and Wiley data-sharing policy; exact exception wording MANUAL_VERIFICATION_REQUIRED | Substantive AI-assisted content generation must be disclosed under Wiley policy; basic grammar, spelling, and literature-search assistance are treated differently. | Subscription with optional open access after acceptance |
+| Engineering Applications of Artificial Intelligence | Original Research Paper | Maximum 250 words | No word or page limit located; main editable source file limit is 50 MB | Editable DOC/DOCX or LaTeX source; the journal's desk-screening guidance requires a single-column manuscript. | DOUBLE_ANONYMIZED | MANUAL_VERIFICATION_REQUIRED | A declaration is required for substantive generative-AI use in manuscript preparation; basic grammar and spelling checks are exempt under Elsevier policy. | Hybrid with an optional open-access route |
+
+The complete field matrix is stored in `venue_requirements_matrix.csv`.

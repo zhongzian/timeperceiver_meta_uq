@@ -1,0 +1,9 @@
+# Student-t Multi-Seed Primary Results
+
+| dataset | gaussian_nll_mean | gaussian_nll_std | student_t_nll_mean | student_t_nll_std | mean_paired_delta_nll | nll_wins | gaussian_crps_mean | gaussian_crps_std | student_t_crps_mean | student_t_crps_std | mean_paired_delta_crps | crps_wins | gaussian_mse_mean | gaussian_mse_std | student_t_mse_mean | student_t_mse_std | mean_paired_delta_mse | point_noninferiority_count | source_evidence_ids |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ETTh1 | 0.915014 | 0.006643 | 0.871113 | 0.007801 | -0.043900 | 4 | 0.342011 | 0.002338 | 0.337656 | 0.002124 | -0.004356 | 4 | 0.416862 | 0.003302 | 0.415611 | 0.002699 | -0.001252 | 4 | EV-2be49df10bafd996;EV-42cd661a8fc45bb6;EV-43f1726bd95e9db6;EV-8024fb9f76d89adf;EV-84bd75a692d8a259;EV-85ec6771854d80be;EV-889e11fdf3dd0830;EV-ceb1caa6605cb552 |
+| Weather | 0.577226 | 0.017061 | 0.103670 | 0.020066 | -0.473557 | 4 | 0.244788 | 0.003197 | 0.207544 | 0.000670 | -0.037245 | 4 | 0.210306 | 0.001462 | 0.209818 | 0.000964 | -0.000488 | 4 | EV-03b4f0ce77534572;EV-0416533fda424a08;EV-0e7d9329052ae964;EV-1913ad30e35aefe8;EV-5b807646ac614bbe;EV-615b0fb4c33c4af4;EV-67d7523e19315c72;EV-77b6c8d01a11d9a1 |
+| Electricity | 0.439644 | 0.002139 | 0.365348 | 0.000800 | -0.074296 | 4 | 0.209365 | 0.000178 | 0.207395 | 0.000338 | -0.001970 | 4 | 0.167419 | 0.000420 | 0.167703 | 0.000613 | 0.000284 | 4 | EV-477087ef0e61858d;EV-7cd89af587c8ca66;EV-8b49a1a531443c81;EV-9d73603a50e5633a;EV-a63f791f39f25404;EV-bae83459c575efbd;EV-e57215b22b46d3ce;EV-f3bdede8325b0d1f |
+
+Note: Four probability-head training seeds with a fixed official backbone and fixed validation/test masks; not full end-to-end multi-seed. Error bars use sample std (ddof=1).

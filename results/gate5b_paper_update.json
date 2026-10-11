@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "table10_rows": 6,
+  "cross_backbone_figure_rows": 6,
+  "tail_figure_rows": 15,
+  "figure_caption_created": true,
+  "decision": "SECOND_BACKBONE_POINT_TRADEOFF",
+  "statistical_significance_claim": false,
+  "broad_transfer_claim": false,
+  "absolute_backbone_ranking": false
+}

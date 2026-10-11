@@ -1,0 +1,20 @@
+{
+  "stage": "Gate 4c leakage audit",
+  "status": "PASS",
+  "selection_calibration_raw_overlap_count": 0,
+  "selection_calibration_future_target_overlap_count": 0,
+  "calibration_labels_seen_during_training": false,
+  "calibration_labels_seen_during_model_selection": false,
+  "test_labels_seen_during_calibration": false,
+  "previous_gate4b_checkpoint_reused_for_conformal": false,
+  "gate4c_probability_heads_retrained": true,
+  "normalization_reference": "official_train_split_statistics",
+  "test_statistics_used_for_normalization": false,
+  "exact_exchangeability_guarantee_claimed": false,
+  "selection_mask_history_only": true,
+  "calibration_mask_history_only": true,
+  "test_mask_reused_without_resampling": true,
+  "selection_mask_sha256": "aeef3fc99e3cc875f871c5613a628d806257bacee74fce735b9d92e5e14068d1",
+  "calibration_mask_sha256": "008f13390bcc2cd09f71b2da869d67198a902f706b2e46321fc20229a9d42066",
+  "test_mask_sha256": "2814d0c2f8c1fc3dca854dee238f4984ff4f519f14f67b8bcbdfd688bda6bebc"
+}

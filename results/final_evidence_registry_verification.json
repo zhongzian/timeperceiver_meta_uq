@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "FINAL_EVIDENCE_REGISTRY_PASS": true,
+  "generated_at": "2026-07-22T15:16:41+08:00",
+  "counts": {
+    "total_evidence_rows": 132,
+    "valid_formal_rows": 130,
+    "paper_evidence_rows": 130,
+    "invalid_legacy_rows_retained": 2,
+    "invalid_legacy_rows_in_paper": 0,
+    "smoke_rows_in_paper": 0,
+    "duplicate_keys": 0,
+    "missing_sources": 0,
+    "missing_source_rows": 0,
+    "hash_mismatches": 0
+  },
+  "checks": {
+    "expected_total_rows_132": true,
+    "expected_stage_counts": true,
+    "invalid_legacy_unmasked_paper_rows_zero": true,
+    "invalid_legacy_rows_retained_2": true,
+    "smoke_paper_rows_zero": true,
+    "failed_paper_rows_zero": true,
+    "invalid_paper_rows_zero": true,
+    "missing_source_file_zero": true,
+    "missing_source_row_or_key_zero": true,
+    "hash_mismatch_zero": true,
+    "duplicate_evidence_key_zero": true,
+    "paper_trace_fields_complete": true,
+    "masked_paper_rows_have_test_mask": true,
+    "gate4b_probability_validity": true,
+    "source_manifest_pass": true
+  },
+  "details": {
+    "stage_counts": {
+      "gate2_clean_baseline": 3,
+      "gate3b_fixed_mask": 48,
+      "gate4a_adapter_ablation": 3,
+      "gate4b_cross_dataset": 4,
+      "gate4b_expanded_conditions": 12,
+      "gate4b_legacy_unmasked_audit": 2,
+      "gate4b_multiseed": 24,
+      "gate4c_interval_calibration": 12,
+      "gate4c_mechanism_audit": 4,
+      "gate4c_probability_head": 2,
+      "gate5a_distribution_ablation": 12,
+      "gate5b_second_backbone": 6
+    },
+    "stage_count_mismatches": {},
+    "duplicate_keys": [],
+    "missing_sources": [],
+    "missing_source_rows": [],
+    "hash_mismatches": [],
+    "missing_trace_fields": [],
+    "missing_mask_trace": [],
+    "invalid_probability_rows": []
+  }
+}

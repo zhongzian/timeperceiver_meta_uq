@@ -1,0 +1,7 @@
+{
+  "variant": "static_adapter",
+  "smoke_only": true,
+  "error": "RuntimeError('Invalid device argument 0: did you call init?')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/data/zza/code/timeperceiver_meta_uq/scripts/gate4a_train_adapter.py\", line 35, in main\n    torch.manual_seed(2025);np.random.seed(2025);dev=torch.device('cuda:0');torch.cuda.reset_peak_memory_stats(dev)\n  File \"/mnt/data/zza/anaconda3/envs/timeperceiver_meta_uq/lib/python3.9/site-packages/torch/cuda/memory.py\", line 307, in reset_peak_memory_stats\n    return torch._C._cuda_resetPeakMemoryStats(device)\nRuntimeError: Invalid device argument 0: did you call init?\n",
+  "elapsed_seconds": 0.12626123428344727
+}

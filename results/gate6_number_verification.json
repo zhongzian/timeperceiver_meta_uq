@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "GATE6_NUMBER_VERIFICATION_PASS": true,
+  "generated_at": "2026-07-22T15:16:47+08:00",
+  "source_files": [
+    "reports/gate5b_patchtst_probability_results.csv",
+    "reports/gate5b_patchtst_paired_deltas.csv",
+    "results/gate5b_formal_decision.json"
+  ],
+  "verified_patchtst_rows": 3,
+  "verified_display_tokens": 28,
+  "number_mismatch_count": 0,
+  "gate_interpretation_mismatch_count": 0,
+  "number_mismatches": [],
+  "gate_interpretation_mismatches": []
+}

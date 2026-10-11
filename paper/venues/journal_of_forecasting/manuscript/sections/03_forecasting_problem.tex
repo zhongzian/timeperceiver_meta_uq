@@ -1,0 +1,13 @@
+\section{Forecasting Problem}
+\label{sec:forecasting-problem}
+
+Let $x_{1:t}\in\mathbb{R}^{t\times C}$ denote a $C$-channel historical series observed up to forecast origin $t$, and let $y_{t+1:t+H}$ be the future target over horizon $H$. A binary historical observation mask $m_{1:t}$ marks available values. The model receives the masked historical input $\widetilde{x}_{1:t}$ together with the time covariates required by the backbone. Only historical inputs are masked; future targets are never masked or exposed to the model.
+
+For every horizon $h$ and channel $c$, the probabilistic head estimates a predictive marginal distribution
+\begin{equation}
+p(y_{t+h,c}\mid\widetilde{x}_{1:t},m_{1:t}).
+\label{eq:marginal-forecast}
+\end{equation}
+The point forecast is the predicted location. Central marginal prediction intervals are obtained from the corresponding distribution quantiles. These are horizon--channel marginals: the method does not estimate a joint covariance structure, a multivariate predictive density, or joint coverage.
+
+The official chronological train, validation, and test splits are retained. Normalization statistics are fitted on training data only and reused for validation and test. Fixed mask assets define random, block, channel, and mixed missingness at rates $0.1$, $0.3$, $0.5$, and $0.7$ for the deterministic audit. Probability-head comparisons use paired fixed masks, preventing mask resampling from confounding distribution-family differences.

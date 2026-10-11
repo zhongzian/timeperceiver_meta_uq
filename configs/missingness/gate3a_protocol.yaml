@@ -1,0 +1,43 @@
+gate: Gate 3a
+generator_version: gate3a_v2_official_window_history_mask
+mask_semantics: '1=observed/keep, 0=missing/mask'
+mask_shape: '[num_test_windows, seq_len, num_features]'
+applies_to: test input/history window seq_x only
+does_not_mask: future prediction labels
+mask_types: [random, block, channel, mixed]
+missing_rates: [0.1, 0.3, 0.5, 0.7]
+seeds: [2025]
+datasets:
+  etth1:
+    baseline_experiment_id: timeperceiver__etth1__official_baseline__seed2025__20260701_203054
+    data_file: /mnt/data/zza/code/timeperceiver_meta_uq/data/ETT-small/ETTh1.csv
+    rows: 17420
+    num_features: 7
+    seq_len: 384
+    label_len: 0
+    pred_len: 96
+    num_test_windows: 2785
+    split_rule: Dataset_ETT_hour fixed borders: 12 months train, 4 months val, 4 months test, with seq_len overlap
+    normalization: StandardScaler fit on official train split only, then applied to all splits
+  weather:
+    baseline_experiment_id: timeperceiver__weather__official_baseline__seed2025__20260701_203558
+    data_file: /mnt/data/zza/code/timeperceiver_meta_uq/data/weather/weather.csv
+    rows: 52696
+    num_features: 21
+    seq_len: 384
+    label_len: 0
+    pred_len: 96
+    num_test_windows: 10444
+    split_rule: Dataset_Custom borders: 70% train, 10% val, 20% test, with seq_len overlap
+    normalization: StandardScaler fit on official train split only, then applied to all splits
+  electricity:
+    baseline_experiment_id: timeperceiver__electricity__official_baseline__seed2025__20260705_090044
+    data_file: /mnt/data/zza/code/timeperceiver_meta_uq/data/electricity/electricity.csv
+    rows: 26304
+    num_features: 321
+    seq_len: 384
+    label_len: 0
+    pred_len: 96
+    num_test_windows: 5165
+    split_rule: Dataset_Custom borders: 70% train, 10% val, 20% test, with seq_len overlap
+    normalization: StandardScaler fit on official train split only, then applied to all splits

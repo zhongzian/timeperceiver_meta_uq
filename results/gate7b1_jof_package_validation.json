@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "package_directory": "paper/venues/journal_of_forecasting/final_submission_package",
+  "file_count": 67,
+  "tarball": "paper/venues/journal_of_forecasting/journal_of_forecasting_submission_package.tar.gz",
+  "tarball_sha256": "dd921f36cfc95b12e500231cf6124310eee4fc608c25a60ad328661a8a20049f",
+  "manifest": "paper/venues/journal_of_forecasting/final_submission_package/manifest/manifest.json",
+  "privacy_violation_count": 0,
+  "privacy_hits": [],
+  "protected_assets": [
+    {
+      "path": "results/gate4a_formal_decision.json",
+      "expected_sha256": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd",
+      "actual_sha256": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd",
+      "unchanged": true
+    },
+    {
+      "path": "results/gate4b_multiseed_formal_decision.json",
+      "expected_sha256": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa",
+      "actual_sha256": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa",
+      "unchanged": true
+    },
+    {
+      "path": "results/gate4c_formal_decision.json",
+      "expected_sha256": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600",
+      "actual_sha256": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600",
+      "unchanged": true
+    },
+    {
+      "path": "reports/gate4b_multiseed_paired_deltas.csv",
+      "expected_sha256": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc",
+      "actual_sha256": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc",
+      "unchanged": true
+    },
+    {
+      "path": "results/gate5a_formal_decision.json",
+      "expected_sha256": "78a1772ae34ee67fe84da1729917fe28d827c512e65a9f4cfa1f51de8eece8c7",
+      "actual_sha256": "78a1772ae34ee67fe84da1729917fe28d827c512e65a9f4cfa1f51de8eece8c7",
+      "unchanged": true
+    },
+    {
+      "path": "results/gate5b_formal_decision.json",
+      "expected_sha256": "2c86ec0bb5d4eccea33a049d86c322951210d4421ad6018e09c83d45f2a0762f",
+      "actual_sha256": "2c86ec0bb5d4eccea33a049d86c322951210d4421ad6018e09c83d45f2a0762f",
+      "unchanged": true
+    },
+    {
+      "path": "reports/gate5a_distribution_results.csv",
+      "expected_sha256": "f3d1db235adcc414959a9a4a83e12ea7450a28794609cc8e9bb2eae36d63e595",
+      "actual_sha256": "f3d1db235adcc414959a9a4a83e12ea7450a28794609cc8e9bb2eae36d63e595",
+      "unchanged": true
+    },
+    {
+      "path": "reports/gate5b_patchtst_probability_results.csv",
+      "expected_sha256": "9477defd4b6ce157b219fbe9453bfb863b18c2b4fa5212b35142cc9d74b0e4b6",
+      "actual_sha256": "9477defd4b6ce157b219fbe9453bfb863b18c2b4fa5212b35142cc9d74b0e4b6",
+      "unchanged": true
+    },
+    {
+      "path": "results/final_evidence_registry.json",
+      "expected_sha256": "6f7f53eb212f0ef3b095fa73ff355a37b3dd11df0cb55f4226077a6546d1ed2a",
+      "actual_sha256": "6f7f53eb212f0ef3b095fa73ff355a37b3dd11df0cb55f4226077a6546d1ed2a",
+      "unchanged": true
+    },
+    {
+      "path": "paper/manuscript/build/manuscript.pdf",
+      "expected_sha256": "74ed45b2b119aae3b05678561427207e5b9a08111c7a3b55781a432d977deb68",
+      "actual_sha256": "74ed45b2b119aae3b05678561427207e5b9a08111c7a3b55781a432d977deb68",
+      "unchanged": true
+    },
+    {
+      "path": "paper/final_submission_package.tar.gz",
+      "expected_sha256": "3f7f1b168add9ae2263b88aed24232e05437fef06d8864e36b72f81e3d5d8e89",
+      "actual_sha256": "3f7f1b168add9ae2263b88aed24232e05437fef06d8864e36b72f81e3d5d8e89",
+      "unchanged": true
+    }
+  ],
+  "upstreams": {
+    "TimePerceiver": {
+      "path": "upstream/TimePerceiver",
+      "commit": "7e30cc07b51c709f408409fd60a34c81ae8990be",
+      "tracked_diff_empty": true,
+      "tracked_changes": [],
+      "untracked": [
+        "__pycache__/",
+        "data_provider/__pycache__/",
+        "exp/__pycache__/",
+        "models/__pycache__/",
+        "utils/__pycache__/"
+      ]
+    },
+    "PatchTST": {
+      "path": "upstream/PatchTST",
+      "commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+      "tracked_diff_empty": true,
+      "tracked_changes": [],
+      "untracked": []
+    }
+  },
+  "checks": {
+    "all_required_audits_pass": true,
+    "formal_integrity_pass": true,
+    "upstream_tracked_diffs_empty": true,
+    "package_privacy_pass": true,
+    "source_archives_nonempty": true,
+    "tarball_nonempty": true,
+    "manifest_nonempty": true,
+    "anonymous_copy_nonempty": true,
+    "author_copy_nonempty": true
+  },
+  "pass": true
+}

@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "variant": "static_adapter",
+  "smoke_only": true,
+  "error_summary": "RuntimeError('Invalid device argument 0: did you call init?')"
+}

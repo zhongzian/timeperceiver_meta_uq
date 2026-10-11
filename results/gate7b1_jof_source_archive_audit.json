@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "engine": "Tectonic 0.16.9 offline cached bundle",
+  "main_source_archive": "manuscript/manuscript_source.tar.gz",
+  "supplement_source_archive": "supplementary/supplementary_source.tar.gz",
+  "main_compile_exit": 0,
+  "supplement_compile_exit": 0,
+  "undefined_citations_or_references": 0,
+  "fatal_errors": 0,
+  "overfull_boxes": 0,
+  "checks": {
+    "main_exit_zero": true,
+    "supplement_exit_zero": true,
+    "main_pdf_nonempty": true,
+    "supplement_pdf_nonempty": true,
+    "undefined_zero": true,
+    "fatal_zero": true,
+    "overfull_zero": true
+  },
+  "pass": true
+}

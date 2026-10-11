@@ -1,0 +1,25 @@
+{
+  "GATE7A_NUMBER_AUDIT_PASS": true,
+  "generated_at": "2026-07-22T09:34:20.262516+00:00",
+  "interpretation_mismatch_count": 0,
+  "interpretation_mismatches": [],
+  "number_mismatch_count": 0,
+  "number_mismatches": [],
+  "numeric_prose_token_count": 85,
+  "percentage_mismatch_count": 0,
+  "percentage_mismatches": [],
+  "special_gate_checks": {
+    "electricity_plus_1_194_percent": true,
+    "gate4b_12_of_12": true,
+    "gate5a_fixed_heavy_tail": true,
+    "gate5b_crps_3_of_3": true,
+    "gate5b_full_2_of_3": true,
+    "gate5b_nll_3_of_3": true,
+    "gate5b_point_2_of_3": true
+  },
+  "status": "PASS",
+  "verified_figure_asset_count": 16,
+  "verified_gate5a_parameter_rows": 12,
+  "verified_gate5b_rows": 3,
+  "verified_table_asset_count": 14
+}

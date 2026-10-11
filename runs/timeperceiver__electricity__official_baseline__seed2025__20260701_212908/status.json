@@ -1,0 +1,11 @@
+{
+  "dataset": "electricity",
+  "end_time": "2026-07-01T21:29:32",
+  "error_summary": "CUDA out of memory detected in train.log",
+  "exit_code": 1,
+  "experiment_id": "timeperceiver__electricity__official_baseline__seed2025__20260701_212908",
+  "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260701_212908/metrics.json",
+  "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260701_212908",
+  "start_time": "2026-07-01T21:29:10",
+  "status": "OOM"
+}

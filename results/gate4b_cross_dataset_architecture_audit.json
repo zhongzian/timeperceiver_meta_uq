@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "dataset": "weather",
+      "status": "PASS",
+      "dataset_identifier": "weather",
+      "data_path": "/mnt/data/zza/code/timeperceiver_meta_uq/data/weather/weather.csv",
+      "features": "M",
+      "seq_len": 384,
+      "pred_len": 96,
+      "input_channels": 21,
+      "target_channels": 21,
+      "target_slicing": "batch_y[:, -pred_len:, :]",
+      "hidden_dimension": 512,
+      "patch_len": 24,
+      "output_projection_shape": [
+        24,
+        512
+      ],
+      "gaussian_loc_projection_shape": [
+        24,
+        512
+      ],
+      "gaussian_scale_projection_shape": [
+        24,
+        512
+      ],
+      "student_t_raw_df_shape": [
+        1,
+        1,
+        21
+      ],
+      "student_t_extra_parameters": 21,
+      "normalization_reference": "official train split StandardScaler",
+      "metric_space": "official_normalized",
+      "official_batch_size": 128,
+      "split_lengths": {
+        "train": 36408,
+        "validation": 5175,
+        "test": 10444
+      }
+    },
+    {
+      "dataset": "electricity",
+      "status": "PASS",
+      "dataset_identifier": "electricity",
+      "data_path": "/mnt/data/zza/code/timeperceiver_meta_uq/data/electricity/electricity.csv",
+      "features": "M",
+      "seq_len": 384,
+      "pred_len": 96,
+      "input_channels": 321,
+      "target_channels": 321,
+      "target_slicing": "batch_y[:, -pred_len:, :]",
+      "hidden_dimension": 512,
+      "patch_len": 24,
+      "output_projection_shape": [
+        24,
+        512
+      ],
+      "gaussian_loc_projection_shape": [
+        24,
+        512
+      ],
+      "gaussian_scale_projection_shape": [
+        24,
+        512
+      ],
+      "student_t_raw_df_shape": [
+        1,
+        1,
+        321
+      ],
+      "student_t_extra_parameters": 321,
+      "normalization_reference": "official train split StandardScaler",
+      "metric_space": "official_normalized",
+      "official_batch_size": 64,
+      "split_lengths": {
+        "train": 17933,
+        "validation": 2537,
+        "test": 5165
+      }
+    }
+  ]
+}

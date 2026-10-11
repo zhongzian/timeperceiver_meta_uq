@@ -1,0 +1,7 @@
+{
+  "variant": "gaussian_head",
+  "smoke_only": true,
+  "error": "RuntimeError('GPU_REQUIRED')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/data/zza/code/timeperceiver_meta_uq/scripts/gate4b_train_probabilistic.py\", line 30, in main\n    if not torch.cuda.is_available():raise RuntimeError('GPU_REQUIRED')\nRuntimeError: GPU_REQUIRED\n",
+  "elapsed_seconds": 0.0564117431640625
+}

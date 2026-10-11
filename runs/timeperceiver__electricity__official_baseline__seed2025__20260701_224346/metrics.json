@@ -1,0 +1,19 @@
+{
+  "best_epoch": null,
+  "checkpoint_path": null,
+  "dataset": "electricity",
+  "elapsed_seconds": 11,
+  "final_epoch": null,
+  "mae": null,
+  "mape": null,
+  "metrics_source": null,
+  "mode": "official_baseline",
+  "mse": null,
+  "mspe": null,
+  "official_protocol": true,
+  "paper_reference": {},
+  "parse_warnings": [],
+  "rmse": null,
+  "seed": 2025,
+  "train_exit_code": 1
+}

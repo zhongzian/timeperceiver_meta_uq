@@ -1,0 +1,10 @@
+\subsection{Protocol Details}
+\label{app:protocol}
+
+The input length is 384 and the prediction length is 96 throughout the formal study. Dataset boundaries follow the official backbone implementations. Training-only normalization is frozen before validation or test access. Historical masks are applied after constructing the input window and before the backbone forward pass. Target windows are copied before masking and verified unchanged.
+
+Random masks remove individual historical elements. Block masks remove contiguous temporal regions. Channel masks remove complete historical channels. Mixed masks combine mechanisms under the recorded rate. The test-mask seed is 2025. Matched methods load the same mask files and hashes.
+
+Probability heads are selected by validation NLL. CRPS uses 64 MC samples and seed 52025. Native intervals use each distribution's marginal quantiles. The Gate 4c calibration segment follows the selection segment and is separated by a 479-row embargo. Test labels are excluded from calibration.
+
+The paired point criterion allows at most a 1\% relative MSE increase. This criterion is applied identically to TimePerceiver and PatchTST. It is the reason PatchTST Electricity remains a failed point-noninferiority cell despite improved NLL and CRPS.

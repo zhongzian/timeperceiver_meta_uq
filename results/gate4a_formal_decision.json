@@ -1,0 +1,33 @@
+{
+  "status": "ADAPTER_CAPACITY_SIGNAL_ONLY",
+  "GATE4A_IMPLEMENTATION_PASS": true,
+  "GATE4A_SIGNAL_POSITIVE": false,
+  "GATE4A_STATIC_ADAPTER_BEATS_BASELINE": true,
+  "GATE4A_MISSINGNESS_CONDITIONING_BEATS_STATIC": false,
+  "GATE4A_ADAPTER_CAPACITY_SIGNAL": "POSITIVE",
+  "GATE4A_MISSINGNESS_CONDITIONING_SIGNAL": "NEGATIVE",
+  "optimization_failure_not_supported": true,
+  "conditioning_generalization_gain_not_observed": true,
+  "ENTER_GATE4A_EXPANDED_MATRIX": false,
+  "seed_count": 1,
+  "deltas": {
+    "static_minus_official": {
+      "mse": -0.06401698218560314,
+      "mae": -0.05987833105744261,
+      "rmse": -0.051075907714349555,
+      "relative_mse_improvement": 0.15048853273010848
+    },
+    "missing_aware_minus_official": {
+      "mse": -0.06223884028757376,
+      "mae": -0.05925971728528151,
+      "rmse": -0.04959876433127197,
+      "relative_mse_improvement": 0.14630854866830822
+    },
+    "missing_aware_minus_static": {
+      "mse": 0.001778141898029384,
+      "mae": 0.0006186137721611029,
+      "rmse": 0.0014771433830775837,
+      "relative_mse_improvement": -0.004920456312654186
+    }
+  }
+}

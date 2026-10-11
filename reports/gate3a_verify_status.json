@@ -1,0 +1,35 @@
+{
+  "gate": "Gate 3a verify",
+  "timestamp": "2026-07-09T15:19:27",
+  "verified": true,
+  "checked": 48,
+  "expected": 48,
+  "errors": [],
+  "warnings": [
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/etth1/block/rate_0.1/seed_2025.json: actual-target missing-rate error 0.057263 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/etth1/block/rate_0.3/seed_2025.json: actual-target missing-rate error 0.048123 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/etth1/block/rate_0.5/seed_2025.json: actual-target missing-rate error 0.039056 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/etth1/block/rate_0.7/seed_2025.json: actual-target missing-rate error 0.030157 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/etth1/channel/rate_0.1/seed_2025.json: actual-target missing-rate error 0.042857 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/etth1/channel/rate_0.5/seed_2025.json: actual-target missing-rate error 0.071429 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/etth1/mixed/rate_0.1/seed_2025.json: actual-target missing-rate error 0.127833 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/weather/block/rate_0.1/seed_2025.json: actual-target missing-rate error 0.057001 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/weather/block/rate_0.3/seed_2025.json: actual-target missing-rate error 0.047880 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/weather/block/rate_0.5/seed_2025.json: actual-target missing-rate error 0.039615 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/weather/block/rate_0.7/seed_2025.json: actual-target missing-rate error 0.030437 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/weather/channel/rate_0.5/seed_2025.json: actual-target missing-rate error 0.023810 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/weather/mixed/rate_0.1/seed_2025.json: actual-target missing-rate error 0.040864 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/electricity/block/rate_0.1/seed_2025.json: actual-target missing-rate error 0.055796 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/electricity/block/rate_0.3/seed_2025.json: actual-target missing-rate error 0.046397 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/electricity/block/rate_0.5/seed_2025.json: actual-target missing-rate error 0.039317 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/electricity/block/rate_0.7/seed_2025.json: actual-target missing-rate error 0.030405 > 0.02",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/artifacts/masks/electricity/mixed/rate_0.1/seed_2025.json: actual-target missing-rate error 0.027426 > 0.02"
+  ],
+  "checks": {
+    "sha256": "OK",
+    "shape": "OK",
+    "dtype": "OK",
+    "binary_values": "OK",
+    "metadata": "OK"
+  }
+}

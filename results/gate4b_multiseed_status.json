@@ -1,0 +1,31 @@
+{
+  "stage": "Gate 4b multi-seed confirmation",
+  "status": "STUDENT_T_MULTI_SEED_SIGNAL_POSITIVE",
+  "scope": "PROBABILISTIC_HEAD_TRAINING_SEEDS",
+  "FULL_END_TO_END_MULTI_SEED": false,
+  "logical_probability_tasks": 24,
+  "probability_tasks_succeeded_or_reused": 24,
+  "reused_tasks": 6,
+  "new_tasks_succeeded": 18,
+  "raw_result_rows": 27,
+  "paired_delta_rows": 12,
+  "scheduler_state": "COMPLETE",
+  "scheduler_pid": 2329594,
+  "scheduler_log": "logs/gate4b_multiseed_confirmation_scheduler_20260717_213636.log",
+  "completion_gates": {
+    "scheduler_state_complete": true,
+    "probability_tasks_24_of_24": true,
+    "reused_tasks_6_of_6": true,
+    "new_tasks_18_of_18": true,
+    "queue_complete_marker": true,
+    "scheduler_exited_normally": true
+  },
+  "legacy_unmasked_results_excluded": true,
+  "statistical_significance_claim": false,
+  "conformal_calibrated": false,
+  "formal_decision": "STUDENT_T_MULTI_SEED_SIGNAL_POSITIVE",
+  "ENTER_GATE4C": false,
+  "GATE4B_MULTI_SEED_IMPLEMENTATION_PASS": true,
+  "GATE4B_MULTI_SEED_SIGNAL_POSITIVE": true,
+  "READY_FOR_GATE4C_PLANNING": true
+}

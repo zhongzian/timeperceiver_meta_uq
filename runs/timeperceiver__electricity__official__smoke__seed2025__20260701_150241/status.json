@@ -1,0 +1,12 @@
+{
+  "checkpoint": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official__smoke__seed2025__20260701_150241/checkpoints/last.pt",
+  "dataset": "electricity",
+  "duration_seconds": 8.28,
+  "experiment_id": "timeperceiver__electricity__official__smoke__seed2025__20260701_150241",
+  "finished_at": "2026-07-01T15:02:49",
+  "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official__smoke__seed2025__20260701_150241/metrics.json",
+  "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official__smoke__seed2025__20260701_150241",
+  "smoke": true,
+  "started_at": "2026-07-01T15:02:41",
+  "status": "SUCCESS"
+}

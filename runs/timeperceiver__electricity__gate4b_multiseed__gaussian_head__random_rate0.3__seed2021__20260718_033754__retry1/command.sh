@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/mnt/data/zza/anaconda3/envs/timeperceiver_meta_uq/bin/python /mnt/data/zza/code/timeperceiver_meta_uq/scripts/gate4b_train_probabilistic.py --task-file /mnt/data/zza/code/timeperceiver_meta_uq/runtime/gate4b_gate4b_multiseed_confirmation_16.json --run-dir /mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__gate4b_multiseed__gaussian_head__random_rate0.3__seed2021__20260718_033754__retry1 --device cuda

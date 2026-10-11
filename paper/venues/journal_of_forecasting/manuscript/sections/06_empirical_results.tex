@@ -1,0 +1,96 @@
+\section{Empirical Results}
+\label{sec:results}
+
+\subsection{Forecast degradation under missing history}
+Across 48 dataset--mask--rate cells, deterministic error rises as more historical values are removed. Table~\ref{tab:fixed-mask-degradation} gives the representative matrix and Figure~\ref{fig:missingness-degradation} shows the complete rate trends; full tables appear in the supplement.
+
+\begin{table}[t]
+\centering
+\caption{Deterministic forecast degradation under fixed historical masks. MSE is lower-is-better; relative degradation uses the corresponding clean TimePerceiver forecast as reference.}
+\label{tab:fixed-mask-degradation}
+\scriptsize
+\resizebox{\linewidth}{!}{\input{tables/table2_fixed_mask_degradation}}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.96\linewidth]{fig1_missingness_degradation.pdf}
+\caption{MSE under fixed historical-mask assets. Line styles and markers distinguish mask types in addition to color, and larger missing rates generally increase forecast error.}
+\label{fig:missingness-degradation}
+\end{figure}
+
+\subsection{TimePerceiver paired proper-score results}
+Across 12 dataset--seed pairs, the \StudentT{} variant improves NLL in 12/12 cases, is CRPS-noninferior in 12/12 cases, and satisfies point noninferiority in 12/12 cases. These are four probability-head seeds on a fixed backbone checkpoint for each dataset. Table~\ref{tab:timeperceiver-multiseed} reports dataset means and variability; Figure~\ref{fig:timeperceiver-nll} retains every paired NLL delta.
+
+\begin{table}[t]
+\centering
+\caption{TimePerceiver results across four probability-head seeds on fixed backbone checkpoints. Deltas are fixed \StudentT{} minus Gaussian; negative NLL and CRPS deltas indicate improvement.}
+\label{tab:timeperceiver-multiseed}
+\scriptsize
+\resizebox{\linewidth}{!}{\input{tables/table4_timeperceiver_multiseed}}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.96\linewidth]{fig2_multiseed_nll_deltas.pdf}
+\caption{Paired TimePerceiver NLL deltas for all dataset--head-seed pairs. Negative values favor the fixed \StudentT{} forecast distribution.}
+\label{fig:timeperceiver-nll}
+\end{figure}
+
+\subsection{Distribution-family ablation}
+The matched-head ablation compares Gaussian, Laplace, fixed \StudentT{}, and learned-$\df$ \StudentT{} forecasts. Table~\ref{tab:distribution-ablation} and Figure~\ref{fig:distribution-ablation} support fixed heavy-tailed forecasting rather than learned degrees of freedom. Fixed $\df=8$ is sufficient under the evaluated protocol, whereas learning per-channel $\df$ provides no consistent additional benefit. The earlier learned-$\df$ results remain visible in the ablation.
+
+\begin{table}[t]
+\centering
+\caption{Distribution-head ablation on frozen TimePerceiver checkpoints. Gaussian, Laplace, and fixed \StudentT{} share identical trainable location and scale capacity; lower NLL, CRPS, MSE, and MAE are better.}
+\label{tab:distribution-ablation}
+\scriptsize
+\resizebox{\linewidth}{!}{\input{tables/table8_distribution_ablation}}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.88\linewidth]{fig4_student_t_df.pdf}
+\caption{Distribution-head comparison under random historical missingness at rate $0.3$. The fixed $\df=8$ setting is a common reference value, not a dataset-specific selection.}
+\label{fig:distribution-ablation}
+\end{figure}
+
+\subsection{PatchTST replication and point tradeoff}
+PatchTST records NLL wins in 3/3 datasets, CRPS noninferiority in 3/3, point noninferiority in 2/3, and a full paired pass in 2/3. ETTh1 and Weather pass all paired criteria. For Electricity, Gaussian MSE is 0.165829 and fixed \StudentT{} MSE is 0.167809, a change of +0.001980 or +1.194\%. This exceeds the prespecified 1\% point-noninferiority threshold. Thus probabilistic-score gains transfer to the second evaluated backbone, but complete multi-metric consistency does not.
+
+\begin{table}[t]
+\centering
+\caption{PatchTST fixed \StudentT{} minus Gaussian deltas. Negative NLL and CRPS values indicate improvement. Electricity's +1.194\% relative MSE change exceeds the 1\% point-noninferiority threshold.}
+\label{tab:patchtst}
+\scriptsize
+\resizebox{\linewidth}{!}{\input{tables/table10_second_backbone}}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.96\linewidth]{fig_gate5b_cross_backbone_deltas.pdf}
+\caption{Within-backbone metric deltas for TimePerceiver and PatchTST. Negative values favor fixed \StudentT{}; the positive PatchTST Electricity MSE delta is retained.}
+\label{fig:cross-backbone}
+\end{figure}
+
+\subsection{Efficiency}
+Fixed \StudentT{} has the same number of trainable head parameters as Gaussian and Laplace because $\df$ is not learned. Table~\ref{tab:efficiency} reports controlled timing and memory measurements. Comparisons are interpreted within each benchmark environment, not as hardware-independent throughput claims.
+
+\begin{table}[t]
+\centering
+\caption{Controlled probability-head parameter, runtime, and memory measurements. Values are compared within dataset and benchmark environment.}
+\label{tab:efficiency}
+\scriptsize
+\resizebox{\linewidth}{!}{\input{tables/table9_efficiency}}
+\end{table}
+
+\subsection{Tail-concentrated gains}
+Residual-percentile decompositions place much of the NLL improvement in the most extreme Gaussian-residual bins. Figure~\ref{fig:tail-gains} presents both evaluated backbones. These diagnostics are descriptive and do not establish a causal mechanism or treat forecast elements as independent inferential samples.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.48\linewidth]{fig_gate5a_tail_nll_gain.pdf}
+\includegraphics[width=0.48\linewidth]{fig_gate5b_patchtst_tail_nll_gain.pdf}
+\caption{Descriptive NLL differences across Gaussian-residual percentile bins for TimePerceiver (left) and PatchTST (right). Negative values favor fixed \StudentT{}.}
+\label{fig:tail-gains}
+\end{figure}

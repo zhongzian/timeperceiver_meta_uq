@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "queue": "/mnt/data/zza/code/timeperceiver_meta_uq/configs/queues/gate4a_minimal_adapter.yaml",
+  "logical_tasks": 2,
+  "active_tasks": 2,
+  "errors": []
+}

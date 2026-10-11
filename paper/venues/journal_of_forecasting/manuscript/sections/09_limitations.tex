@@ -1,0 +1,8 @@
+\section{Limitations}
+\label{sec:limitations}
+
+The evidence covers three datasets and two backbones with fixed historical masks. Some conditions are single-seed. TimePerceiver varies four probability-head seeds while holding the backbone checkpoint fixed, and PatchTST uses one backbone seed and one head seed under random missingness at rate $0.3$ only. PatchTST Electricity has a point-prediction tradeoff. No formal significance test is reported.
+
+The predictive distributions are marginal by horizon and channel. We do not model joint covariance, assess joint coverage, or report a multivariate energy score. The fixed $\df=8$ value is not theoretically optimal, and the study does not perform dataset-specific tail selection. The conformal study covers a limited additive split procedure, and the FiLM study covers a limited global conditioning design.
+
+The experiments do not evaluate decision-specific economic loss, domain-specific forecast value, density forecast combination, or operational consequences. These are untested extensions rather than implied benefits. Broader missingness shifts, more independently trained backbones, and alternative tail models are needed before stronger generalization claims are warranted.

@@ -1,0 +1,22 @@
+{
+  "status": "SUCCESS",
+  "stage": "gate5b0_backbone_smoke",
+  "substage": "deterministic_clean_backbone",
+  "experiment_id": "patchtst__weather__gate5b0_backbone_smoke__clean__seed2025__20260720_181517",
+  "backbone": "patchtst",
+  "dataset": "weather",
+  "patchtst_upstream_commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+  "timeperceiver_upstream_commit": "7e30cc07b51c709f408409fd60a34c81ae8990be",
+  "experiment_seed": 2025,
+  "smoke_only": true,
+  "best_epoch": 1,
+  "best_validation_mse": 0.3426830917596817,
+  "test_used_for_model_selection": false,
+  "best_checkpoint": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/patchtst__weather__gate5b0_backbone_smoke__clean__seed2025__20260720_181517/checkpoints/best_backbone.pt",
+  "best_checkpoint_sha256": "25648b3911720972d4778f6a55930f85c49a52a533bd0156529babad5da7b77b",
+  "checkpoint_strict_reload": true,
+  "no_leakage": true,
+  "finished_at": "2026-07-20T18:15:22+0800",
+  "error_type": "",
+  "error_summary": ""
+}

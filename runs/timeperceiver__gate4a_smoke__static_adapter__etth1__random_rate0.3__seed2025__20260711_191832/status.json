@@ -1,0 +1,13 @@
+{
+  "stage": "Gate 4a",
+  "experiment_id": "timeperceiver__gate4a_smoke__static_adapter__etth1__random_rate0.3__seed2025__20260711_191832",
+  "variant": "static_adapter",
+  "status": "SUCCESS",
+  "error_summary": "",
+  "mse": 0.2992785941986811,
+  "mae": 0.3842687237830389,
+  "rmse": 0.5470636107425544,
+  "backbone_frozen": true,
+  "backbone_gradients": false,
+  "checkpoint_reload": true
+}

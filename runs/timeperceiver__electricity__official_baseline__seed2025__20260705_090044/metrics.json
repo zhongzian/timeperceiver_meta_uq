@@ -1,0 +1,21 @@
+{
+  "best_epoch": 60,
+  "best_vali_loss": 0.1061181,
+  "checkpoint_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260705_090044/checkpoints/electricity_384_96_TimePerceiver_sl384_pl96_dm512_nl32_ld128_ul1_gf1_nh8_df1024_pl24_qs1_sr0.0/checkpoint.pth",
+  "final_epoch": 70,
+  "final_epoch_record": {
+    "epoch": 70,
+    "steps": 281,
+    "test_loss": 0.1253288,
+    "train_loss": 0.0760547,
+    "vali_loss": 0.1086056
+  },
+  "mae": 0.2201225608587265,
+  "mape": 2.2427875995635986,
+  "metrics_source": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260705_090044/results/electricity_384_96_TimePerceiver_sl384_pl96_dm512_nl32_ld128_ul1_gf1_nh8_df1024_pl24_qs1_sr0.0/metrics.npy",
+  "mse": 0.12536390125751495,
+  "mspe": 435459.125,
+  "parse_warnings": [],
+  "rmse": 0.3540676534175873,
+  "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260705_090044"
+}

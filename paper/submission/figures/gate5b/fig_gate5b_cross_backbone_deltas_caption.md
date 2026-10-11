@@ -1,0 +1,1 @@
+**Cross-backbone metric deltas.** Bars show fixed-t8 minus Gaussian, with the zero line marking no change and negative values indicating improvement. PatchTST produces NLL and CRPS improvements across all three datasets, while Electricity exhibits a small positive MSE delta. No significance inference is attached to these descriptive comparisons.

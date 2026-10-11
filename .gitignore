@@ -1,0 +1,20 @@
+
+# GitHub publication exclusions
+.env
+.env.*
+auth.json
+credentials.json
+*.pem
+*.key
+__pycache__/
+*.pyc
+.conda/
+.venv/
+node_modules/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+*.pkl

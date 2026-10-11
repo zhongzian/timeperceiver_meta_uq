@@ -1,0 +1,38 @@
+{
+  "stage": "Gate 4c formal queue validation",
+  "status": "PASS",
+  "queue": "configs/queues/gate4c_minimal_conformal.yaml",
+  "logical_tasks": 2,
+  "active_tasks": 2,
+  "required_free_mib": 4096,
+  "checks": {
+    "logical_tasks_2": true,
+    "active_tasks_2": true,
+    "dataset_etth1_only": true,
+    "variants_exact": true,
+    "selection_calibration_raw_overlap_zero": true,
+    "future_target_overlap_zero": true,
+    "embargo_rows_479": true,
+    "full_training_no_batch_limits": true,
+    "retrain_heads": true,
+    "old_gate4b_head_reuse_false": true,
+    "runner_validate_only_2_of_2": true,
+    "required_free_mib_valid": true,
+    "no_smoke_ids": true
+  },
+  "task_validate_only_results": [
+    {
+      "task_id": "etth1__random_rate0.3__gaussian_head__seed2025",
+      "return_code": 0,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "task_id": "etth1__random_rate0.3__student_t_head__seed2025",
+      "return_code": 0,
+      "status": "PASS",
+      "errors": []
+    }
+  ],
+  "errors": []
+}

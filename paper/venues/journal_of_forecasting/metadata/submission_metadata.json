@@ -1,0 +1,38 @@
+{
+  "journal": "Journal of Forecasting",
+  "publisher": "Wiley",
+  "article_type": "Research Article",
+  "submission_mode": "Free Format",
+  "review_model": "single-blind",
+  "title": "Fixed Heavy-Tailed Probabilistic Forecasting under Missing Historical Observations",
+  "short_title": "Heavy-Tailed Forecasts with Missingness",
+  "abstract": "Forecasting systems often require predictive uncertainty as well as point forecasts, yet incomplete historical observations change the error distribution used to estimate that uncertainty. Comparisons are additionally weakened when competing methods see different missingness realizations. We study probabilistic time-series forecasting under fixed masks applied only to historical inputs, with train-only normalization and paired evaluation assets. A lightweight distribution head represents each horizon-channel marginal with a fixed Student-t distribution with degrees of freedom 8, using the same trainable location and scale projections as Gaussian and Laplace alternatives. Proper probabilistic scores are central: negative log-likelihood and a Monte Carlo estimate of the continuous ranked probability score are reported alongside point-prediction noninferiority. On fixed TimePerceiver checkpoints, Student-t improves negative log-likelihood in 12/12 dataset-seed pairs and is noninferior for both continuous ranked probability score and point prediction in 12/12. A distribution-head ablation supports fixed heavy tails over learned degrees of freedom in the evaluated protocol. On PatchTST, probabilistic-score gains appear in 3/3 datasets, while Electricity exceeds the prespecified point-error tolerance. The results support fixed heavy-tailed predictive distributions as a lightweight method for improving probabilistic forecast quality under missing historical observations, while the PatchTST Electricity result cautions against assuming metric-wise invariance across backbones.",
+  "keywords": [
+    "probabilistic forecasting",
+    "time-series forecasting",
+    "missing observations",
+    "Student-t distribution",
+    "proper scoring rules",
+    "heavy-tailed errors"
+  ],
+  "authors": "AUTHOR_INPUT_REQUIRED",
+  "affiliations": "AUTHOR_INPUT_REQUIRED",
+  "corresponding_author": "AUTHOR_INPUT_REQUIRED",
+  "emails": "AUTHOR_INPUT_REQUIRED",
+  "orcid": "AUTHOR_INPUT_REQUIRED",
+  "suggested_classifications": [
+    "probabilistic forecasting",
+    "forecast evaluation",
+    "missing data"
+  ],
+  "data_availability": "The datasets used in this study are publicly available from their original repositories. Dataset sources and preprocessing details are documented in the supplementary material.",
+  "code_availability": "AUTHOR_ACTION_REQUIRED: Code and experiment configurations will be made available upon publication or through an anonymous review repository, subject to the journal's review policy.",
+  "conflict_of_interest": "AUTHOR_INPUT_REQUIRED",
+  "funding": "AUTHOR_INPUT_REQUIRED",
+  "author_contributions": "AUTHOR_INPUT_REQUIRED",
+  "AI_use_disclosure": "AUTHOR_CONFIRMATION_REQUIRED",
+  "reviewer_suggestions": "AUTHOR_INPUT_REQUIRED_IF_REQUESTED",
+  "opposed_reviewers": "AUTHOR_INPUT_REQUIRED_IF_REQUESTED",
+  "cover_letter": "submission/cover_letter_draft.pdf",
+  "ready_for_submission_portal": false
+}

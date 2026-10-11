@@ -1,0 +1,10 @@
+# Conformal Mechanism Audit
+
+| head | nominal_coverage | native_calibration_picp | native_test_picp | coverage_shift | formal_qhat | delta_mpiw | delta_absolute_coverage_error | counterfactual_oracle_delta | counterfactual_status | source_evidence_ids |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Gaussian | 0.900000 | 0.869114 | 0.904533 | 0.035418 | 0.126842 | 0.253684 | 0.023728 | -0.019348 | COUNTERFACTUAL_ONLY; USES_TEST_LABELS; NOT_FORMAL_CALIBRATION | EV-742abba33b0e3d03 |
+| Gaussian | 0.950000 | 0.912017 | 0.937263 | 0.025246 | 0.279881 | 0.559761 | 0.001974 | 0.108755 | COUNTERFACTUAL_ONLY; USES_TEST_LABELS; NOT_FORMAL_CALIBRATION | EV-411f1c52f4fc16eb |
+| Student-t | 0.900000 | 0.861667 | 0.897581 | 0.035913 | 0.157400 | 0.314800 | 0.025216 | 0.009730 | COUNTERFACTUAL_ONLY; USES_TEST_LABELS; NOT_FORMAL_CALIBRATION | EV-242c285f2436f304 |
+| Student-t | 0.950000 | 0.913178 | 0.937700 | 0.024522 | 0.287271 | 0.574543 | 0.002205 | 0.110282 | COUNTERFACTUAL_ONLY; USES_TEST_LABELS; NOT_FORMAL_CALIBRATION | EV-85a3f48cb293b0e5 |
+
+Note: The oracle delta is diagnostic only and is excluded from every formal calibration decision.

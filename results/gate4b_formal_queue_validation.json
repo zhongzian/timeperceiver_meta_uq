@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "queue": "/mnt/data/zza/code/timeperceiver_meta_uq/configs/queues/gate4b_minimal_probabilistic.yaml",
+  "logical_tasks": 2,
+  "active_tasks": 2,
+  "required_free_mib": 4096,
+  "training_protocol_hash": "b580e8efa72d2a9027b99e8749f5e2a6adb0de47b8c0707a8436834812b9d837",
+  "metric_protocol_hash": "70e38864d89e33e74e2adfc801db267f20212cef19147c5e29e0c91e94a6a209",
+  "errors": []
+}

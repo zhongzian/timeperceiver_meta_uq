@@ -1,0 +1,560 @@
+{
+  "status": "PASS",
+  "FINAL_PAPER_ARTIFACT_PASS": true,
+  "generated_at": "2026-07-22T15:16:47+08:00",
+  "checks": {
+    "FINAL_EVIDENCE_REGISTRY_PASS": true,
+    "FINAL_METRICS_CONSISTENCY_PASS": true,
+    "FINAL_CLAIM_EVIDENCE_PASS": true,
+    "all_required_tables_pass": true,
+    "all_required_figures_pass": true,
+    "all_required_sections_pass": true,
+    "legacy_unmasked_evidence_in_paper_zero": true,
+    "protected_formal_sources_unchanged": true
+  },
+  "tables": {
+    "table1_official_clean_baselines": {
+      "rows": 3,
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_rows": true,
+        "markdown_parses": true,
+        "latex_fragment_valid": true,
+        "all_rows_have_evidence_trace": true,
+        "all_evidence_ids_valid": true
+      }
+    },
+    "table2_fixed_mask_degradation": {
+      "rows": 18,
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_rows": true,
+        "markdown_parses": true,
+        "latex_fragment_valid": true,
+        "all_rows_have_evidence_trace": true,
+        "all_evidence_ids_valid": true
+      }
+    },
+    "table3_adapter_ablation": {
+      "rows": 3,
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_rows": true,
+        "markdown_parses": true,
+        "latex_fragment_valid": true,
+        "all_rows_have_evidence_trace": true,
+        "all_evidence_ids_valid": true
+      }
+    },
+    "table4_student_t_multiseed": {
+      "rows": 3,
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_rows": true,
+        "markdown_parses": true,
+        "latex_fragment_valid": true,
+        "all_rows_have_evidence_trace": true,
+        "all_evidence_ids_valid": true
+      }
+    },
+    "table5_etth1_cross_condition": {
+      "rows": 6,
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_rows": true,
+        "markdown_parses": true,
+        "latex_fragment_valid": true,
+        "all_rows_have_evidence_trace": true,
+        "all_evidence_ids_valid": true
+      }
+    },
+    "table6_conformal_calibration": {
+      "rows": 6,
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_rows": true,
+        "markdown_parses": true,
+        "latex_fragment_valid": true,
+        "all_rows_have_evidence_trace": true,
+        "all_evidence_ids_valid": true
+      }
+    },
+    "table7_conformal_mechanism": {
+      "rows": 4,
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_rows": true,
+        "markdown_parses": true,
+        "latex_fragment_valid": true,
+        "all_rows_have_evidence_trace": true,
+        "all_evidence_ids_valid": true
+      }
+    },
+    "table8_distribution_head_ablation": {
+      "rows": 12,
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_rows": true,
+        "markdown_parses": true,
+        "latex_fragment_valid": true,
+        "all_rows_have_evidence_trace": true,
+        "all_evidence_ids_valid": true
+      }
+    },
+    "table9_distribution_efficiency": {
+      "rows": 12,
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_rows": true,
+        "markdown_parses": true,
+        "latex_fragment_valid": true,
+        "all_rows_have_evidence_trace": true,
+        "all_evidence_ids_valid": true
+      }
+    },
+    "table10_second_backbone_replication": {
+      "rows": 6,
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_rows": true,
+        "markdown_parses": true,
+        "latex_fragment_valid": true,
+        "all_rows_have_evidence_trace": true,
+        "all_evidence_ids_valid": true,
+        "gate6_required_fields_present": true
+      }
+    },
+    "tableA1_full_gate3b_matrix": {
+      "rows": 48,
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_rows": true,
+        "markdown_parses": true,
+        "latex_fragment_valid": true,
+        "all_rows_have_evidence_trace": true,
+        "all_evidence_ids_valid": true
+      }
+    },
+    "tableA2_gate4c_all_heads": {
+      "rows": 12,
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_rows": true,
+        "markdown_parses": true,
+        "latex_fragment_valid": true,
+        "all_rows_have_evidence_trace": true,
+        "all_evidence_ids_valid": true
+      }
+    }
+  },
+  "figures": {
+    "fig1_missingness_degradation": {
+      "data_rows": 48,
+      "png": {
+        "width": 3154,
+        "height": 994,
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "fig2_multiseed_nll_deltas": {
+      "data_rows": 12,
+      "png": {
+        "width": 2674,
+        "height": 1084,
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "fig3a_multiseed_nll": {
+      "data_rows": 6,
+      "png": {
+        "width": 1984,
+        "height": 1144,
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "fig3b_multiseed_crps": {
+      "data_rows": 6,
+      "png": {
+        "width": 1984,
+        "height": 1144,
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "fig3c_multiseed_mse": {
+      "data_rows": 6,
+      "png": {
+        "width": 1984,
+        "height": 1144,
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "fig4_student_t_df": {
+      "data_rows": 12,
+      "png": {
+        "width": 2674,
+        "height": 1144,
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "fig5_conformal_tradeoff": {
+      "data_rows": 6,
+      "png": {
+        "width": 1864,
+        "height": 1264,
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "fig6_calibration_test_shift": {
+      "data_rows": 4,
+      "png": {
+        "width": 2194,
+        "height": 1174,
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "gate5a/fig_gate5a_pit_histograms": {
+      "data_rows": 240,
+      "png": {
+        "width": 3840,
+        "height": 2240,
+        "dpi": [
+          319.9892,
+          319.9892
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "gate5a/fig_gate5a_qq": {
+      "data_rows": 2388,
+      "png": {
+        "width": 3520,
+        "height": 1120,
+        "dpi": [
+          319.9892,
+          319.9892
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "gate5a/fig_gate5a_tail_nll_gain": {
+      "data_rows": 15,
+      "png": {
+        "width": 3520,
+        "height": 1120,
+        "dpi": [
+          319.9892,
+          319.9892
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "gate5a/fig_gate5a_kurtosis_df": {
+      "data_rows": 349,
+      "png": {
+        "width": 3520,
+        "height": 1120,
+        "dpi": [
+          319.9892,
+          319.9892
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "gate5b/fig_gate5b_patchtst_tail_nll_gain": {
+      "data_rows": 15,
+      "png": {
+        "width": 3520,
+        "height": 1152,
+        "dpi": [
+          319.9892,
+          319.9892
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "gate5b/fig_gate5b_cross_backbone_deltas": {
+      "data_rows": 6,
+      "png": {
+        "width": 3520,
+        "height": 1152,
+        "dpi": [
+          319.9892,
+          319.9892
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true,
+        "gate6_caption_present": true
+      }
+    },
+    "figA1_gate4a_adapter": {
+      "data_rows": 3,
+      "png": {
+        "width": 1834,
+        "height": 1084,
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "figA2_gate4c_channel_coverage": {
+      "data_rows": 14,
+      "png": {
+        "width": 2734,
+        "height": 1054,
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    },
+    "figA3_gate4c_horizon_coverage": {
+      "data_rows": 192,
+      "png": {
+        "width": 2734,
+        "height": 1054,
+        "dpi": [
+          299.9994,
+          299.9994
+        ]
+      },
+      "checks": {
+        "files_exist_nonempty": true,
+        "expected_data_rows": true,
+        "png_300_dpi_nonblank_dimensions": true,
+        "pdf_nonempty": true
+      }
+    }
+  },
+  "claims": {
+    "claim_count": 9,
+    "supported_count": 9,
+    "unsupported_count": 0,
+    "missing_sources": [],
+    "missing_evidence_ids": [],
+    "prohibited_wording_hits": []
+  },
+  "sections": {
+    "abstract_draft.md": {
+      "exists_nonempty": true,
+      "legacy_experiment_ids_absent": true,
+      "prohibited_affirmative_wording_absent": true
+    },
+    "contributions.md": {
+      "exists_nonempty": true,
+      "legacy_experiment_ids_absent": true,
+      "prohibited_affirmative_wording_absent": true
+    },
+    "experimental_setup.md": {
+      "exists_nonempty": true,
+      "legacy_experiment_ids_absent": true,
+      "prohibited_affirmative_wording_absent": true
+    },
+    "main_results.md": {
+      "exists_nonempty": true,
+      "legacy_experiment_ids_absent": true,
+      "prohibited_affirmative_wording_absent": true
+    },
+    "ablation_and_negative_results.md": {
+      "exists_nonempty": true,
+      "legacy_experiment_ids_absent": true,
+      "prohibited_affirmative_wording_absent": true
+    },
+    "limitations.md": {
+      "exists_nonempty": true,
+      "legacy_experiment_ids_absent": true,
+      "prohibited_affirmative_wording_absent": true
+    },
+    "reproducibility.md": {
+      "exists_nonempty": true,
+      "legacy_experiment_ids_absent": true,
+      "prohibited_affirmative_wording_absent": true
+    },
+    "distribution_head_ablation.md": {
+      "exists_nonempty": true,
+      "legacy_experiment_ids_absent": true,
+      "prohibited_affirmative_wording_absent": true
+    },
+    "heavy_tail_mechanism.md": {
+      "exists_nonempty": true,
+      "legacy_experiment_ids_absent": true,
+      "prohibited_affirmative_wording_absent": true
+    },
+    "second_backbone_replication.md": {
+      "exists_nonempty": true,
+      "legacy_experiment_ids_absent": true,
+      "prohibited_affirmative_wording_absent": true
+    },
+    "conclusion.md": {
+      "exists_nonempty": true,
+      "legacy_experiment_ids_absent": true,
+      "prohibited_affirmative_wording_absent": true
+    }
+  },
+  "sources": {
+    "protected_hashes_before": {
+      "results/gate4a_formal_decision.json": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd",
+      "results/gate4b_expanded_formal_decision.json": "fa78308c9344d69cfb06474204e9f1ce46af15c8ea6751d2ad0fb2e191584047",
+      "results/gate4b_cross_dataset_formal_decision.json": "073f10e4f4828a8402d854b366ec3c45e329fde60e2c53403cd6d7a940f556e3",
+      "results/gate4b_multiseed_formal_decision.json": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa",
+      "results/gate4c_formal_decision.json": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600",
+      "reports/gate4b_multiseed_paired_deltas.csv": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc",
+      "reports/gate4b_multiseed_dataset_summary.csv": "16a3bf34ef050c4305316e8b6e9e7bb509dbe170369a4e09450986c431c9cfeb",
+      "reports/gate4c_interval_metrics.csv": "24cff2a4833e493dc81f19a8efd8b81b4c0c57fe60bdf4a9d4c4e7792dedc73d",
+      "reports/gate4c_conditioned_bin_metrics.csv": "5102708f75a8ae1c6b68dce60405b8073525cc6432ced29d4ab900b72e31ebe9"
+    },
+    "protected_hashes_after": {
+      "results/gate4a_formal_decision.json": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd",
+      "results/gate4b_expanded_formal_decision.json": "fa78308c9344d69cfb06474204e9f1ce46af15c8ea6751d2ad0fb2e191584047",
+      "results/gate4b_cross_dataset_formal_decision.json": "073f10e4f4828a8402d854b366ec3c45e329fde60e2c53403cd6d7a940f556e3",
+      "results/gate4b_multiseed_formal_decision.json": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa",
+      "results/gate4c_formal_decision.json": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600",
+      "reports/gate4b_multiseed_paired_deltas.csv": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc",
+      "reports/gate4b_multiseed_dataset_summary.csv": "16a3bf34ef050c4305316e8b6e9e7bb509dbe170369a4e09450986c431c9cfeb",
+      "reports/gate4c_interval_metrics.csv": "24cff2a4833e493dc81f19a8efd8b81b4c0c57fe60bdf4a9d4c4e7792dedc73d",
+      "reports/gate4c_conditioned_bin_metrics.csv": "5102708f75a8ae1c6b68dce60405b8073525cc6432ced29d4ab900b72e31ebe9"
+    },
+    "protected_hashes_unchanged": true,
+    "source_manifest_mismatches": [],
+    "source_manifest_status": "PASS",
+    "upstream": {
+      "commit": "7e30cc07b51c709f408409fd60a34c81ae8990be",
+      "tracked_diff_empty": true,
+      "tracked_status": [],
+      "untracked": [
+        "?? __pycache__/run.cpython-39.pyc",
+        "?? data_provider/__pycache__/__init__.cpython-39.pyc",
+        "?? data_provider/__pycache__/data_factory.cpython-39.pyc",
+        "?? data_provider/__pycache__/data_loader.cpython-39.pyc",
+        "?? exp/__pycache__/__init__.cpython-39.pyc",
+        "?? exp/__pycache__/exp_basic.cpython-39.pyc",
+        "?? exp/__pycache__/exp_main.cpython-39.pyc",
+        "?? models/__pycache__/TimePerceiver.cpython-39.pyc",
+        "?? models/__pycache__/__init__.cpython-39.pyc",
+        "?? utils/__pycache__/__init__.cpython-39.pyc",
+        "?? utils/__pycache__/augmentation.cpython-39.pyc",
+        "?? utils/__pycache__/metrics.cpython-39.pyc",
+        "?? utils/__pycache__/print_args.cpython-39.pyc",
+        "?? utils/__pycache__/random_split.cpython-39.pyc",
+        "?? utils/__pycache__/timefeatures.cpython-39.pyc",
+        "?? utils/__pycache__/tools.cpython-39.pyc"
+      ]
+    },
+    "patchtst_commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+    "patchtst_tracked_status": []
+  },
+  "legacy_contamination": []
+}

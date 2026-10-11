@@ -1,0 +1,4 @@
+channels,dataset,deterministic_official_parity,fixed_df,fixed_t8_backbone_trainable_parameters,fixed_t8_df_parameters,fixed_t8_trainable_parameters,forecast_shape,frozen_backbone_remains_eval_during_head_training,gaussian_backbone_trainable_parameters,gaussian_fixed_t8_initialization_equal,gaussian_trainable_parameters,hidden_size,initial_scale_exact_0.5,loc_shape,scale_shape,status
+7,etth1,True,8.0,0,0,147648,"[2, 96, 7]",True,0,True,147648,768,True,"[2, 96, 7]","[2, 96, 7]",PASS
+21,weather,True,8.0,0,0,1179840,"[2, 96, 21]",True,0,True,1179840,6144,True,"[2, 96, 21]","[2, 96, 21]",PASS
+321,electricity,True,8.0,0,0,1179840,"[2, 96, 321]",True,0,True,1179840,6144,True,"[2, 96, 321]","[2, 96, 321]",PASS

@@ -1,0 +1,12 @@
+# ETTh1 Cross-Condition Student-t Results
+
+| condition | gaussian_nll | student_t_nll | delta_nll | gaussian_crps | student_t_crps | delta_crps | gaussian_mse | student_t_mse | delta_mse | nll_win | crps_noninferior | point_noninferior | student_t_mean_df | source_evidence_ids |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| random0.1 | 0.824851 | 0.746826 | -0.078025 | 0.312257 | 0.306145 | -0.006113 | 0.371616 | 0.369385 | -0.002231 | True | True | True | 7.679956 | EV-6e9d750d99d632aa;EV-9c133df8c8df5265 |
+| random0.3 | 0.918535 | 0.877154 | -0.041381 | 0.344127 | 0.340263 | -0.003864 | 0.420332 | 0.419177 | -0.001155 | True | True | True | 7.860172 | EV-712ee125b36083eb;EV-fabc413c1723302f |
+| random0.5 | 1.043996 | 1.030276 | -0.013720 | 0.390081 | 0.390737 | 0.000656 | 0.510701 | 0.517801 | 0.007100 | True | False | False | 7.944396 | EV-bd597522552d2db2;EV-094fb72b141a4d82 |
+| block0.3 | 0.894717 | 0.833631 | -0.061086 | 0.336457 | 0.328718 | -0.007738 | 0.410004 | 0.405170 | -0.004834 | True | True | True | 7.749683 | EV-0b7e6e6d0342433b;EV-ee635e6072987cd6 |
+| channel0.3 | 1.118377 | 1.046873 | -0.071504 | 0.398503 | 0.393654 | -0.004849 | 0.572206 | 0.573228 | 0.001022 | True | True | True | 7.861512 | EV-82b75b552469596d;EV-71a4a7e1662651aa |
+| mixed0.3 | 1.010488 | 0.939824 | -0.070665 | 0.362416 | 0.359130 | -0.003286 | 0.483640 | 0.484809 | 0.001169 | True | True | True | 7.909866 | EV-d8f68ebfaad50e5e;EV-dd471406d4e832a9 |
+
+Note: Negative deltas indicate a lower Student-t error or score.

@@ -1,0 +1,42 @@
+{
+  "generator_version": "gate3a_v2_official_window_history_mask",
+  "rows": [
+    {
+      "actual_rate_rule": "1-mask.mean()",
+      "binary_convention": "1=observed/keep, 0=missing/mask",
+      "future_target_used": false,
+      "generator_function": "gate3a.make_mask->random_mask",
+      "input_shape": "[B,384,7]",
+      "missing_type": "random",
+      "semantic_definition": "independent element masking with P(missing)=target_rate"
+    },
+    {
+      "actual_rate_rule": "1-mask.mean()",
+      "binary_convention": "1=observed/keep, 0=missing/mask",
+      "future_target_used": false,
+      "generator_function": "gate3a.make_mask->block_mask",
+      "input_shape": "[B,384,7]",
+      "missing_type": "block",
+      "semantic_definition": "2%-20% temporal blocks, sometimes all channels and sometimes sampled channel subsets, until target count reached"
+    },
+    {
+      "actual_rate_rule": "1-mask.mean()",
+      "binary_convention": "1=observed/keep, 0=missing/mask",
+      "future_target_used": false,
+      "generator_function": "gate3a.make_mask->channel_mask",
+      "input_shape": "[B,384,7]",
+      "missing_type": "channel",
+      "semantic_definition": "round(rate*C) whole channels per window, capped at C-1"
+    },
+    {
+      "actual_rate_rule": "1-mask.mean()",
+      "binary_convention": "1=observed/keep, 0=missing/mask",
+      "future_target_used": false,
+      "generator_function": "gate3a.make_mask->mixed_mask",
+      "input_shape": "[B,384,7]",
+      "missing_type": "mixed",
+      "semantic_definition": "channel(rate/3) union block(rate/3), then random observed entries to target total"
+    }
+  ],
+  "status": "PASS"
+}

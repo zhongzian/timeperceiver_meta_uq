@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "engine": "Tectonic 0.16.9 offline cached bundle",
+  "exit_codes": {
+    "manuscript": 0,
+    "anonymous_manuscript": 0,
+    "supplementary": 0,
+    "title_page": 0,
+    "cover_letter": 0
+  },
+  "pdf_pages": {
+    "manuscript": 13,
+    "anonymous_manuscript": 13,
+    "supplementary": 9,
+    "title_page": 1,
+    "cover_letter": 1
+  },
+  "abstract_words": 205,
+  "short_title_characters": 39,
+  "undefined_citations": 0,
+  "undefined_references": 0,
+  "missing_assets": 0,
+  "fatal_errors": 0,
+  "overfull_boxes": 0,
+  "unresolved_pdf_citation_markers": 0,
+  "checks": {
+    "all_exit_codes_zero": true,
+    "all_pdfs_nonempty": true,
+    "undefined_citations_zero": true,
+    "undefined_references_zero": true,
+    "overfull_boxes_zero": true,
+    "fatal_errors_zero": true,
+    "missing_assets_zero": true,
+    "unresolved_pdf_citation_markers_zero": true,
+    "abstract_180_to_230": true,
+    "short_title_under_40": true,
+    "cover_letter_one_page": true
+  },
+  "pass": true
+}

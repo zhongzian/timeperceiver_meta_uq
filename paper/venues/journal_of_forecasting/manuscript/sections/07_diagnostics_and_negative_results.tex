@@ -1,0 +1,6 @@
+\section{Diagnostics and Negative Results}
+\label{sec:negative-results}
+
+The retained negative results constrain the interpretation. On ETTh1 with random missingness at rate $0.3$, a matched-capacity static adapter improves the official forecast, but the tested missingness-aware FiLM adapter does not improve over that static adapter. Mechanism checks show nonconstant conditioning, nonzero FiLM modulation, finite gradients, and parameter updates. The result therefore concerns this global-statistics conditioning design and fixed condition; it does not establish that missingness conditioning is generally unhelpful.
+
+Under a strict raw-time selection and calibration split, the evaluated additive split-conformal correction widens intervals without improving absolute coverage error. Native intervals are already near the nominal targets, while the calibration segment is descriptively harder. This is a result for one additive score, split, dataset, and missingness condition; it does not generalize to other conformal designs. Detailed tables and figures for both negative findings are in the supplement.

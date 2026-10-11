@@ -1,0 +1,857 @@
+{
+  "artifacts": [
+    "reports/gate7b0_venue_comparison.csv",
+    "reports/gate7b0_venue_comparison.md",
+    "reports/gate7b0_scope_fit.md",
+    "reports/gate7b0_submission_requirements.md",
+    "reports/gate7b0_risk_assessment.md",
+    "reports/gate7b0_recommendation.md",
+    "paper/venue_selection/decision_brief.md",
+    "paper/venue_selection/venue_requirements_matrix.csv",
+    "paper/venue_selection/venue_requirements_matrix.md",
+    "artifacts/gate7b0_venue_sources/source_inventory.csv"
+  ],
+  "execution": {
+    "formal_evidence_modified": false,
+    "gpu": false,
+    "inference": false,
+    "manuscript_modified": false,
+    "scheduler": false,
+    "submission_package_modified": false,
+    "training": false
+  },
+  "generated_at": "2026-07-22T10:33:10.805559+00:00",
+  "manuscript_baseline": {
+    "abstract_words": 224,
+    "anonymous": true,
+    "appendix_sections": 4,
+    "bibliography_entries": 7,
+    "claim_boundaries": [
+      "No statistical-significance claim",
+      "No state-of-the-art claim",
+      "No joint-calibration claim",
+      "Only three datasets and two backbones",
+      "PatchTST Electricity MSE exceeds the preregistered one-percent tolerance by reaching +1.194%",
+      "Missing-aware FiLM does not outperform the static adapter",
+      "Additive split conformal does not outperform native intervals"
+    ],
+    "evidence": "Three datasets, two backbones, four TimePerceiver probability-head seeds, one PatchTST seed, fixed-mask evaluation, distribution ablation, and retained negative results",
+    "figures": 16,
+    "main_sections": 9,
+    "method": "Lightweight fixed Student-t probabilistic head with df=8 and the same trainable parameter count as matched Gaussian and Laplace heads",
+    "novelty_strength": "MODERATE",
+    "pages": 18,
+    "tables": 14,
+    "title": "Fixed Heavy-Tailed Probabilistic Forecasting under Missing Historical Observations"
+  },
+  "ranking_policy": "No exact JCR, Scopus, or CAS category, year, or quartile is asserted without authoritative access. All such fields remain manual-verification items and do not block the scope-fit decision.",
+  "recommendation": {
+    "backup_1": "Neural Computing and Applications",
+    "backup_2": "Applied Intelligence",
+    "eligible_primary_venues": [
+      "Journal of Forecasting",
+      "Neural Computing and Applications"
+    ],
+    "highest_total": 87,
+    "not_recommended": [
+      "Engineering Applications of Artificial Intelligence"
+    ],
+    "primary": "Journal of Forecasting",
+    "rule": "scope>=20, novelty>=13, experiments>=11, no scope/format blocker, and within three points of the highest total"
+  },
+  "retrieved_at": "2026-07-22",
+  "schema_version": "1.0",
+  "score_weights": {
+    "experimental_evidence_fit": 15,
+    "forecasting_community_fit": 10,
+    "manuscript_format_fit": 10,
+    "method_novelty_fit": 20,
+    "negative_reproducibility_fit": 5,
+    "risk_adjusted_acceptance_fit": 10,
+    "scope_fit": 25,
+    "submission_policy_compatibility": 5
+  },
+  "status": "AUDIT_COMPLETE",
+  "venues": [
+    {
+      "abstract_limit": "150-250 words",
+      "anonymous_submission_required": "NOT_STATED",
+      "applied_ai_fit": "GOOD: the work is empirical and application-oriented, but the three public forecasting benchmarks offer less application depth than a named real-life deployment.",
+      "article_type": "Original Research Article",
+      "author_contribution_statement": "REQUIRED_IF_APPLICABLE",
+      "author_details_required_at_initial_submission": "MANUAL_VERIFICATION_REQUIRED",
+      "cas_partition": "CAS_PARTITION_MANUAL_VERIFICATION_REQUIRED",
+      "cas_partition_year": "CAS_PARTITION_MANUAL_VERIFICATION_REQUIRED",
+      "code_availability_statement": "REQUIRED_IF_APPLICABLE in the declarations section",
+      "conflict_of_interest_statement": "REQUIRED",
+      "cover_letter_required": "NOT_STATED",
+      "data_availability_statement": "REQUIRED for original research articles",
+      "double_blind_policy": "NOT_STATED",
+      "estimated_revision_effort": "MODERATE_TO_HIGH",
+      "ethics_statement": "REQUIRED_IF_APPLICABLE",
+      "fee_information_verified": "Publishing model verified; current optional APC and any submission fee require manual verification before submission.",
+      "figure_limit": "NOT_STATED",
+      "forecasting_fit": "GOOD: recent journal content includes deep probabilistic time-series forecasting, although forecasting is one application area rather than the journal's central identity.",
+      "funding_statement": "REQUIRED",
+      "generative_ai_disclosure": "Substantive generative-AI use must be documented; an LLM cannot be an author; AI-assisted copy editing alone need not be declared.",
+      "graphical_abstract_required": "NOT_STATED",
+      "highlights_required": "NOT_STATED",
+      "initial_submission_format": "Editable Word or LaTeX source; LaTeX submissions include source and PDF and should avoid subfolders.",
+      "jcr_category": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "jcr_quartile": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "jcr_year": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "journal_type": "Hybrid subscription and optional open-access journal",
+      "latex_template": "Springer Nature LaTeX template; the journal guideline identifies the smallcondensed style.",
+      "major_experiment_risk": "MODERATE: three datasets and two backbones are credible, but recent related work may use substantially broader benchmark matrices.",
+      "major_format_risk": "MODERATE: no stated page cap, but 18 pages, 14 tables, 16 figures, and four appendices will need journal-specific organization.",
+      "major_novelty_risk": "HIGH: fixed Student-t df=8 is an empirical design choice, not a new distribution, theoretical result, or backbone.",
+      "major_policy_risk": "LOW_TO_MODERATE: the current anonymous package is compatible with separation, but the journal's review-anonymity instructions require manual confirmation.",
+      "major_scope_risk": "The official scope asks for original and innovative intelligent-system developments rather than routine application of known technology to new datasets.",
+      "mandatory_apc": "NO",
+      "mandatory_format_blocker": false,
+      "manual_checks_remaining": [
+        "JCR, Scopus, and CAS categories and quartiles",
+        "Current optional APC and submission-fee status",
+        "Peer-review anonymity and initial title-page workflow"
+      ],
+      "manuscript_length_limit": "NOT_STATED",
+      "methodology_fit": "PARTIAL_TO_GOOD: the neural probabilistic head and fixed missing-history protocol fit intelligent-systems methodology, but the head is deliberately lightweight and is not a new distribution or backbone.",
+      "missing_data_fit": "GOOD: uncertain and incomplete information are compatible with the scope; the manuscript studies missing historical observations rather than imputation as an end in itself.",
+      "negative_results_fit": "GOOD: fixed-mask audits, preregistered tolerances, and retained negative results strengthen reproducibility, though this is not an explicitly named article category.",
+      "official_guidelines_source": "https://link.springer.com/journal/10489/submission-guidelines",
+      "official_homepage_title": "Applied Intelligence",
+      "official_scope_source": "https://link.springer.com/journal/10489/aims-and-scope",
+      "open_access_model": "Hybrid; optional Open Choice",
+      "optional_apc": "YES; current amount MANUAL_VERIFICATION_REQUIRED",
+      "overall_risk": "HIGH",
+      "page_limit": "NOT_STATED",
+      "probabilistic_forecasting_fit": "GOOD: recent official articles use predictive distributions, CRPS, calibration, and interval metrics.",
+      "publisher": "Springer Nature",
+      "ranking_verification_status": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "recent_relevant_article_count": 2,
+      "recent_relevant_article_examples": [
+        {
+          "article_type": "Original Article",
+          "dataset_count_if_visible": "12 datasets",
+          "method_novelty_level": "HIGH relative to a simple output-head replacement",
+          "missing_data_component": "NOT_STATED",
+          "official_publication_source": "https://link.springer.com/article/10.1007/s10489-024-06203-5",
+          "probabilistic_metrics": "CRPS, calibration, sharpness, and forecasting accuracy",
+          "title": "VAEneu: a new avenue for VAE application on probabilistic forecasting",
+          "topic": "Deep probabilistic time-series forecasting with a conditional variational autoencoder",
+          "why_relevant": "Confirms direct probabilistic-forecasting interest while showing a recent paper with a new model, 12 baselines, and 12 datasets.",
+          "year": 2025
+        },
+        {
+          "article_type": "Original Article",
+          "dataset_count_if_visible": "NOT_STATED",
+          "method_novelty_level": "HIGH relative to a fixed parametric head",
+          "missing_data_component": "NOT_STATED",
+          "official_publication_source": "https://link.springer.com/article/10.1007/s10489-024-05346-9",
+          "probabilistic_metrics": "CRPS, Winkler score, calibration, and interval width",
+          "title": "Generating probabilistic forecasts from arbitrary point forecasts using a conditional invertible neural network",
+          "topic": "Conditional invertible neural networks for probabilistic forecasting",
+          "why_relevant": "Demonstrates acceptance of distributional post-processing but also raises the novelty bar through an invertible-network method.",
+          "year": 2024
+        }
+      ],
+      "recent_relevant_topics": [
+        "deep probabilistic forecasting",
+        "proper scoring rules",
+        "calibration and interval quality",
+        "distributional post-processing"
+      ],
+      "recommended_role": "BACKUP_2",
+      "reference_limit": "NOT_STATED",
+      "reference_style": "Numbered references",
+      "required_manuscript_changes": [
+        "Frame the fixed-mask protocol and matched-distribution audit as the intelligent-systems contribution without overstating algorithmic novelty.",
+        "Explain practical decision relevance of robust uncertainty under missing histories.",
+        "Reorganize the extensive tables and figures for the Springer layout while retaining evidence in supplementary material.",
+        "Add venue-specific declarations and verify review anonymity before preparing title-page files."
+      ],
+      "retrieved_at": "2026-07-22",
+      "risk_levels": {
+        "desk_reject_scope_risk": "MODERATE",
+        "experimental_sufficiency_risk": "MODERATE",
+        "format_adaptation_risk": "MODERATE",
+        "novelty_rejection_risk": "HIGH",
+        "policy_compliance_risk": "LOW"
+      },
+      "scope_summary": "Publishes new and innovative intelligent-systems methodologies and applications to complex real-life problems, including neural networks, uncertain-information processing, streaming data, and risk analysis. The scope explicitly distinguishes innovative development from applying established technology to another dataset.",
+      "scopus_category": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "scopus_quartile": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "scopus_year": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "score": {
+        "experimental_evidence_fit": {
+          "max": 15,
+          "reason": "Two backbones, multiple TimePerceiver seeds, ablations, and fixed masks are solid; three datasets and one PatchTST seed limit breadth.",
+          "score": 12
+        },
+        "forecasting_community_fit": {
+          "max": 10,
+          "reason": "Recent articles confirm probabilistic-forecasting readership, although the journal serves a broader applied-AI community.",
+          "score": 8
+        },
+        "manuscript_format_fit": {
+          "max": 10,
+          "reason": "No official length cap was found and Springer LaTeX is supported; the figure and table count still creates adaptation work.",
+          "score": 8
+        },
+        "method_novelty_fit": {
+          "max": 20,
+          "reason": "The controlled fixed-head study is defensible, while the official emphasis on innovative methodology makes moderate novelty a material risk.",
+          "score": 13
+        },
+        "negative_reproducibility_fit": {
+          "max": 5,
+          "reason": "The fixed-mask correction, preregistered tolerance, and retained negative findings materially strengthen an empirical systems paper.",
+          "score": 5
+        },
+        "risk_adjusted_acceptance_fit": {
+          "max": 10,
+          "reason": "Documented scope overlap is offset by a high novelty-mismatch risk compared with recent method-heavy papers.",
+          "score": 5
+        },
+        "scope_fit": {
+          "max": 25,
+          "reason": "Probabilistic neural forecasting and incomplete information fit, but forecasting is not the central scope and method novelty is part of scope screening.",
+          "score": 21
+        },
+        "submission_policy_compatibility": {
+          "max": 5,
+          "reason": "Data, code, funding, conflict, and AI declarations are manageable; review anonymity remains unverified.",
+          "score": 4
+        }
+      },
+      "slug": "applied_intelligence",
+      "sources": [
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_scope",
+          "title": "Aims and scope | Applied Intelligence",
+          "url": "https://link.springer.com/journal/10489/aims-and-scope"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_guidelines",
+          "title": "Submission guidelines | Applied Intelligence",
+          "url": "https://link.springer.com/journal/10489/submission-guidelines"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_ai_policy",
+          "title": "AI guidance for researchers and communities | Springer Nature",
+          "url": "https://group.springernature.com/gp/group/ai/ai-guidance-for-our-researchers-and-communities"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_recent_article",
+          "title": "VAEneu: a new avenue for VAE application on probabilistic forecasting",
+          "url": "https://link.springer.com/article/10.1007/s10489-024-06203-5"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_recent_article",
+          "title": "Generating probabilistic forecasts from arbitrary point forecasts using a conditional invertible neural network",
+          "url": "https://link.springer.com/article/10.1007/s10489-024-05346-9"
+        }
+      ],
+      "submission_fee": "NOT_STATED",
+      "supplementary_material_policy": "Electronic supplementary material is supported; files require descriptive captions.",
+      "table_limit": "NOT_STATED",
+      "total_score": 76,
+      "unresolved_scope_blocker": false,
+      "venue_name": "Applied Intelligence",
+      "word_limit": "NOT_STATED"
+    },
+    {
+      "abstract_limit": "150-250 words; up to 450 words may be justified for some original research",
+      "anonymous_submission_required": "YES",
+      "applied_ai_fit": "VERY_GOOD: the empirical benchmark and practical-value framing align directly.",
+      "article_type": "Original Article",
+      "author_contribution_statement": "REQUIRED_IF_APPLICABLE",
+      "author_details_required_at_initial_submission": "YES, in a separate title page",
+      "cas_partition": "CAS_PARTITION_MANUAL_VERIFICATION_REQUIRED",
+      "cas_partition_year": "CAS_PARTITION_MANUAL_VERIFICATION_REQUIRED",
+      "code_availability_statement": "REQUIRED_IF_APPLICABLE in the declarations section",
+      "conflict_of_interest_statement": "REQUIRED",
+      "cover_letter_required": "NOT_STATED",
+      "data_availability_statement": "REQUIRED for original research articles",
+      "double_blind_policy": "DOUBLE_BLIND",
+      "estimated_revision_effort": "MODERATE",
+      "ethics_statement": "REQUIRED_IF_APPLICABLE",
+      "fee_information_verified": "Publishing model verified; current optional APC and any submission fee require manual verification before submission.",
+      "figure_limit": "NOT_STATED",
+      "forecasting_fit": "VERY_GOOD: intelligent forecasting is explicitly named in the official scope.",
+      "funding_statement": "REQUIRED",
+      "generative_ai_disclosure": "Substantive generative-AI use must be documented; an LLM cannot be an author; AI-assisted copy editing alone need not be declared.",
+      "graphical_abstract_required": "NOT_STATED",
+      "highlights_required": "NOT_STATED",
+      "initial_submission_format": "Double-blind submission with an anonymized manuscript and separate title page; Word is preferred and mathematical LaTeX is accepted.",
+      "jcr_category": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "jcr_quartile": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "jcr_year": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "journal_type": "Hybrid subscription and optional open-access journal",
+      "latex_template": "Springer Nature LaTeX template is accepted for manuscripts with extensive mathematics.",
+      "major_experiment_risk": "MODERATE: the multi-seed primary backbone and second-backbone audit are helpful, but three datasets remain a compact matrix.",
+      "major_format_risk": "MODERATE: double-blind separation is straightforward, but the large table and figure inventory needs template-aware placement.",
+      "major_novelty_risk": "MODERATE: the paper must distinguish a principled heavy-tail robustness study from a routine output-layer substitution.",
+      "major_policy_risk": "LOW: the current anonymous manuscript already aligns with the explicit double-blind policy.",
+      "major_scope_risk": "LOW: intelligent forecasting, benchmarks, and performance measures are explicitly in scope.",
+      "mandatory_apc": "NO",
+      "mandatory_format_blocker": false,
+      "manual_checks_remaining": [
+        "JCR, Scopus, and CAS categories and quartiles",
+        "Current optional APC and submission-fee status",
+        "Final article-type selection in the submission portal"
+      ],
+      "manuscript_length_limit": "NOT_STATED",
+      "methodology_fit": "GOOD: both TimePerceiver and PatchTST are neural forecasters, and the fixed Student-t head is evaluated as a practical neural-computing extension.",
+      "missing_data_fit": "GOOD: robustness to missing historical observations is a practical neural-computing problem.",
+      "negative_results_fit": "GOOD: reproducible benchmarks and performance measures are scope-compatible, even though negative-result publication is not explicitly promised.",
+      "official_guidelines_source": "https://link.springer.com/journal/521/submission-guidelines",
+      "official_homepage_title": "Neural Computing and Applications",
+      "official_scope_source": "https://link.springer.com/journal/521/aims-and-scope",
+      "open_access_model": "Hybrid; optional Open Choice",
+      "optional_apc": "YES; current amount MANUAL_VERIFICATION_REQUIRED",
+      "overall_risk": "MODERATE",
+      "page_limit": "NOT_STATED",
+      "probabilistic_forecasting_fit": "GOOD: uncertainty and probabilistic evaluation fit neural performance assessment, though recent sampled forecasting papers are often application-specific.",
+      "publisher": "Springer Nature",
+      "ranking_verification_status": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "recent_relevant_article_count": 2,
+      "recent_relevant_article_examples": [
+        {
+          "article_type": "Original Article",
+          "dataset_count_if_visible": "NOT_STATED",
+          "method_novelty_level": "MODERATE_TO_HIGH",
+          "missing_data_component": "NOT_STATED",
+          "official_publication_source": "https://link.springer.com/article/10.1007/s00521-025-11325-z",
+          "probabilistic_metrics": "NOT_STATED",
+          "title": "Stock price forecasting through symbolic dynamics and state transition graphs with a convolutional recurrent neural network architecture",
+          "topic": "Deep neural stock-price forecasting across market regimes and horizons",
+          "why_relevant": "Confirms recent publication of neural time-series forecasting with practical application framing.",
+          "year": 2025
+        },
+        {
+          "article_type": "Original Article",
+          "dataset_count_if_visible": "NOT_STATED",
+          "method_novelty_level": "MODERATE",
+          "missing_data_component": "NOT_STATED",
+          "official_publication_source": "https://link.springer.com/article/10.1007/s00521-025-11230-5",
+          "probabilistic_metrics": "NOT_STATED",
+          "title": "Explainable artificial intelligence for wind power forecasting model based on long short-term memory",
+          "topic": "Explainable neural wind-power forecasting",
+          "why_relevant": "Shows that an applied neural-forecasting contribution can fit when practical value and neural integration are explicit.",
+          "year": 2025
+        }
+      ],
+      "recent_relevant_topics": [
+        "neural forecasting",
+        "application-specific time series",
+        "explainable forecasting",
+        "benchmark performance"
+      ],
+      "recommended_role": "BACKUP_1",
+      "reference_limit": "NOT_STATED",
+      "reference_style": "Numbered references",
+      "required_manuscript_changes": [
+        "Make neural-computing integration and practical value explicit in the abstract and introduction.",
+        "Present the matched Gaussian, Laplace, and Student-t heads as a controlled neural-output design study.",
+        "Prepare a separate title page and preserve a fully anonymized manuscript.",
+        "Add journal-specific declarations and reorganize appendices or supplementary files without removing evidence."
+      ],
+      "retrieved_at": "2026-07-22",
+      "risk_levels": {
+        "desk_reject_scope_risk": "LOW",
+        "experimental_sufficiency_risk": "MODERATE",
+        "format_adaptation_risk": "MODERATE",
+        "novelty_rejection_risk": "MODERATE",
+        "policy_compliance_risk": "LOW"
+      },
+      "scope_summary": "Covers practical neural computing and related techniques and explicitly lists benchmarks, intelligent forecasting, machine learning, performance measures, and applied statistics. Original Articles should present new, significant research, development, or applications with practical value.",
+      "scopus_category": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "scopus_quartile": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "scopus_year": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "score": {
+        "experimental_evidence_fit": {
+          "max": 15,
+          "reason": "The fixed-mask audit, four primary-backbone seeds, second backbone, ablations, and negative findings suit benchmark-oriented evidence.",
+          "score": 13
+        },
+        "forecasting_community_fit": {
+          "max": 10,
+          "reason": "Forecasting is explicitly named and recent neural forecasting papers confirm active readership.",
+          "score": 9
+        },
+        "manuscript_format_fit": {
+          "max": 10,
+          "reason": "The double-blind workflow matches the current anonymous artifact, while 30 visual/table assets create moderate layout work.",
+          "score": 8
+        },
+        "method_novelty_fit": {
+          "max": 20,
+          "reason": "A controlled neural probabilistic-head contribution is plausible, but moderate novelty needs careful differentiation from a routine layer swap.",
+          "score": 14
+        },
+        "negative_reproducibility_fit": {
+          "max": 5,
+          "reason": "Benchmark and performance-measure scope rewards rigorous audits, although negative-result reporting is not an explicit editorial focus.",
+          "score": 4
+        },
+        "risk_adjusted_acceptance_fit": {
+          "max": 10,
+          "reason": "Strong documented scope fit lowers desk risk, with moderate novelty and compact dataset breadth remaining the main review risks.",
+          "score": 7
+        },
+        "scope_fit": {
+          "max": 25,
+          "reason": "The official scope explicitly names intelligent forecasting, benchmarks, practical neural computing, and performance measures.",
+          "score": 24
+        },
+        "submission_policy_compatibility": {
+          "max": 5,
+          "reason": "Anonymization, data declarations, supplementary files, and AI disclosure are all compatible with existing project assets.",
+          "score": 5
+        }
+      },
+      "slug": "neural_computing_and_applications",
+      "sources": [
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_scope",
+          "title": "Aims and scope | Neural Computing and Applications",
+          "url": "https://link.springer.com/journal/521/aims-and-scope"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_guidelines",
+          "title": "Submission guidelines | Neural Computing and Applications",
+          "url": "https://link.springer.com/journal/521/submission-guidelines"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_ai_policy",
+          "title": "AI guidance for researchers and communities | Springer Nature",
+          "url": "https://group.springernature.com/gp/group/ai/ai-guidance-for-our-researchers-and-communities"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_recent_article",
+          "title": "Stock price forecasting through symbolic dynamics and state transition graphs with a convolutional recurrent neural network architecture",
+          "url": "https://link.springer.com/article/10.1007/s00521-025-11325-z"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_recent_article",
+          "title": "Explainable artificial intelligence for wind power forecasting model based on long short-term memory",
+          "url": "https://link.springer.com/article/10.1007/s00521-025-11230-5"
+        }
+      ],
+      "submission_fee": "NOT_STATED",
+      "supplementary_material_policy": "Electronic supplementary material is supported; files require descriptive captions.",
+      "table_limit": "NOT_STATED",
+      "total_score": 84,
+      "unresolved_scope_blocker": false,
+      "venue_name": "Neural Computing and Applications",
+      "word_limit": "NOT_STATED"
+    },
+    {
+      "abstract_limit": "NOT_STATED",
+      "anonymous_submission_required": "NO",
+      "applied_ai_fit": "GOOD: computational deep forecasting is in scope, but statistical interpretation and forecasting relevance should lead the presentation.",
+      "article_type": "Research article; exact portal taxonomy MANUAL_VERIFICATION_REQUIRED",
+      "author_contribution_statement": "MANUAL_VERIFICATION_REQUIRED",
+      "author_details_required_at_initial_submission": "YES, on the title page; ORCID is required in the workflow",
+      "cas_partition": "CAS_PARTITION_MANUAL_VERIFICATION_REQUIRED",
+      "cas_partition_year": "CAS_PARTITION_MANUAL_VERIFICATION_REQUIRED",
+      "code_availability_statement": "NOT_STATED",
+      "conflict_of_interest_statement": "REQUIRED",
+      "cover_letter_required": "NOT_STATED",
+      "data_availability_statement": "Expected under the journal and Wiley data-sharing policy; exact exception wording MANUAL_VERIFICATION_REQUIRED",
+      "double_blind_policy": "SINGLE_BLIND",
+      "estimated_revision_effort": "MODERATE",
+      "ethics_statement": "REQUIRED_IF_APPLICABLE",
+      "fee_information_verified": "No submission fee and optional open access are stated; current optional APC requires manual verification.",
+      "figure_limit": "NOT_STATED",
+      "forecasting_fit": "EXCELLENT: forecasting is the journal's central subject.",
+      "funding_statement": "REQUIRED",
+      "generative_ai_disclosure": "Substantive AI-assisted content generation must be disclosed under Wiley policy; basic grammar, spelling, and literature-search assistance are treated differently.",
+      "graphical_abstract_required": "NOT_STATED",
+      "highlights_required": "NOT_STATED",
+      "initial_submission_format": "Free Format; editable Word, PDF, or LaTeX is accepted initially, with LaTeX source and supporting files supplied as required.",
+      "jcr_category": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "jcr_quartile": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "jcr_year": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "journal_type": "Subscription journal with optional open access",
+      "latex_template": "No mandatory journal template for initial Free Format submission; Wiley LaTeX workflows are supported.",
+      "major_experiment_risk": "MODERATE: three datasets and two backbones are useful, but the forecasting audience may ask for broader series diversity, stronger statistical baselines, or clearer heavy-tail diagnostics.",
+      "major_format_risk": "LOW_TO_MODERATE: Free Format and no located length cap reduce conversion burden, though 14 tables and 16 figures should be editorially streamlined.",
+      "major_novelty_risk": "MODERATE: a fixed Student-t head needs a stronger statistical and forecasting rationale because it offers no new distribution or theory.",
+      "major_policy_risk": "LOW: single-blind review and Free Format simplify adaptation; data-sharing wording and AI disclosure still require final checks.",
+      "major_scope_risk": "LOW: the manuscript's central question is probabilistic forecasting under degraded historical information.",
+      "mandatory_apc": "NO",
+      "mandatory_format_blocker": false,
+      "manual_checks_remaining": [
+        "JCR, Scopus, and CAS categories and quartiles",
+        "Current optional open-access APC",
+        "Exact submission-portal article type and data/code statement wording",
+        "Whether the current figure and table inventory should move partly to supporting information"
+      ],
+      "manuscript_length_limit": "NOT_STATED",
+      "methodology_fit": "VERY_GOOD if framed as a distributional-forecasting robustness study rather than a neural architecture paper.",
+      "missing_data_fit": "GOOD: missing histories are a forecasting-information problem, although the manuscript must explain forecasting consequences rather than focus on generic AI robustness.",
+      "negative_results_fit": "VERY_GOOD: distributional diagnostics, robust interval evaluation, preregistered tolerances, and honest limitations support a forecasting-methodology narrative.",
+      "official_guidelines_source": "https://onlinelibrary.wiley.com/page/journal/1099131x/homepage/forauthors.html",
+      "official_homepage_title": "Journal of Forecasting",
+      "official_scope_source": "https://onlinelibrary.wiley.com/journal/1099131x",
+      "open_access_model": "Subscription with optional open access after acceptance",
+      "optional_apc": "YES; current amount MANUAL_VERIFICATION_REQUIRED",
+      "overall_risk": "MODERATE",
+      "page_limit": "NOT_STATED",
+      "probabilistic_forecasting_fit": "EXCELLENT: recent official articles cover data-driven predictive distributions, heavy tails, Student-t variants, proper scores, and robust prediction intervals.",
+      "publisher": "Wiley",
+      "ranking_verification_status": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "recent_relevant_article_count": 2,
+      "recent_relevant_article_examples": [
+        {
+          "article_type": "NOT_STATED",
+          "dataset_count_if_visible": "Two application settings are visible; exact dataset count NOT_STATED",
+          "method_novelty_level": "MODERATE_TO_HIGH",
+          "missing_data_component": "NOT_STATED",
+          "official_publication_source": "https://onlinelibrary.wiley.com/doi/10.1002/for.3208",
+          "probabilistic_metrics": "Distributional forecast evaluation; exact complete metric list NOT_STATED",
+          "title": "Taming Data-Driven Probability Distributions",
+          "topic": "Data-driven probabilistic forecasting, including heavy-tailed stock returns and macroeconomic fan charts",
+          "why_relevant": "Directly supports a heavy-tail and predictive-distribution framing for forecasting readers.",
+          "year": 2025
+        },
+        {
+          "article_type": "NOT_STATED",
+          "dataset_count_if_visible": "NOT_STATED",
+          "method_novelty_level": "MODERATE_TO_HIGH",
+          "missing_data_component": "NOT_STATED",
+          "official_publication_source": "https://onlinelibrary.wiley.com/doi/abs/10.1002/for.70126",
+          "probabilistic_metrics": "Interval score is visible; complete metric list NOT_STATED",
+          "title": "Robust Prediction Intervals for Time Series Forecasting: A Bootstrap and Bayesian Approach",
+          "topic": "Robust time-series prediction intervals using bootstrap and Bayesian methods with skewed Student-t components",
+          "why_relevant": "Shows a current editorial home for robust interval and Student-t-related forecasting methodology.",
+          "year": 2026
+        }
+      ],
+      "recent_relevant_topics": [
+        "heavy-tailed predictive distributions",
+        "probabilistic forecasting",
+        "robust prediction intervals",
+        "proper probabilistic evaluation"
+      ],
+      "recommended_role": "PRIMARY",
+      "reference_limit": "NOT_STATED",
+      "reference_style": "Any consistent style at initial Free Format submission; APA style for final journal formatting",
+      "required_manuscript_changes": [
+        "Lead with the forecasting problem, proper-score evidence, heavy-tail rationale, and consequences of missing histories.",
+        "Strengthen statistical interpretation of fixed df=8 and make the learnable-df negative ablation central to the design argument.",
+        "Discuss heavy-tail diagnostics and the limits of three datasets and two backbones without adding unsupported claims.",
+        "Prepare the author title page and Wiley declarations after the venue is confirmed; preserve the venue-neutral source until Gate 7B1."
+      ],
+      "retrieved_at": "2026-07-22",
+      "risk_levels": {
+        "desk_reject_scope_risk": "LOW",
+        "experimental_sufficiency_risk": "MODERATE",
+        "format_adaptation_risk": "MODERATE",
+        "novelty_rejection_risk": "MODERATE",
+        "policy_compliance_risk": "LOW"
+      },
+      "scope_summary": "A multidisciplinary forecasting journal covering theoretical, practical, computational, and methodological forecasting work across statistics, economics, psychology, systems engineering, and the social sciences.",
+      "scopus_category": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "scopus_quartile": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "scopus_year": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "score": {
+        "experimental_evidence_fit": {
+          "max": 15,
+          "reason": "Proper scores, fixed masks, repeated primary-backbone seeds, a second backbone, and negative ablations are persuasive; breadth remains three datasets.",
+          "score": 12
+        },
+        "forecasting_community_fit": {
+          "max": 10,
+          "reason": "Every main outcome concerns forecast accuracy, probabilistic scores, interval behavior, or robustness to missing histories.",
+          "score": 10
+        },
+        "manuscript_format_fit": {
+          "max": 10,
+          "reason": "Free Format and no located length cap make the existing 18-page source readily adaptable, with only presentation streamlining expected.",
+          "score": 9
+        },
+        "method_novelty_fit": {
+          "max": 20,
+          "reason": "The empirical heavy-tail design study fits forecasting methodology, but fixed Student-t is not a new distribution or theoretical contribution.",
+          "score": 14
+        },
+        "negative_reproducibility_fit": {
+          "max": 5,
+          "reason": "The learnable-df, FiLM, conformal, and point-tolerance findings provide useful diagnostic evidence for forecasting methodology.",
+          "score": 5
+        },
+        "risk_adjusted_acceptance_fit": {
+          "max": 10,
+          "reason": "Excellent topical alignment lowers desk risk, while moderate novelty, compact data breadth, and statistical-depth expectations keep overall risk moderate.",
+          "score": 7
+        },
+        "scope_fit": {
+          "max": 25,
+          "reason": "The official journal identity directly centers theoretical, practical, computational, and methodological forecasting.",
+          "score": 25
+        },
+        "submission_policy_compatibility": {
+          "max": 5,
+          "reason": "Free Format, single-blind review, LaTeX support, supporting information, and data-sharing expectations are compatible with current assets.",
+          "score": 5
+        }
+      },
+      "slug": "journal_of_forecasting",
+      "sources": [
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_scope",
+          "title": "Journal of Forecasting | Wiley Online Library",
+          "url": "https://onlinelibrary.wiley.com/journal/1099131x"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_guidelines",
+          "title": "Journal of Forecasting Author Guidelines",
+          "url": "https://onlinelibrary.wiley.com/page/journal/1099131x/homepage/forauthors.html"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_open_access",
+          "title": "Journal of Forecasting Open Access",
+          "url": "https://onlinelibrary.wiley.com/page/journal/1099131x/homepage/fundedaccess.html"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_ai_policy",
+          "title": "Wiley AI Guidelines",
+          "url": "https://www.wiley.com/en-kr/publish/article/ai-guidelines/"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_recent_article",
+          "title": "Taming Data-Driven Probability Distributions",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/for.3208"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_recent_article",
+          "title": "Robust Prediction Intervals for Time Series Forecasting: A Bootstrap and Bayesian Approach",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/for.70126"
+        }
+      ],
+      "submission_fee": "NO",
+      "supplementary_material_policy": "Supporting information is submitted separately and is supported by the journal workflow.",
+      "table_limit": "NOT_STATED",
+      "total_score": 87,
+      "unresolved_scope_blocker": false,
+      "venue_name": "Journal of Forecasting",
+      "word_limit": "NOT_STATED"
+    },
+    {
+      "abstract_limit": "Maximum 250 words",
+      "anonymous_submission_required": "YES",
+      "applied_ai_fit": "BLOCKED: the current manuscript has no single named real-world engineering application or deployment/decision context.",
+      "article_type": "Original Research Paper",
+      "author_contribution_statement": "MANUAL_VERIFICATION_REQUIRED",
+      "author_details_required_at_initial_submission": "YES, in a separate title page",
+      "cas_partition": "CAS_PARTITION_MANUAL_VERIFICATION_REQUIRED",
+      "cas_partition_year": "CAS_PARTITION_MANUAL_VERIFICATION_REQUIRED",
+      "code_availability_statement": "NOT_STATED",
+      "conflict_of_interest_statement": "REQUIRED",
+      "cover_letter_required": "NOT_STATED",
+      "data_availability_statement": "MANUAL_VERIFICATION_REQUIRED",
+      "double_blind_policy": "DOUBLE_ANONYMIZED",
+      "estimated_revision_effort": "VERY_HIGH_AND_REQUIRES_NEW_SCIENTIFIC_SCOPE",
+      "ethics_statement": "REQUIRED_IF_APPLICABLE",
+      "fee_information_verified": "Publishing model verified; current optional APC and submission-fee status require manual verification.",
+      "figure_limit": "NOT_STATED",
+      "forecasting_fit": "GOOD only when attached to a concrete engineering problem such as load, wind, infrastructure, or industrial sensing.",
+      "funding_statement": "REQUIRED",
+      "generative_ai_disclosure": "A declaration is required for substantive generative-AI use in manuscript preparation; basic grammar and spelling checks are exempt under Elsevier policy.",
+      "graphical_abstract_required": "ENCOURAGED, not required",
+      "highlights_required": "ENCOURAGED, not required; 3-5 bullets with a maximum of 85 characters each",
+      "initial_submission_format": "Editable DOC/DOCX or LaTeX source; the journal's desk-screening guidance requires a single-column manuscript.",
+      "jcr_category": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "jcr_quartile": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "jcr_year": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "journal_type": "Hybrid subscription and optional open-access journal",
+      "latex_template": "Elsevier LaTeX template is encouraged; preserve the journal's single-column desk-screening requirement.",
+      "major_experiment_risk": "HIGH: public generic benchmarks are not a substitute for application-specific engineering validation and decision relevance.",
+      "major_format_risk": "MODERATE_TO_HIGH: double-anonymized single-column conversion is possible, but the title, abstract, and framing would require substantive engineering adaptation.",
+      "major_novelty_risk": "HIGH: the fixed Student-t head may not meet the requested novel-AI threshold without an engineering contribution that changes the value proposition.",
+      "major_policy_risk": "LOW_TO_MODERATE: anonymization and AI disclosure are manageable; exact data-statement and fee details need manual confirmation.",
+      "major_scope_risk": "VERY_HIGH: the current benchmark manuscript does not identify a real-world engineering application, which is an explicit journal requirement.",
+      "mandatory_apc": "NO",
+      "mandatory_format_blocker": false,
+      "manual_checks_remaining": [
+        "JCR, Scopus, and CAS categories and quartiles",
+        "Current optional APC and submission-fee status",
+        "Exact data/code and author-contribution statement requirements"
+      ],
+      "manuscript_length_limit": "No word or page limit located; main editable source file limit is 50 MB",
+      "methodology_fit": "PARTIAL: the probabilistic neural head is AI methodology, but its novelty is moderate and the paper is organized as a generic forecasting benchmark rather than an engineering solution.",
+      "missing_data_fit": "GOOD in engineering sensor settings; recent content includes missing-data imputation for sensor and infrastructure systems.",
+      "negative_results_fit": "PARTIAL: rigorous negative findings are useful, but they do not replace the required engineering application.",
+      "official_guidelines_source": "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/publish/guide-for-authors",
+      "official_homepage_title": "Engineering Applications of Artificial Intelligence",
+      "official_scope_source": "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/about/aims-and-scope",
+      "open_access_model": "Hybrid with an optional open-access route",
+      "optional_apc": "YES; current amount MANUAL_VERIFICATION_REQUIRED",
+      "overall_risk": "VERY_HIGH",
+      "page_limit": "NOT_STATED",
+      "probabilistic_forecasting_fit": "GOOD: recent journal papers include deep probabilistic load forecasting.",
+      "publisher": "Elsevier",
+      "ranking_verification_status": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "recent_relevant_article_count": 2,
+      "recent_relevant_article_examples": [
+        {
+          "article_type": "Research Paper",
+          "dataset_count_if_visible": "Two real-world load datasets",
+          "method_novelty_level": "MODERATE_TO_HIGH",
+          "missing_data_component": "NOT_STATED",
+          "official_publication_source": "https://www.sciencedirect.com/science/article/pii/S095219762500781X",
+          "probabilistic_metrics": "Probabilistic forecast evaluation; complete metric list NOT_STATED",
+          "title": "Transformer-based deep probabilistic network for load forecasting",
+          "topic": "Deep probabilistic electric-load forecasting",
+          "why_relevant": "Confirms probabilistic forecasting fit when the work addresses a concrete engineering-domain load application.",
+          "year": 2025
+        },
+        {
+          "article_type": "Research Paper",
+          "dataset_count_if_visible": "Physical and simulated structural settings; exact count NOT_STATED",
+          "method_novelty_level": "MODERATE_TO_HIGH",
+          "missing_data_component": "Central missing-sensor-data contribution",
+          "official_publication_source": "https://www.sciencedirect.com/science/article/pii/S095219762500973X",
+          "probabilistic_metrics": "NOT_STATED",
+          "title": "Time-frequency informed stacked long short-term memory-based generative adversarial network for missing data imputation in sensor networks",
+          "topic": "Missing-data imputation in civil-infrastructure sensor networks",
+          "why_relevant": "Shows that missing-data research is welcome when embedded in a concrete engineering system and validated accordingly.",
+          "year": 2025
+        }
+      ],
+      "recent_relevant_topics": [
+        "engineering load forecasting",
+        "probabilistic neural networks",
+        "sensor missing-data imputation",
+        "civil-infrastructure monitoring"
+      ],
+      "recommended_role": "NOT_RECOMMENDED",
+      "reference_limit": "NOT_STATED",
+      "reference_style": "Author-year; consistent formatting is accepted at initial submission",
+      "required_manuscript_changes": [
+        "A real engineering problem, decision context, and application-specific validation would be required; these cannot be invented during template adaptation.",
+        "The abstract would need to state both the AI contribution and the real-world engineering application.",
+        "Prepare a double-anonymized, single-column manuscript, separate title page, and Elsevier declarations only if the scientific scope is genuinely extended."
+      ],
+      "retrieved_at": "2026-07-22",
+      "risk_levels": {
+        "desk_reject_scope_risk": "VERY_HIGH",
+        "experimental_sufficiency_risk": "HIGH",
+        "format_adaptation_risk": "HIGH",
+        "novelty_rejection_risk": "HIGH",
+        "policy_compliance_risk": "MODERATE"
+      },
+      "scope_summary": "Publishes practical AI in engineering and requires papers to report novel AI aspects used for a real-world engineering application, with validation on public datasets. The journal warns that abstracts must state both the AI contribution and the engineering application.",
+      "scopus_category": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "scopus_quartile": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "scopus_year": "MANUAL_QUARTILE_VERIFICATION_REQUIRED",
+      "score": {
+        "experimental_evidence_fit": {
+          "max": 15,
+          "reason": "The fixed-mask evidence is rigorous but lacks application-specific engineering datasets, decisions, and deployment analysis.",
+          "score": 10
+        },
+        "forecasting_community_fit": {
+          "max": 10,
+          "reason": "Forecasting is represented in recent content when linked to engineering domains such as electric load.",
+          "score": 7
+        },
+        "manuscript_format_fit": {
+          "max": 10,
+          "reason": "Single-column and double-anonymized formatting are feasible, but the title, abstract, and narrative require substantial non-template reframing.",
+          "score": 6
+        },
+        "method_novelty_fit": {
+          "max": 20,
+          "reason": "The fixed probabilistic head has practical value, while moderate AI novelty is weak against the journal's explicit novel-AI and engineering framing.",
+          "score": 12
+        },
+        "negative_reproducibility_fit": {
+          "max": 5,
+          "reason": "Rigorous negative results help, but they cannot compensate for the missing engineering-application contribution.",
+          "score": 3
+        },
+        "risk_adjusted_acceptance_fit": {
+          "max": 10,
+          "reason": "The unresolved real-world engineering scope blocker creates a very high desk-rejection risk.",
+          "score": 2
+        },
+        "scope_fit": {
+          "max": 25,
+          "reason": "AI forecasting and missing sensor data are relevant, but the official real-world engineering-application requirement is not met by the current generic benchmark paper.",
+          "score": 11
+        },
+        "submission_policy_compatibility": {
+          "max": 5,
+          "reason": "The project can satisfy anonymization, editable-source, supplementary, conflict, funding, and AI-disclosure requirements.",
+          "score": 5
+        }
+      },
+      "slug": "engineering_applications_of_artificial_intelligence",
+      "sources": [
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_scope",
+          "title": "Aims and scope | Engineering Applications of Artificial Intelligence",
+          "url": "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/about/aims-and-scope"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_guidelines",
+          "title": "Guide for authors | Engineering Applications of Artificial Intelligence",
+          "url": "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/publish/guide-for-authors"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_open_access",
+          "title": "Open access options | Engineering Applications of Artificial Intelligence",
+          "url": "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/publish/open-access-options"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_ai_policy",
+          "title": "Generative AI policies for journals | Elsevier",
+          "url": "https://www.elsevier.com/en-au/about/policies-and-standards/generative-ai-policies-for-journals"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_recent_article",
+          "title": "Transformer-based deep probabilistic network for load forecasting",
+          "url": "https://www.sciencedirect.com/science/article/pii/S095219762500781X"
+        },
+        {
+          "retrieved_at": "2026-07-22",
+          "source_type": "official_recent_article",
+          "title": "Time-frequency informed stacked long short-term memory-based generative adversarial network for missing data imputation in sensor networks",
+          "url": "https://www.sciencedirect.com/science/article/pii/S095219762500973X"
+        }
+      ],
+      "submission_fee": "NOT_STATED",
+      "supplementary_material_policy": "Supplementary material is supported and should be supplied with concise descriptive captions.",
+      "table_limit": "NOT_STATED",
+      "total_score": 56,
+      "unresolved_scope_blocker": true,
+      "venue_name": "Engineering Applications of Artificial Intelligence",
+      "word_limit": "NOT_STATED"
+    }
+  ]
+}

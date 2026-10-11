@@ -1,0 +1,62 @@
+# Gate 5b Protected Assets Preflight
+
+Status: **PASS**
+
+```json
+{
+  "status": "PASS",
+  "purpose": "Gate 5b pre-formal protected-asset baseline",
+  "protected_assets": [
+    {
+      "path": "results/gate4a_formal_decision.json",
+      "exists": true,
+      "sha256": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd"
+    },
+    {
+      "path": "results/gate4b_expanded_formal_decision.json",
+      "exists": true,
+      "sha256": "fa78308c9344d69cfb06474204e9f1ce46af15c8ea6751d2ad0fb2e191584047"
+    },
+    {
+      "path": "results/gate4b_cross_dataset_formal_decision.json",
+      "exists": true,
+      "sha256": "073f10e4f4828a8402d854b366ec3c45e329fde60e2c53403cd6d7a940f556e3"
+    },
+    {
+      "path": "results/gate4b_multiseed_formal_decision.json",
+      "exists": true,
+      "sha256": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa"
+    },
+    {
+      "path": "results/gate4c_formal_decision.json",
+      "exists": true,
+      "sha256": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600"
+    },
+    {
+      "path": "results/gate5a_formal_decision.json",
+      "exists": true,
+      "sha256": "78a1772ae34ee67fe84da1729917fe28d827c512e65a9f4cfa1f51de8eece8c7"
+    },
+    {
+      "path": "reports/gate4b_multiseed_paired_deltas.csv",
+      "exists": true,
+      "sha256": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc"
+    },
+    {
+      "path": "reports/gate4b_multiseed_dataset_summary.csv",
+      "exists": true,
+      "sha256": "16a3bf34ef050c4305316e8b6e9e7bb509dbe170369a4e09450986c431c9cfeb"
+    },
+    {
+      "path": "reports/gate5a_distribution_results.csv",
+      "exists": true,
+      "sha256": "f3d1db235adcc414959a9a4a83e12ea7450a28794609cc8e9bb2eae36d63e595"
+    },
+    {
+      "path": "reports/gate5a_pairwise_deltas.csv",
+      "exists": true,
+      "sha256": "913209971fe76e2e3ad750c7cb11bf1b83b46931e86d92a77a0aa806a6efb03d"
+    }
+  ]
+}
+```

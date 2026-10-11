@@ -1,0 +1,4 @@
+variant,trainable_parameter_count,total_parameter_count,parameter_overhead_ratio,peak_gpu_memory_mib
+official_baseline,0,NA,0.0,NA
+gaussian_head,6168,1142564,0.0054276854195192525,239.2080078125
+student_t_head,6175,1142571,0.005433845244087449,239.2099609375

@@ -1,0 +1,22 @@
+\section{Limitations}
+\label{sec:limitations}
+
+\begin{enumerate}
+    \item The study covers three datasets: ETTh1, Weather, and Electricity.
+    \item It evaluates two backbones, TimePerceiver and PatchTST.
+    \item Fixed test masks support pairing but do not represent every possible missingness realization.
+    \item Several expanded conditions use one probability-head training seed.
+    \item The TimePerceiver multi-seed matrix keeps each official backbone checkpoint fixed.
+    \item PatchTST uses one clean-backbone seed and one probability-head seed.
+    \item The PatchTST study is limited to random missingness at rate 0.3.
+    \item No inferential significance analysis is reported.
+    \item The probability heads model marginal target-element distributions.
+    \item Cross-channel and cross-horizon covariance are not modeled.
+    \item Marginal interval coverage does not establish simultaneous channel or horizon coverage.
+    \item Fixed df=8 is empirically sufficient here but is not a theoretical optimum.
+    \item The complete second-backbone gate fails because Electricity MSE increases by 1.194\%.
+    \item The conformal result concerns one additive split procedure on ETTh1 random-0.3.
+    \item The FiLM result concerns one global-statistics conditioning design and one insertion pattern.
+\end{enumerate}
+
+These boundaries define the evidence rather than post-hoc exceptions. Broader backbone seeds, missingness realizations, distribution shifts, and covariance-aware heads remain open evaluation directions.

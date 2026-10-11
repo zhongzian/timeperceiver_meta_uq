@@ -1,0 +1,15 @@
+{
+  "formal_runner_parameterized_type_rate": true,
+  "historical_minimal_input_mask_applied": false,
+  "historical_minimal_reuse_legal": false,
+  "metric_implementation_sha256": "f26de38c732c1f5084aea45fedd585babb803146d1646b037c92c39a4b27cd53",
+  "metric_implementation_unchanged": true,
+  "probability_head_sha256": "2b9ce791cff14a45697cd0ca499d45749baab309a5e442d4f0a221e1c253450d",
+  "probability_head_unchanged": true,
+  "repair": "shared runner now applies batch_x * mask before every train/validation/test forward",
+  "scheduler_requires_parameterization": true,
+  "status": "PASS",
+  "test_resolution_uses_gate3a_inventory": true,
+  "train_mask_generator_all_types": true,
+  "validation_uses_gate3a_semantics": true
+}

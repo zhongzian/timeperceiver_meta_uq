@@ -1,0 +1,127 @@
+# Gate 4b Multi-Seed Formal Decision
+
+Decision: **STUDENT_T_MULTI_SEED_SIGNAL_POSITIVE**
+
+This is probability-head seed robustness with fixed official backbones, not full end-to-end multi-seed training.
+
+| Gate | Result |
+| --- | --- |
+| Implementation | True |
+| NLL wins | 12/12 |
+| CRPS noninferior | 12/12 |
+| Point noninferior | 12/12 |
+| Full pair pass | 12/12 |
+| Dataset mean pass | 3/3 |
+| Strong signal | True |
+| Ready for Gate 4c planning | True |
+| ENTER_GATE4C | False |
+
+No statistical-significance claim is made.
+
+```json
+{
+  "status": "STUDENT_T_MULTI_SEED_SIGNAL_POSITIVE",
+  "decision": "STUDENT_T_MULTI_SEED_SIGNAL_POSITIVE",
+  "scope": "PROBABILISTIC_HEAD_TRAINING_SEEDS",
+  "FULL_END_TO_END_MULTI_SEED": false,
+  "GATE4B_MULTI_SEED_IMPLEMENTATION_PASS": true,
+  "GATE4B_MULTI_SEED_NLL_WIN_COUNT": 12,
+  "GATE4B_MULTI_SEED_CRPS_NONINFERIOR_COUNT": 12,
+  "GATE4B_MULTI_SEED_POINT_NONINFERIOR_COUNT": 12,
+  "GATE4B_MULTI_SEED_FULL_PAIR_PASS_COUNT": 12,
+  "GATE4B_MULTI_SEED_DATASET_MEAN_PASS_COUNT": 3,
+  "GATE4B_MULTI_SEED_SIGNAL_POSITIVE": true,
+  "READY_FOR_GATE4C_PLANNING": true,
+  "ENTER_GATE4C": false,
+  "implementation_checks": {
+    "datasets_complete_3_of_3": true,
+    "probability_tasks_complete_24_of_24": true,
+    "raw_rows_complete_27": true,
+    "paired_rows_complete_12": true,
+    "all_probability_status_success": true,
+    "corrected_fixed_mask_only": true,
+    "old_unmasked_excluded": true,
+    "validation_nll_selection": true,
+    "test_mask_not_used_for_training": true,
+    "batch_y_unchanged": true,
+    "input_mask_applied": true,
+    "backbone_frozen": true,
+    "optimizer_excludes_backbone": true,
+    "all_core_metrics_finite": true,
+    "all_scales_positive": true,
+    "all_student_df_above_2_01": true,
+    "scheduler_completion_gates": true,
+    "upstream_tracked_diff_empty": true
+  },
+  "dataset_gates": [
+    {
+      "dataset": "etth1",
+      "gaussian_mean_nll": 0.9150137454271317,
+      "student_t_mean_nll": 0.8711133301258087,
+      "gaussian_mean_crps": 0.34201131701479615,
+      "student_t_mean_crps": 0.3376556594769058,
+      "gaussian_mean_mse": 0.41686223447322845,
+      "student_t_mean_mse": 0.4156107231974602,
+      "nll_win_count": 4,
+      "checks": {
+        "mean_nll_win": true,
+        "mean_crps_noninferior": true,
+        "mean_point_noninferior": true,
+        "nll_win_count_at_least_3_of_4": true
+      },
+      "pass": true
+    },
+    {
+      "dataset": "weather",
+      "gaussian_mean_nll": 0.577226385474205,
+      "student_t_mean_nll": 0.10366951860487461,
+      "gaussian_mean_crps": 0.24478849652993434,
+      "student_t_mean_crps": 0.2075436689218636,
+      "gaussian_mean_mse": 0.21030588820576668,
+      "student_t_mean_mse": 0.20981798693537712,
+      "nll_win_count": 4,
+      "checks": {
+        "mean_nll_win": true,
+        "mean_crps_noninferior": true,
+        "mean_point_noninferior": true,
+        "nll_win_count_at_least_3_of_4": true
+      },
+      "pass": true
+    },
+    {
+      "dataset": "electricity",
+      "gaussian_mean_nll": 0.43964414298534393,
+      "student_t_mean_nll": 0.36534789949655533,
+      "gaussian_mean_crps": 0.20936517087912035,
+      "student_t_mean_crps": 0.20739476159183592,
+      "gaussian_mean_mse": 0.16741851717233658,
+      "student_t_mean_mse": 0.16770297661423683,
+      "nll_win_count": 4,
+      "checks": {
+        "mean_nll_win": true,
+        "mean_crps_noninferior": true,
+        "mean_point_noninferior": true,
+        "nll_win_count_at_least_3_of_4": true
+      },
+      "pass": true
+    }
+  ],
+  "thresholds": {
+    "nll_wins": "at least 10 of 12",
+    "crps_noninferior": "at least 10 of 12",
+    "point_noninferior": "at least 11 of 12",
+    "full_pair_pass": "at least 9 of 12",
+    "dataset_mean_pass": "3 of 3"
+  },
+  "limitations": [
+    "Probability-head training seeds only; backbone checkpoints are fixed.",
+    "Validation and test masks are fixed across seeds; train masks vary with experiment seed.",
+    "Gaussian and Student-t are paired within each dataset and seed.",
+    "Only four head-training seeds are included; no statistical-significance claim is made.",
+    "Historical unmasked Gate 4b results are excluded.",
+    "No conformal calibration was run; native intervals are not calibrated intervals."
+  ],
+  "statistical_significance_claim": false,
+  "upstream_tracked_diff_empty": true
+}
+```

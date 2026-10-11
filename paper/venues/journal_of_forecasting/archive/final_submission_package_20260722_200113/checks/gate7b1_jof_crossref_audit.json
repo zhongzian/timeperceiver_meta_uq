@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "main_section_count": 10,
+  "main_table_count": 5,
+  "main_figure_count": 5,
+  "supplement_section_count": 9,
+  "undefined_reference_count": 0,
+  "undefined_main_references": [],
+  "undefined_supplement_references": [],
+  "duplicate_label_count": 0,
+  "missing_asset_count": 0,
+  "missing_graphics": [],
+  "missing_tables": [],
+  "checks": {
+    "main_sections_10": true,
+    "main_tables_5": true,
+    "main_figures_5": true,
+    "expected_main_tables": true,
+    "expected_main_figures": true,
+    "undefined_main_references_zero": true,
+    "undefined_supp_references_zero": true,
+    "duplicate_labels_zero": true,
+    "missing_graphics_zero": true,
+    "missing_tables_zero": true
+  },
+  "pass": true
+}

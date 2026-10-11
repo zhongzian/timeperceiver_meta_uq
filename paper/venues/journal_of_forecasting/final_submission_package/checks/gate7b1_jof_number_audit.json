@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "number_mismatch_count": 0,
+  "number_mismatches": [],
+  "percentage_mismatch_count": 0,
+  "percentage_mismatches": [],
+  "interpretation_mismatch_count": 0,
+  "interpretation_mismatches": [],
+  "evidence_values": {
+    "timeperceiver_nll_wins": 12,
+    "timeperceiver_crps_noninferior": 12,
+    "timeperceiver_point_noninferior": 12,
+    "patchtst_nll_wins": 3,
+    "patchtst_crps_noninferior": 3,
+    "patchtst_point_noninferior": 2,
+    "patchtst_full_pair_pass": 2,
+    "electricity_gaussian_mse": 0.16582922637462616,
+    "electricity_student_mse": 0.16780923306941986,
+    "electricity_delta_mse": 0.001980006694793701
+  },
+  "evidence_checks": {
+    "timeperceiver_counts": true,
+    "patchtst_counts": true,
+    "electricity_gaussian_rounding": true,
+    "electricity_student_rounding": true,
+    "electricity_delta_rounding": true,
+    "point_tradeoff_formal": true
+  },
+  "interpretation_checks": {
+    "threshold_failure_explicit": true,
+    "mc_not_analytic": true,
+    "df_not_optimal": true,
+    "head_seed_scope": true
+  },
+  "metrics_recomputed": false,
+  "pass": true
+}

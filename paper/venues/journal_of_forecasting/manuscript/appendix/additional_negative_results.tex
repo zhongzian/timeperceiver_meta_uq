@@ -1,0 +1,22 @@
+\section{Adapter Ablation}
+\label{supp:adapter}
+The static adapter improves on the official reference in the evaluated ETTh1 condition, while global-statistics FiLM does not improve over matched static capacity.
+\begin{table}[ht]\centering\caption{Static and missingness-aware adapter comparison on ETTh1 random-0.3.}\label{tab:supp-adapter}\scriptsize\input{../manuscript/tables/table3_adapter_ablation}\end{table}
+\begin{figure}[ht]\centering\includegraphics[width=0.78\linewidth]{figA1_gate4a_adapter.pdf}\caption{Adapter MSE comparison.}\label{fig:supp-adapter}\end{figure}
+
+\section{Strict Conformal Negative Result}
+\label{supp:conformal}
+The additive correction uses a temporally separated calibration set and cannot shrink intervals. It widens the already near-nominal native intervals and does not improve absolute coverage error under this protocol.
+\begin{table}[ht]\centering\caption{Formal additive conformal results.}\label{tab:supp-conformal}\scriptsize\input{../manuscript/tables/table6_conformal}\end{table}
+\begin{table}[ht]\centering\caption{Conformal mechanism audit; counterfactual rows are diagnostic only.}\label{tab:supp-conformal-mechanism}\scriptsize\resizebox{\linewidth}{!}{\input{../manuscript/tables/table7_conformal_mechanism}}\end{table}
+\begin{table}[ht]\centering\caption{All retained probability heads and interval procedures.}\label{tab:supp-conformal-all}\scriptsize\resizebox{\linewidth}{!}{\input{../manuscript/tables/tableA2_conformal_all_heads}}\end{table}
+\begin{figure}[ht]\centering
+\includegraphics[width=0.48\linewidth]{fig5_conformal_tradeoff.pdf}
+\includegraphics[width=0.48\linewidth]{fig6_calibration_test_shift.pdf}
+\caption{Interval-width tradeoff and calibration-to-test coverage shift.}\label{fig:supp-conformal}
+\end{figure}
+\begin{figure}[ht]\centering
+\includegraphics[width=0.48\linewidth]{figA2_gate4c_channel_coverage.pdf}
+\includegraphics[width=0.48\linewidth]{figA3_gate4c_horizon_coverage.pdf}
+\caption{Channel- and horizon-level marginal coverage diagnostics.}\label{fig:supp-coverage}
+\end{figure}

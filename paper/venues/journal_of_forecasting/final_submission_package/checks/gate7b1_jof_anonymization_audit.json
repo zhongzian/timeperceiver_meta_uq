@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "review_model": "single-blind",
+  "anonymous_copy_retained": true,
+  "author_information_copy_with_placeholders_retained": true,
+  "source_scanned": true,
+  "compiled_pdf_scanned": true,
+  "placeholder_is_violation": false,
+  "privacy_violation_count": 0,
+  "violations": [],
+  "pass": true
+}

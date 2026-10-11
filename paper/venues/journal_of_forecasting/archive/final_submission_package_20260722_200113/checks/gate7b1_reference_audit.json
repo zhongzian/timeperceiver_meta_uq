@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "original_reference_count": 7,
+  "final_reference_count": 27,
+  "cited_reference_count": 27,
+  "missing_cited_entry_count": 0,
+  "missing_cited_entries": [],
+  "uncited_entry_count": 0,
+  "uncited_entries": [],
+  "duplicate_entry_count": 0,
+  "duplicate_keys": [],
+  "duplicate_titles": [],
+  "duplicate_dois": [],
+  "metadata_failure_count": 0,
+  "metadata_failures": [],
+  "fabricated_metadata_count": 0,
+  "fabricated_metadata": [],
+  "unverified_publication_status_count": 0,
+  "unverified_references": [],
+  "needs_manual_verification_count": 0,
+  "reference_range_pass": true,
+  "pass": true
+}

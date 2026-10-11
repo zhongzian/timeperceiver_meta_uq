@@ -1,0 +1,19 @@
+{
+  "best_epoch": 26,
+  "checkpoint_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__etth1__official_baseline__seed2025__20260701_203054/checkpoints/ETTh1_384_96_TimePerceiver_sl384_pl96_dm256_nl32_ld64_ul1_gf1_nh4_df512_pl12_qs1_sr1.0/checkpoint.pth",
+  "dataset": "etth1",
+  "elapsed_seconds": 300.602,
+  "final_epoch": 36,
+  "mae": 0.39894330501556396,
+  "mape": 9.342019081115723,
+  "metrics_source": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__etth1__official_baseline__seed2025__20260701_203054/results/ETTh1_384_96_TimePerceiver_sl384_pl96_dm256_nl32_ld64_ul1_gf1_nh4_df512_pl12_qs1_sr1.0/metrics.npy",
+  "mode": "official_baseline",
+  "mse": 0.3744615912437439,
+  "mspe": 32982.20703125,
+  "official_protocol": true,
+  "paper_reference": {},
+  "parse_warnings": [],
+  "rmse": 0.6119326949119568,
+  "seed": 2025,
+  "train_exit_code": 0
+}

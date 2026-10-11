@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "official_reference": "Gate 3b-smoke ETTh1/random/0.3/seed2025 first 8 batches",
+  "static_adapter": {"forecast_max_abs_diff": 0.0, "mse_diff": 0.0, "mae_diff": 0.0, "rmse_diff": 0.0},
+  "missingness_aware_adapter": {"forecast_max_abs_diff": 0.0, "mse_diff": 0.0, "mae_diff": 0.0, "rmse_diff": 0.0},
+  "strict_backbone_missing_keys_only_extension": true,
+  "upstream_modified": false
+}

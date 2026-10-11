@@ -1,0 +1,2 @@
+decision,implementation_pass,marginal_gaussian,marginal_student_t,group_benefit,score_noninferior,student_efficiency,signal_positive,enter_expanded
+CONFORMAL_MINIMAL_SIGNAL_NEGATIVE,True,False,False,False,True,True,False,False

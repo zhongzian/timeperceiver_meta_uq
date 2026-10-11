@@ -1,0 +1,25 @@
+{
+  "cuda_visible_devices": "",
+  "note": "nvidia-smi physical indices are listed separately from PyTorch logical indices; UUID exposure is from nvidia-smi.",
+  "nvidia_smi_devices": [
+    {
+      "driver_version": "535.288.01",
+      "memory_free": "2997 MiB",
+      "memory_total": "16376 MiB",
+      "memory_used": "13079 MiB",
+      "name": "NVIDIA GeForce RTX 4080",
+      "nvidia_smi_index": "0",
+      "uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121"
+    },
+    {
+      "driver_version": "535.288.01",
+      "memory_free": "956 MiB",
+      "memory_total": "24564 MiB",
+      "memory_used": "23260 MiB",
+      "name": "NVIDIA GeForce RTX 4090",
+      "nvidia_smi_index": "1",
+      "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+    }
+  ],
+  "pytorch_devices": []
+}

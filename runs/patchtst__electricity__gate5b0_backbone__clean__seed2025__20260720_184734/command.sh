@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/mnt/data/zza/anaconda3/envs/timeperceiver_meta_uq/bin/python /mnt/data/zza/code/timeperceiver_meta_uq/scripts/gate5b_train_backbone.py --task-file /mnt/data/zza/code/timeperceiver_meta_uq/runtime/gate5b_tasks/gate5b_patchtst_backbones__electricity__patchtst_clean_seed2025.json --run-dir /mnt/data/zza/code/timeperceiver_meta_uq/runs/patchtst__electricity__gate5b0_backbone__clean__seed2025__20260720_184734

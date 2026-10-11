@@ -1,0 +1,12 @@
+\begin{tabular}{@{}lrrrrrrrrr@{}}
+\toprule
+Dataset & Backbone & $\Delta$NLL & $\Delta$CRPS & $\Delta$MSE & Rel. MSE & NLL win & CRPS NI & Point NI & Full pair \\
+\midrule
+ETTh1 & TimePerceiver & -0.053587 & -0.007578 & -0.006405 & -1.524\% & Yes & Yes & Yes & Yes \\
+ETTh1 & PatchTST & -0.035317 & -0.002538 & -0.005439 & -1.274\% & Yes & Yes & Yes & Yes \\
+Weather & TimePerceiver & -0.450160 & -0.036981 & -0.001243 & -0.586\% & Yes & Yes & Yes & Yes \\
+Weather & PatchTST & -1.818698 & -0.076205 & -0.050179 & -21.595\% & Yes & Yes & Yes & Yes \\
+Electricity & TimePerceiver & -0.073589 & -0.001656 & 0.000592 & +0.353\% & Yes & Yes & Yes & Yes \\
+Electricity & PatchTST & -0.083433 & -0.001688 & 0.001980 & +1.194\% & Yes & Yes & No & No \\
+\bottomrule
+\end{tabular}

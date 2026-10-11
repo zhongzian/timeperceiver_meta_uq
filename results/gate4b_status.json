@@ -1,0 +1,20 @@
+{
+  "ENTER_GATE4B_EXPANDED_MATRIX": true,
+  "GATE4B_IMPLEMENTATION_PASS": true,
+  "GATE4B_TRAINING_SMOKE_PASS": true,
+  "architecture_audit": "PASS",
+  "checkpoint_audit": "PASS",
+  "data_protocol_audit": "PASS",
+  "formal_queue": "COMPLETE",
+  "metric_space_audit": "PASS",
+  "metric_validation": "PASS",
+  "parity": "PASS",
+  "required_free_mib": 4096,
+  "scheduler": "COMPLETE",
+  "stage": "Gate 4b",
+  "status": "STUDENT_T_MINIMAL_SIGNAL_POSITIVE",
+  "training_smoke": "PASS",
+  "GATE4B_STUDENT_T_SIGNAL_POSITIVE": true,
+  "corrected_fixed_mask_protocol": true,
+  "historical_unmasked_minimal_valid": false
+}

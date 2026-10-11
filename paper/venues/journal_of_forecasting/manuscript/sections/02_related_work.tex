@@ -1,0 +1,14 @@
+\section{Related Work}
+\label{sec:related-work}
+
+\subsection{Probabilistic forecasting and proper scores}
+DeepAR established autoregressive probabilistic forecasting at scale \citep{salinas2020deepar}; spline quantile functions and diffusion-based TimeGrad broadened the available forecast distributions \citep{gasthaus2019spline,rasul2021timegrad}. Proper-score methodology distinguishes distributional quality from point accuracy \citep{matheson1976crps,gneiting2007proper,gneiting2007calibration,gneiting2014probabilistic}. We report NLL and a sampled CRPS implementation, with interval scores and coverage--width diagnostics as complementary summaries \citep{winkler1972interval,jordan2019scoringrules}.
+
+\subsection{Heavy-tailed predictive distributions}
+The Student distribution originates from small-sample inference \citep{student1908} and has long been used for robust modeling because heavier tails reduce the penalty assigned to extreme residuals relative to a Gaussian model \citep{lange1989robust}. Our use is narrower: we replace only the marginal forecast likelihood while keeping trainable location and scale capacity matched. The work neither introduces a new distribution nor learns a separate tail parameter for the final method.
+
+\subsection{Forecasting with incomplete histories}
+GRU-D, BRITS, GP-VAE, CSDI, and SAITS represent influential approaches to irregular or missing time-series data \citep{che2018grud,cao2018brits,fortuin2020gpvae,tashiro2021csdi,du2023saits}. TimePerceiver directly motivates the backbone and missing-history setting studied here \citep{lee2025timeperceiver}. Our focus differs from imputation-only evaluation: future targets remain intact, and the forecast distribution is scored after fixed historical masking.
+
+\subsection{Forecasting backbones, calibration, and comparison}
+Informer, Autoformer, FEDformer, the Temporal Fusion Transformer, and PatchTST illustrate diverse sequence-modeling choices for long-horizon forecasting \citep{zhou2021informer,wu2021autoformer,zhou2022fedformer,lim2021tft,nie2023patchtst}. Post-hoc probabilistic calibration and conformal intervals offer complementary tools \citep{kuleshov2018calibrated,romano2019cqr,stankeviciute2021conformal}, although dependent time series require careful temporal splits. Finally, paired forecast comparisons should separate descriptive consistency from formal inferential testing \citep{diebold1995comparison,giacomini2006conditional}; the present study reports no formal significance test.

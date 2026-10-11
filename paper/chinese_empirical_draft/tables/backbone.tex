@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering\small
+\caption{固定 Student-t 减 Gaussian 的配对差值（表中三项均为差值）。种子2025，random 0.3，$H=96$。}\label{tab:backbone}
+\begin{tabular}{llrrr}
+\toprule
+数据集 & 分布头/主干 & NLL & CRPS & MSE \\
+\midrule
+ETTh1 & TimePerceiver & -0.053587 & -0.007578 & -0.006405 \\
+ETTh1 & PatchTST & -0.035317 & -0.002538 & -0.005439 \\
+Weather & TimePerceiver & -0.450160 & -0.036981 & -0.001243 \\
+Weather & PatchTST & -1.818698 & -0.076205 & -0.050179 \\
+Electricity & TimePerceiver & -0.073589 & -0.001656 & +0.000592 \\
+Electricity & PatchTST & -0.083433 & -0.001688 & +0.001980 \\
+\bottomrule
+\end{tabular}
+\end{table*}

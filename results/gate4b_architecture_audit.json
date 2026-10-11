@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "official_model_class": "upstream TimePerceiver.Model",
+  "query_cross_attention_output": "[B, C, future_patch_count, d_model]",
+  "output_projection": "Linear(d_model=256, patch_len=12)",
+  "official_forecast_shape": "[B, pred_len=96, C=7]",
+  "selected_extension_point": "query_cross_attention output before output_projection",
+  "location_initialization": "copy official output_projection weight and bias",
+  "backbone_frozen": true,
+  "gate4a_adapter_used": false,
+  "upstream_modified": false,
+  "distribution_assumption": "conditionally independent univariate marginals per horizon and channel"
+}

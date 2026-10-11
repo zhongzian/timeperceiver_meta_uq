@@ -1,0 +1,58 @@
+{
+  "stage": "Gate 4c split audit",
+  "status": "PASS",
+  "checks": {
+    "official_validation_window_count_2785": true,
+    "embargo_rows_479": true,
+    "selection_windows_at_least_200": true,
+    "calibration_windows_at_least_200": true,
+    "raw_timestamp_overlap_zero": true,
+    "future_target_overlap_zero": true,
+    "window_index_overlap_zero": true
+  },
+  "dataset": "etth1",
+  "official_validation_raw_range": [
+    8256,
+    11520
+  ],
+  "official_validation_raw_dates": [
+    "2017-06-10 00:00:00",
+    "2017-10-23 23:00:00"
+  ],
+  "selection_raw_range": [
+    8256,
+    9648
+  ],
+  "embargo_raw_range": [
+    9648,
+    10127
+  ],
+  "calibration_raw_range": [
+    10127,
+    11520
+  ],
+  "seq_len": 384,
+  "pred_len": 96,
+  "embargo_rows": 479,
+  "selection_fraction_of_usable_validation": 0.5,
+  "selection_window_count": 913,
+  "calibration_window_count": 914,
+  "selection_indices_sha256": "aef95959edfc00a788fac048d8f008fa3b55e66ee9bd316336ece09c1337f527",
+  "calibration_indices_sha256": "1457e831c82e5565a5adce3640d1ae732cbfb5bef44d606fb6f19a05246f2e22",
+  "selection_window_index_range": [
+    0,
+    912
+  ],
+  "calibration_window_index_range": [
+    1871,
+    2784
+  ],
+  "raw_timestamp_overlap_count": 0,
+  "future_target_overlap_count": 0,
+  "window_index_overlap_count": 0,
+  "window_definition": "history and future target must be fully contained in its raw-time segment",
+  "created_at": "2026-07-18T16:42:20.293580",
+  "selection_window_indices_path": "artifacts/gate4c_splits/etth1_random_rate0.3_seed2025/selection_window_indices.npy",
+  "calibration_window_indices_path": "artifacts/gate4c_splits/etth1_random_rate0.3_seed2025/calibration_window_indices.npy",
+  "metadata_path": "artifacts/gate4c_splits/etth1_random_rate0.3_seed2025/metadata.json"
+}

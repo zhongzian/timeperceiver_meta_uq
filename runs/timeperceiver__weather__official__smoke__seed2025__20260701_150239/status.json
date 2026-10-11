@@ -1,0 +1,12 @@
+{
+  "checkpoint": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__weather__official__smoke__seed2025__20260701_150239/checkpoints/last.pt",
+  "dataset": "weather",
+  "duration_seconds": 1.027,
+  "experiment_id": "timeperceiver__weather__official__smoke__seed2025__20260701_150239",
+  "finished_at": "2026-07-01T15:02:40",
+  "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__weather__official__smoke__seed2025__20260701_150239/metrics.json",
+  "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__weather__official__smoke__seed2025__20260701_150239",
+  "smoke": true,
+  "started_at": "2026-07-01T15:02:39",
+  "status": "SUCCESS"
+}

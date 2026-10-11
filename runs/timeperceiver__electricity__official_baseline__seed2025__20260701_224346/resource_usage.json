@@ -1,0 +1,14 @@
+{
+  "cuda_visible_devices": "1",
+  "dataset": "electricity",
+  "elapsed_seconds": 11,
+  "end_time": "2026-07-01T22:44:03+08:00",
+  "experiment_id": "timeperceiver__electricity__official_baseline__seed2025__20260701_224346",
+  "gpu_after_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260701_224346/gpu_after.txt",
+  "gpu_before_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260701_224346/gpu_before.txt",
+  "gpu_policy": "wait for target CUDA_VISIBLE_DEVICES mapping to have enough free memory; pass --gpu 0 to official run.py",
+  "target_gpu_name": "",
+  "target_nvidia_smi_index": "0",
+  "oom_retry_count": 0,
+  "start_time": "2026-07-01T22:43:52+08:00"
+}

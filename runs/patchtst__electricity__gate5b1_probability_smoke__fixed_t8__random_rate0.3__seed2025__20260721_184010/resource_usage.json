@@ -1,0 +1,7 @@
+{
+  "peak_allocated_mib": 1759.3779296875,
+  "peak_reserved_mib": 1942.0,
+  "elapsed_seconds": 12.172784328460693,
+  "batch_size": 8,
+  "device": "cuda"
+}

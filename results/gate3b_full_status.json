@@ -1,0 +1,12 @@
+{
+  "stage": "Gate 3b-full",
+  "status": "PASS",
+  "logical_tasks": 48,
+  "succeeded": 48,
+  "running": 0,
+  "waiting_resource": 0,
+  "failed": 0,
+  "GATE3B_FULL_PASS": true,
+  "ENTER_GATE4": true,
+  "seed_count": 1
+}

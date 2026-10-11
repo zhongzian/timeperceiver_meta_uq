@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/mnt/data/zza/anaconda3/envs/timeperceiver_meta_uq/bin/python /mnt/data/zza/code/timeperceiver_meta_uq/scripts/gate5b_train_probability.py --task-file /mnt/data/zza/code/timeperceiver_meta_uq/runtime/gate5b_probability_smoke_tasks/etth1__fixed_t8__random_rate0.3_seed2025.json --run-dir /mnt/data/zza/code/timeperceiver_meta_uq/runs/patchtst__etth1__gate5b1_probability_smoke__fixed_t8__random_rate0.3__seed2025__20260721_184028

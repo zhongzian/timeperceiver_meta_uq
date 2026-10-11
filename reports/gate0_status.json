@@ -1,0 +1,27 @@
+{
+  "gate": "Gate 0",
+  "status": "PASS",
+  "timestamp": "2026-07-01T12:51:11",
+  "project_root": "/mnt/data/zza/code/timeperceiver_meta_uq",
+  "conda_env": "timeperceiver_meta_uq",
+  "python_version": "Python 3.9.25",
+  "torch_version": "2.1.0+cu121",
+  "torch_cuda_runtime": "12.1",
+  "cuda_available": true,
+  "gpu_count": 2,
+  "repository_path": "/mnt/data/zza/code/timeperceiver_meta_uq/upstream/TimePerceiver",
+  "repository_commit": "7e30cc07b51c709f408409fd60a34c81ae8990be",
+  "agents_read": [
+    "/mnt/data/zza/code/AGENTS.md",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/AGENTS.md"
+  ],
+  "checks": {
+    "conda_env_exists": true,
+    "torch_installed": true,
+    "cuda_tiny_tensor": true,
+    "imports_ok": true,
+    "compileall_ok": true
+  },
+  "blockers": [],
+  "next_gate": "Gate 1"
+}

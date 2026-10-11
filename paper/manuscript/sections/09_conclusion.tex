@@ -1,0 +1,6 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+The evidence supports fixed heavy-tailed probabilistic forecasting under missing historical observations. The fixed missing-history protocol controls masks, normalization, model selection, and target access. On TimePerceiver, Student-$t$ variants improve NLL and CRPS across three datasets and four probability-head training seeds. The distribution ablation supports fixed df=8 as sufficient under the evaluated setting.
+
+On PatchTST, the fixed Student-$t$ head improves NLL and CRPS on all three datasets. However, the Electricity point-prediction tradeoff prevents the complete second-backbone gate from being positive. The final evidence therefore supports probabilistic-score robustness across the two evaluated backbones, but it does not establish metric-wise invariance beyond them.

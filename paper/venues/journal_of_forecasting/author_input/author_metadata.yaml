@@ -1,0 +1,193 @@
+manuscript:
+  title: "Fixed Heavy-Tailed Probabilistic Forecasting under Missing Historical Observations"
+  short_title: "Heavy-Tailed Forecasts with Missingness"
+  article_type: "Research Article"
+
+authors:
+  - author_id: A1
+    given_name: "Zian"
+    middle_name: ""
+    family_name: "Zhong"
+    display_name: "Zian Zhong"
+    native_name: "钟子安"
+    name_order_confirmed: false
+    email: AUTHOR_INPUT_REQUIRED
+    orcid: AUTHOR_INPUT_REQUIRED
+    affiliations:
+      - AFF1
+    is_corresponding_author: AUTHOR_CONFIRMATION_REQUIRED
+    is_co_first_author: AUTHOR_CONFIRMATION_REQUIRED
+    author_order: 1
+
+  - author_id: A2
+    given_name: "Jianqun"
+    middle_name: ""
+    family_name: "Cui"
+    display_name: "Jianqun Cui"
+    native_name: ""
+    relationship_note: "Supervisor of Zian Zhong"
+    authorship_inclusion_confirmed: false
+    name_order_confirmed: false
+    email: AUTHOR_INPUT_REQUIRED
+    orcid: AUTHOR_INPUT_REQUIRED
+    affiliations:
+      - AFF1
+    is_corresponding_author: AUTHOR_CONFIRMATION_REQUIRED
+    is_co_first_author: AUTHOR_CONFIRMATION_REQUIRED
+    author_order: 2
+
+affiliations:
+  - affiliation_id: AFF1
+    department: AUTHOR_INPUT_REQUIRED
+    institution: AUTHOR_INPUT_REQUIRED
+    city: AUTHOR_INPUT_REQUIRED
+    state_or_region: AUTHOR_INPUT_REQUIRED
+    postal_code: AUTHOR_INPUT_REQUIRED
+    country: "China"
+    institution_name_confirmed: false
+
+corresponding_author:
+  author_id: AUTHOR_INPUT_REQUIRED
+  postal_address: AUTHOR_INPUT_REQUIRED
+  email_confirmed: false
+  all_authors_confirm_corresponding_author: false
+
+funding:
+  funded: true
+
+  funders:
+    - funder_name: "National Natural Science Foundation of China"
+      grant_numbers:
+        - "62272189"
+        - "62372206"
+        - "62402193"
+      recipient_author_ids: AUTHOR_INPUT_REQUIRED
+      verified_by_authors: false
+
+    - funder_name: "Hubei Provincial Natural Science Foundation of China"
+      grant_numbers:
+        - "2024AFB421"
+      recipient_author_ids: AUTHOR_INPUT_REQUIRED
+      verified_by_authors: false
+
+    - funder_name: "Fundamental Research Funds for the Central Universities, Central China Normal University"
+      grant_numbers:
+        - "XJ2026001501"
+      recipient_author_ids: AUTHOR_INPUT_REQUIRED
+      verified_by_authors: false
+
+  statement: >-
+    This work was supported by the National Natural Science Foundation
+    of China (Nos. 62272189, 62372206, and 62402193), the Hubei
+    Provincial Natural Science Foundation of China (No. 2024AFB421),
+    and the Fundamental Research Funds for the Central Universities,
+    Central China Normal University (No. XJ2026001501).
+
+  statement_confirmed: false
+
+acknowledgements:
+  required: AUTHOR_CONFIRMATION_REQUIRED
+  text: AUTHOR_INPUT_REQUIRED
+  all_authors_confirmed: false
+
+conflict_of_interest:
+  has_conflict: AUTHOR_CONFIRMATION_REQUIRED
+  statement: AUTHOR_INPUT_REQUIRED
+  all_authors_confirmed: false
+
+author_contributions:
+  taxonomy: "CRediT"
+
+  contributions:
+    conceptualization: []
+    methodology: []
+    software: []
+    validation: []
+    formal_analysis: []
+    investigation: []
+    resources: []
+    data_curation: []
+    writing_original_draft: []
+    writing_review_editing: []
+    visualization: []
+    supervision: []
+    project_administration: []
+    funding_acquisition: []
+
+  all_authors_have_at_least_one_role: false
+  all_authors_confirmed: false
+
+data_availability:
+  statement_approved: false
+  dataset_sources_verified: false
+  final_statement: AUTHOR_INPUT_REQUIRED
+
+code_availability:
+  release_plan: AUTHOR_INPUT_REQUIRED
+  repository_url: AUTHOR_INPUT_REQUIRED
+  anonymous_review_url: AUTHOR_INPUT_REQUIRED
+  archive_doi: ""
+  final_statement: AUTHOR_INPUT_REQUIRED
+  statement_approved: false
+
+ethics:
+  human_or_animal_subjects_involved: AUTHOR_CONFIRMATION_REQUIRED
+  identifiable_personal_data_involved: AUTHOR_CONFIRMATION_REQUIRED
+  ethics_approval_required: AUTHOR_CONFIRMATION_REQUIRED
+  approval_body: ""
+  approval_number: ""
+  statement: AUTHOR_INPUT_REQUIRED
+  all_authors_confirmed: false
+
+generative_ai:
+  tools_used:
+    - "OpenAI ChatGPT"
+    - "OpenAI Codex"
+
+  purposes:
+    - "language editing"
+    - "manuscript organization"
+    - "code-development assistance"
+
+  human_review_completed: AUTHOR_CONFIRMATION_REQUIRED
+  all_authors_approve_disclosure: false
+  disclosure_version_date: AUTHOR_INPUT_REQUIRED
+
+  proposed_statement: >-
+    During the preparation of this manuscript, the authors used
+    OpenAI ChatGPT and Codex for language editing, manuscript
+    organization, and code-development assistance. All generated
+    content and code changes were reviewed and verified by the
+    authors, who remain fully responsible for the scientific claims,
+    analyses, interpretation, and final manuscript. No AI system is
+    listed as an author.
+
+  final_statement: AUTHOR_INPUT_REQUIRED
+
+submission_confirmations:
+  jianqun_cui_authorship_confirmed: false
+  author_order_confirmed: false
+  corresponding_author_confirmed: false
+  not_under_review_elsewhere: AUTHOR_CONFIRMATION_REQUIRED
+  all_authors_approved_manuscript: AUTHOR_CONFIRMATION_REQUIRED
+  all_authors_approved_submission: AUTHOR_CONFIRMATION_REQUIRED
+  data_statements_accurate: AUTHOR_CONFIRMATION_REQUIRED
+  code_statements_accurate: AUTHOR_CONFIRMATION_REQUIRED
+  funding_statement_accurate: AUTHOR_CONFIRMATION_REQUIRED
+  conflicts_fully_disclosed: AUTHOR_CONFIRMATION_REQUIRED
+  ai_disclosure_approved: AUTHOR_CONFIRMATION_REQUIRED
+
+reviewers:
+  suggestions_required_by_portal: MANUAL_PORTAL_VERIFICATION_REQUIRED
+  suggested_reviewers: []
+  opposed_reviewers: []
+
+portal:
+  exact_article_type: MANUAL_PORTAL_VERIFICATION_REQUIRED
+  subject_categories: []
+  keywords_confirmed: false
+  open_access_choice: AUTHOR_INPUT_REQUIRED
+  supplementary_upload_category: MANUAL_PORTAL_VERIFICATION_REQUIRED
+  title_page_upload_category: MANUAL_PORTAL_VERIFICATION_REQUIRED
+  AI_disclosure_field: MANUAL_PORTAL_VERIFICATION_REQUIRED
+  data_availability_field: MANUAL_PORTAL_VERIFICATION_REQUIRED

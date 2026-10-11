@@ -1,0 +1,14 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Why heavy tails help}
+The residual-bin analyses show that NLL gains are concentrated in extreme Gaussian-residual regions on both evaluated backbones. This pattern is consistent with a heavier-tailed forecast assigning less implausibly small density to large errors. It is descriptive, not causal proof: the experiments do not manipulate tail behavior independently of the likelihood family.
+
+\subsection{Why a fixed degree of freedom can suffice}
+A fixed $\df$ provides robust tails without adding learned shape parameters. One possible explanation for the learned-$\df$ result is that per-channel flexibility may add estimation variance or be weakly identified under the available head-training data. This remains a hypothesis. The evidence only shows that learned $\df$ did not yield a consistent additional gain in this ablation.
+
+\subsection{Proper-score versus point tradeoff}
+The PatchTST Electricity case illustrates why distributional and point objectives must be reported together. Better NLL and CRPS can coexist with a small MSE deterioration because the proper scores evaluate the predictive distribution while MSE evaluates its center. The +1.194\% deterioration exceeds the fixed 1\% tolerance, so it is a genuine protocol-level tradeoff rather than a rounding artifact.
+
+\subsection{Practical interpretation}
+The supported use case is a forecasting system that requires marginal predictive uncertainty under incomplete historical inputs and can retain paired fixed-mask evaluation. Fixed \StudentT{} is attractive here because it changes the likelihood without increasing trainable head capacity. This interpretation does not imply a particular business deployment, joint uncertainty, or invariant point performance across architectures.

@@ -1,0 +1,11 @@
+{
+  "status": "PLANNING_PASS",
+  "logical_tasks": 48,
+  "reused": 0,
+  "active": 48,
+  "checkpoint_audit": "PASS",
+  "mask_audit": "PASS",
+  "queue_validation": "PASS",
+  "eval_only": true,
+  "full_test": true
+}

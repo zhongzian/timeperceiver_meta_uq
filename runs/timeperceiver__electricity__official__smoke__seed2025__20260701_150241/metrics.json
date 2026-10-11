@@ -1,0 +1,24 @@
+{
+  "checkpoint": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official__smoke__seed2025__20260701_150241/checkpoints/last.pt",
+  "dataset": "electricity",
+  "duration_seconds": 8.28,
+  "eval_losses": [
+    {
+      "loss": 1.3273465633392334,
+      "split": "val"
+    },
+    {
+      "loss": 0.8548986315727234,
+      "split": "test"
+    }
+  ],
+  "experiment_id": "timeperceiver__electricity__official__smoke__seed2025__20260701_150241",
+  "num_parameters": 19212,
+  "smoke": true,
+  "test_mae": 0.7238536477088928,
+  "test_mape": 5.575686931610107,
+  "test_mse": 0.8548985719680786,
+  "test_mspe": 11446.271484375,
+  "test_rmse": 0.9246072769165039,
+  "train_one_step_loss": 1.8044019937515259
+}

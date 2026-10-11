@@ -1,0 +1,22 @@
+{
+  "status": "STUDENT_T_MINIMAL_SIGNAL_POSITIVE",
+  "GATE4B_IMPLEMENTATION_PASS": true,
+  "GATE4B_STUDENT_T_NLL_BEATS_GAUSSIAN": true,
+  "GATE4B_STUDENT_T_CRPS_NONINFERIOR": true,
+  "GATE4B_STUDENT_T_POINT_NONINFERIOR": true,
+  "GATE4B_STUDENT_T_SIGNAL_POSITIVE": true,
+  "ENTER_GATE4B_EXPANDED_MATRIX": true,
+  "seed_count": 1,
+  "deltas": {
+    "test_mean_nll": -0.06505125761032104,
+    "test_crps": -0.004199406598647093,
+    "test_mse": 0.0009745657444000244,
+    "test_mae": -0.0011231601238250732,
+    "test_rmse": 0.0008092754025652571,
+    "mean_absolute_coverage_error": -0.02240065038204192,
+    "mean_interval_score": 0.03157207369804382,
+    "mean_interval_width": -0.1407274454832077,
+    "relative_crps_improvement": 0.013682911345228173,
+    "relative_mse_improvement": -0.00269169243999973
+  }
+}

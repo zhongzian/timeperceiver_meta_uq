@@ -1,0 +1,12 @@
+{
+  "cuda_visible_devices": "1",
+  "elapsed_seconds": 300.602,
+  "end_time": "2026-07-01T20:35:58",
+  "monitor_samples": 30,
+  "nvidia_smi_after": "0, GPU-c88b779d-77c7-92b9-e031-943bae990121, NVIDIA GeForce RTX 4080, 16376 MiB, 5187 MiB, 10889 MiB\n1, GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb, NVIDIA GeForce RTX 4090, 24564 MiB, 7917 MiB, 16299 MiB",
+  "nvidia_smi_before": "0, GPU-c88b779d-77c7-92b9-e031-943bae990121, NVIDIA GeForce RTX 4080, 16376 MiB, 6533 MiB, 9542 MiB\n1, GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb, NVIDIA GeForce RTX 4090, 24564 MiB, 8765 MiB, 15452 MiB",
+  "official_gpu_argument": 0,
+  "peak_memory_used_mib": 9457,
+  "selected_gpu_index": 1,
+  "start_time": "2026-07-01T20:30:55"
+}

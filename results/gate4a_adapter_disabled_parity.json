@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "mse_diff": 0.0,
+  "mae_diff": 0.0,
+  "rmse_diff": 0.0,
+  "forecast_max_abs_diff": 0.0,
+  "note": "Official project wrapper import was isolated from upstream; no training was run."
+}

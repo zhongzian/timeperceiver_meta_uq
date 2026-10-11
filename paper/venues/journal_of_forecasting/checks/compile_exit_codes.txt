@@ -1,0 +1,5 @@
+manuscript=0
+anonymous_manuscript=0
+supplementary=0
+title_page=0
+cover_letter=0

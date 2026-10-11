@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "fixed_student_t_claim": "bounded_to_evaluated_missing_history_protocol",
+  "learnable_df_claim": "no_consistent_additional_benefit_in_ablation",
+  "cross_backbone_claim": "nll_and_crps_direction_on_two_evaluated_backbones_only",
+  "electricity_point_tradeoff": "explicitly_disclosed",
+  "statistical_significance_claim": false,
+  "sota_claim": false,
+  "unsupported_claim_count": 0,
+  "unsupported_claims": [],
+  "prohibited_wording_count": 0,
+  "prohibited_wording": [],
+  "missing_required_scope_count": 0,
+  "missing_required_scope": {},
+  "pass": true
+}

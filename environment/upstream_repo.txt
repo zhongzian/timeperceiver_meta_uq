@@ -1,0 +1,12 @@
+official_url=https://github.com/efficient-learning-lab/TimePerceiver.git
+clone_path=/mnt/data/zza/code/timeperceiver_meta_uq/upstream/TimePerceiver
+branch=main
+head_commit=7e30cc07b51c709f408409fd60a34c81ae8990be
+remote_head_commit=7e30cc07b51c709f408409fd60a34c81ae8990be
+clone_fetch_time=20260630_202933
+git_status_short:
+CLEAN
+git_log_1:
+7e30cc0 Update README.md
+license=MIT License  Copyright (c) 2025 Efficient Learning Lab @ SKKU  Permission is hereby granted, free of charge, to any person obtaining a copy 
+has_uncommitted_changes=false

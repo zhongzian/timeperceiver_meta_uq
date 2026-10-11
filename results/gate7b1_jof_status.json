@@ -1,0 +1,51 @@
+{
+  "status": "JOURNAL_OF_FORECASTING_ADAPTATION_COMPLETE",
+  "target_venue": "Journal of Forecasting",
+  "GATE7B1_GUIDELINE_AUDIT_PASS": true,
+  "GATE7B1_FORECASTING_POSITIONING_PASS": true,
+  "GATE7B1_REFERENCE_AUDIT_PASS": true,
+  "GATE7B1_CLAIM_AUDIT_PASS": true,
+  "GATE7B1_NUMBER_AUDIT_PASS": true,
+  "GATE7B1_CROSS_REFERENCE_PASS": true,
+  "GATE7B1_ANONYMIZATION_PASS": true,
+  "GATE7B1_COMPILE_PASS": true,
+  "GATE7B1_SUBMISSION_PACKAGE_PASS": true,
+  "GATE7B1_FORMAL_INTEGRITY_PASS": true,
+  "author_input_required_count": 14,
+  "manual_portal_verification_count": 7,
+  "GATE7B1_JOF_ADAPTATION_PASS": true,
+  "READY_FOR_AUTHOR_METADATA": true,
+  "READY_FOR_SUBMISSION_PORTAL": false,
+  "training_run": false,
+  "inference_run": false,
+  "gpu_used": false,
+  "scheduler_started": false,
+  "formal_evidence_modified": false,
+  "venue_neutral_manuscript_modified": false,
+  "gate7a_package_modified": false,
+  "submission_package_file_count": 67,
+  "submission_tarball": "paper/venues/journal_of_forecasting/journal_of_forecasting_submission_package.tar.gz",
+  "submission_tarball_sha256": "dd921f36cfc95b12e500231cf6124310eee4fc608c25a60ad328661a8a20049f",
+  "upstreams": {
+    "TimePerceiver": {
+      "path": "upstream/TimePerceiver",
+      "commit": "7e30cc07b51c709f408409fd60a34c81ae8990be",
+      "tracked_diff_empty": true,
+      "tracked_changes": [],
+      "untracked": [
+        "__pycache__/",
+        "data_provider/__pycache__/",
+        "exp/__pycache__/",
+        "models/__pycache__/",
+        "utils/__pycache__/"
+      ]
+    },
+    "PatchTST": {
+      "path": "upstream/PatchTST",
+      "commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+      "tracked_diff_empty": true,
+      "tracked_changes": [],
+      "untracked": []
+    }
+  }
+}

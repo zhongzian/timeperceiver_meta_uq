@@ -1,0 +1,22 @@
+{
+  "status": "SUCCESS",
+  "stage": "gate5b0_backbone",
+  "substage": "deterministic_clean_backbone",
+  "experiment_id": "patchtst__electricity__gate5b0_backbone__clean__seed2025__20260720_184734",
+  "backbone": "patchtst",
+  "dataset": "electricity",
+  "patchtst_upstream_commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+  "timeperceiver_upstream_commit": "7e30cc07b51c709f408409fd60a34c81ae8990be",
+  "experiment_seed": 2025,
+  "smoke_only": false,
+  "best_epoch": 55,
+  "best_validation_mse": 0.11014649314138125,
+  "test_used_for_model_selection": false,
+  "best_checkpoint": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/patchtst__electricity__gate5b0_backbone__clean__seed2025__20260720_184734/checkpoints/best_backbone.pt",
+  "best_checkpoint_sha256": "716f715eee0798b373135b81bb70165c2df698f57534b7ae18e5b6bc03b1009d",
+  "checkpoint_strict_reload": true,
+  "no_leakage": true,
+  "finished_at": "2026-07-21T18:19:05+0800",
+  "error_type": "",
+  "error_summary": ""
+}

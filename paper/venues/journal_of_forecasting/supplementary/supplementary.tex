@@ -1,0 +1,20 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,array,booktabs,graphicx,longtable}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\newcommand{\citep}[1]{\cite{#1}}
+\makeatletter
+\renewcommand{\@cite}[2]{(#1\if@tempswa, #2\fi)}
+\makeatother
+\input{../manuscript/macros}
+\setlength{\emergencystretch}{4em}
+\graphicspath{{../manuscript/figures/}}
+\begin{document}
+\title{Supplementary Material for ``\PaperTitle''}
+\author{[AUTHOR INPUT REQUIRED]}
+\date{}
+\maketitle
+\input{../manuscript/appendix/appendix}
+\input{../manuscript/references_list}
+\end{document}

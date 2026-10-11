@@ -1,0 +1,13 @@
+dataset,head,qq_rmse,sample_count,variant
+etth1,Gaussian,0.13858195234549328,200000,gaussian_head
+etth1,Laplace,0.051157261109699426,200000,laplace_head
+etth1,Fixed-t8,0.07853820205486153,200000,student_t_fixed_df8_head
+etth1,Learnable-t,0.07359677408322053,200000,student_t_head
+weather,Gaussian,0.3472943947955005,200000,gaussian_head
+weather,Laplace,0.2776967410803429,200000,laplace_head
+weather,Fixed-t8,0.260471756999364,200000,student_t_fixed_df8_head
+weather,Learnable-t,0.25568169892171994,200000,student_t_head
+electricity,Gaussian,0.1595292976289986,200000,gaussian_head
+electricity,Laplace,0.1028174807297083,200000,laplace_head
+electricity,Fixed-t8,0.09851311813144294,200000,student_t_fixed_df8_head
+electricity,Learnable-t,0.09846768576643519,200000,student_t_head

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "GATE6_ANONYMIZATION_PASS": true,
+  "generated_at": "2026-07-22T15:16:47+08:00",
+  "submission_directory": "paper/submission",
+  "scanned_text_file_count": 62,
+  "anonymization_violation_count": 0,
+  "patterns": [
+    "project_local_path",
+    "local_username",
+    "absolute_local_path",
+    "personal_email",
+    "github_account_url",
+    "pid_record",
+    "gpu_uuid",
+    "internal_queue_path",
+    "internal_run_path",
+    "internal_experiment_timestamp",
+    "hostname_record"
+  ],
+  "violations": []
+}

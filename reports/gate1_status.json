@@ -1,0 +1,128 @@
+{
+  "blockers": [],
+  "conda_env": "timeperceiver_meta_uq",
+  "data_results": {
+    "electricity": {
+      "bytes": 95581762,
+      "csv": {
+        "columns": 322,
+        "has_date": true,
+        "has_ot": true,
+        "header_first": [
+          "date",
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "path": "/mnt/data/zza/code/timeperceiver_meta_uq/data/electricity/electricity.csv",
+        "rows": 26304
+      },
+      "path": "/mnt/data/zza/code/timeperceiver_meta_uq/data/electricity/electricity.csv",
+      "sha256": "7e45845d54c5219bad0ae6bc1b5316cf8ff9cead5d33fa998a5a51c2e4a497ad",
+      "source_member": "dataset/electricity/electricity.csv",
+      "status": "reused"
+    },
+    "etth1": {
+      "bytes": 2589657,
+      "csv": {
+        "columns": 8,
+        "has_date": true,
+        "has_ot": true,
+        "header_first": [
+          "date",
+          "HUFL",
+          "HULL",
+          "MUFL",
+          "MULL"
+        ],
+        "path": "/mnt/data/zza/code/timeperceiver_meta_uq/data/ETT-small/ETTh1.csv",
+        "rows": 17420
+      },
+      "path": "/mnt/data/zza/code/timeperceiver_meta_uq/data/ETT-small/ETTh1.csv",
+      "sha256": "f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066",
+      "source_member": "dataset/ETT-small/ETTh1.csv",
+      "status": "reused"
+    },
+    "weather": {
+      "bytes": 7235425,
+      "csv": {
+        "columns": 22,
+        "has_date": true,
+        "has_ot": true,
+        "header_first": [
+          "date",
+          "p (mbar)",
+          "T (degC)",
+          "Tpot (K)",
+          "Tdew (degC)"
+        ],
+        "path": "/mnt/data/zza/code/timeperceiver_meta_uq/data/weather/weather.csv",
+        "rows": 52696
+      },
+      "path": "/mnt/data/zza/code/timeperceiver_meta_uq/data/weather/weather.csv",
+      "sha256": "34ee981d07313e51da2a50bb600072c8ae4a69cb4b0651f4cb93a069d7a2ba63",
+      "source_member": "dataset/weather/weather.csv",
+      "status": "reused"
+    }
+  },
+  "datasets_passed": [
+    "electricity",
+    "etth1",
+    "weather"
+  ],
+  "datasets_requested": [
+    "etth1",
+    "weather",
+    "electricity"
+  ],
+  "gate": "Gate 1",
+  "next_gate": "Gate 2",
+  "notes": [
+    "Smoke tests use tiny smoke-only configs and are not formal reproduction results.",
+    "Official model files were not modified."
+  ],
+  "official_commit": "7e30cc07b51c709f408409fd60a34c81ae8990be",
+  "official_repo": "/mnt/data/zza/code/timeperceiver_meta_uq/upstream/TimePerceiver",
+  "project_root": "/mnt/data/zza/code/timeperceiver_meta_uq",
+  "smoke_results": [
+    {
+      "checkpoint": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__etth1__official__smoke__seed2025__20260701_150238/checkpoints/last.pt",
+      "dataset": "etth1",
+      "duration_seconds": 0.754,
+      "experiment_id": "timeperceiver__etth1__official__smoke__seed2025__20260701_150238",
+      "finished_at": "2026-07-01T15:02:39",
+      "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__etth1__official__smoke__seed2025__20260701_150238/metrics.json",
+      "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__etth1__official__smoke__seed2025__20260701_150238",
+      "smoke": true,
+      "started_at": "2026-07-01T15:02:38",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__weather__official__smoke__seed2025__20260701_150239/checkpoints/last.pt",
+      "dataset": "weather",
+      "duration_seconds": 1.027,
+      "experiment_id": "timeperceiver__weather__official__smoke__seed2025__20260701_150239",
+      "finished_at": "2026-07-01T15:02:40",
+      "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__weather__official__smoke__seed2025__20260701_150239/metrics.json",
+      "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__weather__official__smoke__seed2025__20260701_150239",
+      "smoke": true,
+      "started_at": "2026-07-01T15:02:39",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official__smoke__seed2025__20260701_150241/checkpoints/last.pt",
+      "dataset": "electricity",
+      "duration_seconds": 8.28,
+      "experiment_id": "timeperceiver__electricity__official__smoke__seed2025__20260701_150241",
+      "finished_at": "2026-07-01T15:02:49",
+      "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official__smoke__seed2025__20260701_150241/metrics.json",
+      "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official__smoke__seed2025__20260701_150241",
+      "smoke": true,
+      "started_at": "2026-07-01T15:02:41",
+      "status": "SUCCESS"
+    }
+  ],
+  "status": "PASS",
+  "timestamp": "2026-07-01T15:02:49"
+}

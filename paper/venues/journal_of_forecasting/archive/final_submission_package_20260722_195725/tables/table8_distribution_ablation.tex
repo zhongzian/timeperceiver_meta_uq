@@ -1,0 +1,18 @@
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Dataset & Head & NLL & CRPS & MSE & Coverage error & Trainable \\
+\midrule
+etth1 & Gaussian & 0.918535 & 0.344127 & 0.420332 & 0.038132 & 6,168 \\
+etth1 & Laplace & 0.879116 & 0.341785 & 0.424149 & 0.011910 & 6,168 \\
+etth1 & Fixed Student-t (df=8) & 0.864949 & 0.336548 & 0.413927 & 0.022006 & 6,168 \\
+etth1 & Learned Student-t & 0.877154 & 0.340263 & 0.419177 & 0.020301 & 6,175 \\
+weather & Gaussian & 0.586325 & 0.245442 & 0.212237 & 0.082667 & 24,624 \\
+weather & Laplace & 0.204399 & 0.209589 & 0.210051 & 0.070806 & 24,624 \\
+weather & Fixed Student-t (df=8) & 0.136165 & 0.208461 & 0.210994 & 0.051632 & 24,624 \\
+weather & Learned Student-t & 0.129293 & 0.208276 & 0.210836 & 0.052156 & 24,645 \\
+electricity & Gaussian & 0.440598 & 0.209453 & 0.167881 & 0.038304 & 24,624 \\
+electricity & Laplace & 0.370388 & 0.208768 & 0.170436 & 0.018222 & 24,624 \\
+electricity & Fixed Student-t (df=8) & 0.367009 & 0.207797 & 0.168473 & 0.018744 & 24,624 \\
+electricity & Learned Student-t & 0.366449 & 0.207786 & 0.168486 & 0.018502 & 24,945 \\
+\bottomrule
+\end{tabular}

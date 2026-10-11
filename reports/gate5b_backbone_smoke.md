@@ -1,0 +1,64 @@
+# Gate 5b0 Backbone Smoke
+
+Status: **PASS**
+
+```json
+{
+  "status": "PASS",
+  "backbone_smoke_pass": "3/3",
+  "smoke_results_are_formal": false,
+  "datasets": [
+    {
+      "dataset": "etth1",
+      "status": "PASS",
+      "experiment_id": "patchtst__etth1__gate5b0_backbone_smoke__clean__seed2025__20260720_180942",
+      "run_dir": "runs/patchtst__etth1__gate5b0_backbone_smoke__clean__seed2025__20260720_180942",
+      "train_batches": 4,
+      "val_batches": 2,
+      "test_batches": 2,
+      "forward_finite": true,
+      "loss_finite": true,
+      "backward_finite": true,
+      "gradient_finite": true,
+      "checkpoint_strict_reload": true,
+      "test_used_for_model_selection": false,
+      "peak_allocated_mib": 120.98095703125,
+      "peak_reserved_mib": 140.0
+    },
+    {
+      "dataset": "weather",
+      "status": "PASS",
+      "experiment_id": "patchtst__weather__gate5b0_backbone_smoke__clean__seed2025__20260720_181517",
+      "run_dir": "runs/patchtst__weather__gate5b0_backbone_smoke__clean__seed2025__20260720_181517",
+      "train_batches": 4,
+      "val_batches": 2,
+      "test_batches": 2,
+      "forward_finite": true,
+      "loss_finite": true,
+      "backward_finite": true,
+      "gradient_finite": true,
+      "checkpoint_strict_reload": true,
+      "test_used_for_model_selection": false,
+      "peak_allocated_mib": 659.44873046875,
+      "peak_reserved_mib": 732.0
+    },
+    {
+      "dataset": "electricity",
+      "status": "PASS",
+      "experiment_id": "patchtst__electricity__gate5b0_backbone_smoke__clean__seed2025__20260720_184331",
+      "run_dir": "runs/patchtst__electricity__gate5b0_backbone_smoke__clean__seed2025__20260720_184331",
+      "train_batches": 4,
+      "val_batches": 2,
+      "test_batches": 2,
+      "forward_finite": true,
+      "loss_finite": true,
+      "backward_finite": true,
+      "gradient_finite": true,
+      "checkpoint_strict_reload": true,
+      "test_used_for_model_selection": false,
+      "peak_allocated_mib": 4807.67431640625,
+      "peak_reserved_mib": 5240.0
+    }
+  ]
+}
+```

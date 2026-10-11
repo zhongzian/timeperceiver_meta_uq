@@ -1,0 +1,19 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Forecasting systems often receive incomplete histories. Sensors fail, communication channels drop observations, and data pipelines can produce blocks or channels of missing values. A useful forecasting model must therefore operate on a partially observed historical window and quantify uncertainty about an unobserved future. These requirements are distinct: a point forecast can remain plausible while its predictive distribution becomes too narrow, too light-tailed, or otherwise poorly matched to the residuals.
+
+Many missing-data studies focus on reconstructing the history before evaluating a downstream task. Imputation is important, but reconstruction quality alone does not determine forecast quality. A forecasting-centered evaluation must hold the historical mask fixed across methods, keep future targets outside the input, and prevent test statistics from entering normalization or model selection. Without these controls, apparent differences can reflect mask resampling or leakage rather than the predictive method.
+
+Gaussian likelihoods are attractive because they are simple and differentiable. Their tails can nevertheless assign excessive negative log-likelihood to large standardized residuals. A Student-$t$ likelihood offers heavier tails while retaining a familiar location-scale parameterization. Fixing its degrees of freedom removes the need to estimate an additional shape parameter and makes capacity matching straightforward. Proper scoring rules, including log score and the continuous ranked probability score, provide complementary views of probabilistic quality \cite{gneiting2007proper}.
+
+This study combines a fixed missing-history protocol with a lightweight fixed Student-$t$ head. The historical observation mask is treated as an evaluation asset rather than an ephemeral random draw. Gaussian, Laplace, and fixed Student-$t$ heads use matched trainable location-scale projections. We retain negative results for a missingness-aware feature-wise linear modulation (FiLM) adapter and an additive split-conformal procedure. The goal is an auditable account of what improves, what does not, and where a tradeoff remains.
+
+The main evidence uses TimePerceiver \cite{lee2025timeperceiver} on ETTh1, Weather, and Electricity. Across four probability-head training seeds, Student-$t$ variants improve NLL and CRPS in all 12 paired cells and meet point noninferiority in all 12. A controlled ablation supports fixed df=8 as sufficient. A second study uses PatchTST \cite{nie2023patchtst}. Its fixed Student-$t$ head improves NLL and CRPS on all three datasets, but Electricity MSE rises from 0.165829 to 0.167809. The 1.194\% increase exceeds the pre-registered 1\% tolerance, so the full multi-metric gate remains negative.
+
+The contributions are threefold:
+\begin{enumerate}
+    \item We define a leakage-controlled fixed missing-history evaluation protocol for deterministic and probabilistic forecasting.
+    \item We study a lightweight fixed Student-$t$ probability head with the same trainable parameter count as matched Gaussian and Laplace heads.
+    \item We provide a cross-backbone empirical study with a distribution ablation, retained negative results, and an explicit PatchTST Electricity point-prediction tradeoff.
+\end{enumerate}

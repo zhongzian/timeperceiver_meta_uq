@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "GATE6_CLAIM_SCAN_PASS": true,
+  "generated_at": "2026-07-22T15:16:47+08:00",
+  "scanned_file_count": 129,
+  "prohibited_unsupported_wording_count": 0,
+  "prohibited_patterns": [
+    "backbone-independent",
+    "universal",
+    "universally",
+    "all metrics improve",
+    "full second-backbone success",
+    "second-backbone replication positive",
+    "point accuracy is preserved across all datasets",
+    "statistically significant",
+    "state-of-the-art",
+    "SOTA",
+    "jointly calibrated",
+    "guaranteed calibration",
+    "adaptive df is necessary"
+  ],
+  "hits": []
+}

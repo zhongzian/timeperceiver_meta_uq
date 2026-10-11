@@ -1,0 +1,9 @@
+{
+  "experiment_id": "timeperceiver__etth1__official_missing_eval_smoke__random_rate0.3__seed2025__20260709_153942",
+  "dataset": "etth1",
+  "mode": "official_missing_eval_smoke",
+  "train_started": false,
+  "device": "cpu",
+  "cuda_available": false,
+  "elapsed_seconds_wall": 11.679973
+}

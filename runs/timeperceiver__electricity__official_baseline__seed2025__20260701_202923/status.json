@@ -1,0 +1,11 @@
+{
+  "dataset": "electricity",
+  "end_time": "2026-07-01T20:29:33",
+  "error_summary": "training exited non-zero or metrics were not parsed",
+  "exit_code": 1,
+  "experiment_id": "timeperceiver__electricity__official_baseline__seed2025__20260701_202923",
+  "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260701_202923/metrics.json",
+  "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260701_202923",
+  "start_time": "2026-07-01T20:29:24",
+  "status": "FAILED"
+}

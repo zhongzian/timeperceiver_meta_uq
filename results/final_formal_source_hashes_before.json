@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-07-18T21:21:51+08:00",
+  "purpose": "Immutable pre-synthesis SHA256 snapshot",
+  "hashes": {
+    "results/gate4a_formal_decision.json": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd",
+    "results/gate4b_expanded_formal_decision.json": "fa78308c9344d69cfb06474204e9f1ce46af15c8ea6751d2ad0fb2e191584047",
+    "results/gate4b_cross_dataset_formal_decision.json": "073f10e4f4828a8402d854b366ec3c45e329fde60e2c53403cd6d7a940f556e3",
+    "results/gate4b_multiseed_formal_decision.json": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa",
+    "results/gate4c_formal_decision.json": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600",
+    "reports/gate4b_multiseed_paired_deltas.csv": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc",
+    "reports/gate4b_multiseed_dataset_summary.csv": "16a3bf34ef050c4305316e8b6e9e7bb509dbe170369a4e09450986c431c9cfeb",
+    "reports/gate4c_interval_metrics.csv": "24cff2a4833e493dc81f19a8efd8b81b4c0c57fe60bdf4a9d4c4e7792dedc73d",
+    "reports/gate4c_conditioned_bin_metrics.csv": "5102708f75a8ae1c6b68dce60405b8073525cc6432ced29d4ab900b72e31ebe9"
+  }
+}

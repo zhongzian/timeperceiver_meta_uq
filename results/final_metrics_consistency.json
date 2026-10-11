@@ -1,0 +1,203 @@
+{
+  "status": "PASS",
+  "FINAL_METRICS_CONSISTENCY_PASS": true,
+  "generated_at": "2026-07-22T15:16:41+08:00",
+  "gate_results": {
+    "gate2_baseline": {
+      "status": "PASS",
+      "checks": {
+        "clean_rows_3_of_3": true,
+        "mse_matches_formal": true,
+        "mae_matches_formal": true,
+        "rmse_identity": true
+      }
+    },
+    "gate3b_48_mask_matrix": {
+      "status": "PASS",
+      "checks": {
+        "rows_48_of_48": true,
+        "factorial_cells_complete": true,
+        "dataset_type_curves_12_complete": true,
+        "fixed_test_masks_verified": true,
+        "all_status_success": true,
+        "formal_status_pass": true,
+        "evaluator_parity": true,
+        "all_12_mse_curves_monotonic": true
+      },
+      "monotonic_curves": {
+        "electricity:block": true,
+        "electricity:channel": true,
+        "electricity:mixed": true,
+        "electricity:random": true,
+        "etth1:block": true,
+        "etth1:channel": true,
+        "etth1:mixed": true,
+        "etth1:random": true,
+        "weather:block": true,
+        "weather:channel": true,
+        "weather:mixed": true,
+        "weather:random": true
+      }
+    },
+    "gate4a_decision": {
+      "status": "PASS",
+      "checks": {
+        "three_variants_found": true,
+        "static_mse_delta": true,
+        "missing_aware_official_delta": true,
+        "missing_aware_static_delta": true,
+        "static_beats_official": true,
+        "conditioning_does_not_beat_static": true,
+        "formal_decision_negative_conditioning": true
+      }
+    },
+    "gate4b_expanded": {
+      "status": "PASS",
+      "checks": {
+        "conditions_6_of_6": true,
+        "probability_rows_12": true,
+        "deltas_reproduced": true,
+        "random03_corrected_fixed_mask": true,
+        "old_unmasked_excluded": true,
+        "formal_counts_reproduced": true,
+        "formal_signal_positive": true
+      },
+      "counts": {
+        "nll": 6,
+        "crps": 5,
+        "point": 5
+      }
+    },
+    "gate4b_cross_dataset": {
+      "status": "PASS",
+      "checks": {
+        "weather_electricity_pairs": true,
+        "probability_rows_4": true,
+        "deltas_reproduced": true,
+        "formal_counts_2_of_2": true,
+        "formal_decision_reproduced": true
+      },
+      "counts": {
+        "nll": 2,
+        "crps": 2,
+        "point": 2
+      }
+    },
+    "gate4b_multiseed": {
+      "status": "PASS",
+      "checks": {
+        "datasets_3": true,
+        "seeds_4": true,
+        "variants_2": true,
+        "probability_rows_24": true,
+        "paired_cells_12": true,
+        "paired_deltas_reproduced": true,
+        "sample_mean_std_ddof1_reproduced": true,
+        "formal_counts_12_12_12_12_3": true,
+        "decision_counts_match": true,
+        "probability_seed_scope_only": true,
+        "formal_signal_positive": true
+      },
+      "counts": {
+        "nll": 12,
+        "crps": 12,
+        "point": 12,
+        "full": 12,
+        "dataset_mean": 3
+      }
+    },
+    "gate4c_formal_and_mechanism": {
+      "status": "PASS",
+      "checks": {
+        "interval_rows_12": true,
+        "head_method_level_factorial": true,
+        "formal_implementation_pass": true,
+        "formal_negative_signal": true,
+        "conformal_ace_worse_in_all_8_comparisons": true,
+        "mechanism_audit_complete": true,
+        "mechanism_formal_gate_unchanged": true,
+        "protected_formal_hashes_unchanged": true
+      }
+    },
+    "gate5a_distribution_ablation": {
+      "status": "PASS",
+      "checks": {
+        "rows_12": true,
+        "datasets_3": true,
+        "four_heads_per_dataset": true,
+        "pairwise_rows_12": true,
+        "pairwise_deltas_reproduced": true,
+        "laplace_counts_match": true,
+        "fixed_t_counts_match": true,
+        "learned_df_counts_match": true,
+        "implementation_pass": true,
+        "mechanism_secondary_descriptive": true,
+        "efficiency_complete": true
+      },
+      "counts": {
+        "Laplace vs Gaussian": {
+          "nll": 3,
+          "crps": 3,
+          "point": 2
+        },
+        "Fixed-t vs Gaussian": {
+          "nll": 3,
+          "crps": 3,
+          "point": 3
+        },
+        "Learnable-t vs Fixed-t": {
+          "nll": 2,
+          "crps": 2,
+          "point": 2
+        },
+        "Learnable-t vs Laplace": {
+          "nll": 3,
+          "crps": 3,
+          "point": 3
+        }
+      }
+    },
+    "gate5b_second_backbone": {
+      "status": "PASS",
+      "checks": {
+        "probability_rows_6": true,
+        "datasets_3": true,
+        "two_capacity_matched_heads_per_dataset": true,
+        "paired_rows_3": true,
+        "paired_deltas_reproduced": true,
+        "formal_counts_match": true,
+        "implementation_pass": true,
+        "point_tradeoff_preserved": true,
+        "tail_diagnostic_secondary": true
+      },
+      "counts": {
+        "nll": 3,
+        "crps": 3,
+        "point": 2,
+        "full": 2
+      }
+    }
+  },
+  "protected_hashes_before": {
+    "results/gate4a_formal_decision.json": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd",
+    "results/gate4b_expanded_formal_decision.json": "fa78308c9344d69cfb06474204e9f1ce46af15c8ea6751d2ad0fb2e191584047",
+    "results/gate4b_cross_dataset_formal_decision.json": "073f10e4f4828a8402d854b366ec3c45e329fde60e2c53403cd6d7a940f556e3",
+    "results/gate4b_multiseed_formal_decision.json": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa",
+    "results/gate4c_formal_decision.json": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600",
+    "reports/gate4b_multiseed_paired_deltas.csv": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc",
+    "reports/gate4b_multiseed_dataset_summary.csv": "16a3bf34ef050c4305316e8b6e9e7bb509dbe170369a4e09450986c431c9cfeb",
+    "reports/gate4c_interval_metrics.csv": "24cff2a4833e493dc81f19a8efd8b81b4c0c57fe60bdf4a9d4c4e7792dedc73d",
+    "reports/gate4c_conditioned_bin_metrics.csv": "5102708f75a8ae1c6b68dce60405b8073525cc6432ced29d4ab900b72e31ebe9"
+  },
+  "protected_hashes_after": {
+    "results/gate4a_formal_decision.json": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd",
+    "results/gate4b_expanded_formal_decision.json": "fa78308c9344d69cfb06474204e9f1ce46af15c8ea6751d2ad0fb2e191584047",
+    "results/gate4b_cross_dataset_formal_decision.json": "073f10e4f4828a8402d854b366ec3c45e329fde60e2c53403cd6d7a940f556e3",
+    "results/gate4b_multiseed_formal_decision.json": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa",
+    "results/gate4c_formal_decision.json": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600",
+    "reports/gate4b_multiseed_paired_deltas.csv": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc",
+    "reports/gate4b_multiseed_dataset_summary.csv": "16a3bf34ef050c4305316e8b6e9e7bb509dbe170369a4e09450986c431c9cfeb",
+    "reports/gate4c_interval_metrics.csv": "24cff2a4833e493dc81f19a8efd8b81b4c0c57fe60bdf4a9d4c4e7792dedc73d",
+    "reports/gate4c_conditioned_bin_metrics.csv": "5102708f75a8ae1c6b68dce60405b8073525cc6432ced29d4ab900b72e31ebe9"
+  }
+}

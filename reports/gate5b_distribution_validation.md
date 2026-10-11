@@ -1,0 +1,49 @@
+# Gate 5b Distribution Validation
+
+Status: **PASS**
+
+```json
+{
+  "status": "PASS",
+  "gaussian_nll_parity": true,
+  "fixed_t8_nll_parity": true,
+  "fixed_t8_quantile_parity": true,
+  "crps_implementation_reused": true,
+  "crps_implementation": "scripts/gate5a_distribution_metrics.py",
+  "crps_gaussian_finite": true,
+  "crps_fixed_t8_finite": true,
+  "interval_nesting": true,
+  "scale_positive_and_finite": true,
+  "fixed_df_exact": 8.0,
+  "capacity_fairness": "PASS",
+  "capacity_rows": [
+    {
+      "dataset": "etth1",
+      "gaussian_trainable_parameters": 147648,
+      "fixed_t8_trainable_parameters": 147648,
+      "equal_trainable_parameters": true,
+      "gaussian_backbone_trainable_parameters": 0,
+      "fixed_t8_backbone_trainable_parameters": 0,
+      "fixed_t8_df_parameters": 0
+    },
+    {
+      "dataset": "weather",
+      "gaussian_trainable_parameters": 1179840,
+      "fixed_t8_trainable_parameters": 1179840,
+      "equal_trainable_parameters": true,
+      "gaussian_backbone_trainable_parameters": 0,
+      "fixed_t8_backbone_trainable_parameters": 0,
+      "fixed_t8_df_parameters": 0
+    },
+    {
+      "dataset": "electricity",
+      "gaussian_trainable_parameters": 1179840,
+      "fixed_t8_trainable_parameters": 1179840,
+      "equal_trainable_parameters": true,
+      "gaussian_backbone_trainable_parameters": 0,
+      "fixed_t8_backbone_trainable_parameters": 0,
+      "fixed_t8_df_parameters": 0
+    }
+  ]
+}
+```

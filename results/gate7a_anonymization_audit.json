@@ -1,0 +1,42 @@
+{
+  "GATE7A_ANONYMIZATION_PASS": true,
+  "allowed_public_metadata": [
+    "public upstream URLs",
+    "DOIs",
+    "software versions",
+    "dataset names",
+    "publication authors"
+  ],
+  "audited_roots": [
+    "paper/manuscript",
+    "paper/submission"
+  ],
+  "audited_text_file_count": 96,
+  "counts": {
+    "absolute_checkpoint_paths": 0,
+    "absolute_local_paths": 0,
+    "gpu_uuids": 0,
+    "hostnames": 0,
+    "internal_timestamps": 0,
+    "personal_emails": 0,
+    "pids": 0,
+    "private_urls": 0,
+    "queue_paths": 0,
+    "usernames": 0
+  },
+  "generated_at": "2026-07-22T09:34:20.421225+00:00",
+  "status": "PASS",
+  "violation_count": 0,
+  "violations": {
+    "absolute_checkpoint_paths": [],
+    "absolute_local_paths": [],
+    "gpu_uuids": [],
+    "hostnames": [],
+    "internal_timestamps": [],
+    "personal_emails": [],
+    "pids": [],
+    "private_urls": [],
+    "queue_paths": [],
+    "usernames": []
+  }
+}

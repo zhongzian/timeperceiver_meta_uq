@@ -1,0 +1,13 @@
+{
+  "stage": "Gate 4a",
+  "experiment_id": "timeperceiver__gate4a_smoke__missingness_aware_adapter__etth1__random_rate0.3__seed2025__20260711_191906",
+  "variant": "missingness_aware_adapter",
+  "status": "SUCCESS",
+  "error_summary": "",
+  "mse": 0.29840493769872756,
+  "mae": 0.38296485514867873,
+  "rmse": 0.5462645308810811,
+  "backbone_frozen": true,
+  "backbone_gradients": false,
+  "checkpoint_reload": true
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checkpoints_strict_loaded": 3,
+  "expected_checkpoints": 3,
+  "rows": [
+    {
+      "dataset": "etth1",
+      "status": "PASS",
+      "official_experiment_id": "timeperceiver__etth1__official_baseline__seed2025__20260701_203054",
+      "checkpoint_path": "runs/timeperceiver__etth1__official_baseline__seed2025__20260701_203054/checkpoints/ETTh1_384_96_TimePerceiver_sl384_pl96_dm256_nl32_ld64_ul1_gf1_nh4_df512_pl12_qs1_sr1.0/checkpoint.pth",
+      "checkpoint_sha256": "8a939fccc4942196ccc75aa76e170d8884e4670aaa666f5e7ca10b30b159f8e1",
+      "strict_load": true,
+      "strict_load_tensor_count": 115,
+      "probability_head_weights_present": false
+    },
+    {
+      "dataset": "weather",
+      "status": "PASS",
+      "official_experiment_id": "timeperceiver__weather__official_baseline__seed2025__20260701_203558",
+      "checkpoint_path": "runs/timeperceiver__weather__official_baseline__seed2025__20260701_203558/checkpoints/weather_384_96_TimePerceiver_sl384_pl96_dm512_nl32_ld128_ul1_gf1_nh8_df1024_pl24_qs1_sr1.0/checkpoint.pth",
+      "checkpoint_sha256": "a99ec027aba651569e188a6c1ecd07d512ed6a077e3ea38f9f4db81aa8da635c",
+      "strict_load": true,
+      "strict_load_tensor_count": 115,
+      "probability_head_weights_present": false
+    },
+    {
+      "dataset": "electricity",
+      "status": "PASS",
+      "official_experiment_id": "timeperceiver__electricity__official_baseline__seed2025__20260705_090044",
+      "checkpoint_path": "runs/timeperceiver__electricity__official_baseline__seed2025__20260705_090044/checkpoints/electricity_384_96_TimePerceiver_sl384_pl96_dm512_nl32_ld128_ul1_gf1_nh8_df1024_pl24_qs1_sr0.0/checkpoint.pth",
+      "checkpoint_sha256": "93fd70e275cc3f8764e0fc404d05bb32e0431c78aa09ecc3fa83ff111b5c5f1a",
+      "strict_load": true,
+      "strict_load_tensor_count": 115,
+      "probability_head_weights_present": false
+    }
+  ]
+}

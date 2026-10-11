@@ -1,0 +1,10 @@
+\begin{tabular}{lrrrrrrrrrr}
+\hline
+variant & trainable\_parameters & parameter\_overhead\_pct & best\_epoch & validation\_mse & test\_mse & test\_mae & test\_rmse & mse\_change\_vs\_official & mse\_change\_vs\_static & source\_evidence\_ids \\
+\hline
+Official & 0 & 0.000000 & NA & NA & 0.425394 & 0.450336 & 0.652223 & 0.000000 & NA & EV-d8e55f8661b5e4b7 \\
+Static adapter & 33600 & 2.956716 & 1 & 0.678666 & 0.361377 & 0.390458 & 0.601147 & -0.064017 & 0.000000 & EV-1022a9906a254ce9 \\
+Missingness-aware FiLM adapter & 39136 & 3.443870 & 5 & 0.679754 & 0.363156 & 0.391077 & 0.602624 & -0.062239 & 0.001778 & EV-9c8b5cf7cd660b74 \\
+\hline
+\end{tabular}
+% Note: Static capacity improves the official result; the tested global-statistics FiLM condition does not improve on the static adapter.

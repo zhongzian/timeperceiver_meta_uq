@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "dataset": "etth1",
+  "seq_len": 384,
+  "pred_len": 96,
+  "seed": 2025,
+  "train_mask": "deterministic on-the-fly random mask, rate=0.3, base_seed=42025",
+  "validation_mask": "artifacts/gate4a_val_masks/etth1/random/rate_0.3/seed_43025.npz",
+  "test_mask_source": "Gate 3a inventory ETTh1/random/0.3/seed2025",
+  "batch_y_modified": false,
+  "test_mask_used_during_training": false,
+  "early_stopping_source": "validation MSE",
+  "normalization": "Gate 2 official Dataset_Custom normalization",
+  "future_target_used_for_condition": false
+}

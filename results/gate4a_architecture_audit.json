@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "official_model_class": "upstream.TimePerceiver.models.TimePerceiver.Model",
+  "official_forward_signature": "forward(inputs, x_mark_enc, x_dec, x_mark_dec, indices=None, mask=None)",
+  "encoder_output_shape": "[B, enc_in, future_patch_count, d_model] after query_cross_attention",
+  "hidden_dim": 256,
+  "prediction_head": "output_projection Linear(d_model, patch_len), followed by reshape and RevIN restore",
+  "selected_insertion_point": "query_cross_attention output before official output_projection",
+  "wrapper_strategy": "project-level subclass/reimplementation using official modules and forward protocol",
+  "checkpoint_loading_strategy": "strict load official backbone first; extension parameters initialized separately",
+  "upstream_modified": false,
+  "risks": ["wrapper must preserve RevIN, patch indices, output projection, and output reshape exactly"]
+}

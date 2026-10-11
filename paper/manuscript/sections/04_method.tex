@@ -1,0 +1,34 @@
+\section{Method}
+\label{sec:method}
+
+\subsection{Backbone and probability-head interface}
+
+The method operates on forecast features produced by a frozen backbone. For TimePerceiver, these features follow the model's latent encoder and query-based decoder \cite{lee2025timeperceiver}. For PatchTST, they follow the supervised patch encoder \cite{nie2023patchtst}. We do not alter either backbone architecture. A small output head maps each feature vector to the parameters of a marginal predictive distribution.
+
+\subsection{Gaussian reference}
+
+The Gaussian reference predicts a location $\mu$ and an unconstrained scale value $s$. Its positive scale is
+\begin{equation}
+    \sigma = \operatorname{softplus}(s) + 10^{-4}.
+    \label{eq:scale}
+\end{equation}
+The head is trained by minimizing mean Gaussian NLL over observed target elements. Because future targets are complete in this protocol, the target mask does not remove forecast elements.
+
+\subsection{\texorpdfstring{Fixed Student-$t$ head}{Fixed Student-t head}}
+
+The fixed Student-$t$ head predicts the same location $\mu$ and scale $\sigma$ as the Gaussian reference. It sets the degrees of freedom to
+\begin{equation}
+    \nu = 8
+    \label{eq:fixed-df}
+\end{equation}
+for every target channel and horizon. There is no trainable degrees-of-freedom parameter. The NLL objective follows the univariate Student-$t$ density independently for each target element.
+
+The fixed value is a reference setting shown to be empirically sufficient by the distribution-head ablation before the PatchTST experiment. It was retained for Gate 5b without dataset-specific retuning. We do not describe df=8 as theoretically optimal.
+
+\subsection{Capacity matching}
+
+Gaussian, Laplace, and fixed Student-$t$ heads use identical trainable location and scale projections. They therefore have the same trainable parameter count for a given backbone and dataset. Their difference lies in the likelihood and interval quantiles, not in the number of optimized weights. A learned-df Student-$t$ variant adds one degrees-of-freedom parameter per target channel and is used only in the controlled ablation and TimePerceiver multi-seed evidence.
+
+\subsection{Evaluation protocol}
+
+Every paired head comparison uses the same backbone checkpoint, train/validation/test split, normalization statistics, validation mask, test mask, optimization budget, and checkpoint-selection rule. The test set is evaluated only after selecting the lowest validation-NLL checkpoint. NLL and CRPS provide the primary probabilistic comparison, while Equation~\ref{eq:point-gate} guards against a material point-prediction regression.

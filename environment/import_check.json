@@ -1,0 +1,60 @@
+{
+  "python": "3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]",
+  "imports": {
+    "torch": {
+      "ok": true,
+      "version": "2.1.0+cu121"
+    },
+    "numpy": {
+      "ok": true,
+      "version": "1.23.5"
+    },
+    "pandas": {
+      "ok": true,
+      "version": "1.5.3"
+    },
+    "scipy": {
+      "ok": true,
+      "version": "1.10.1"
+    },
+    "sklearn": {
+      "ok": true,
+      "version": "1.2.2"
+    },
+    "einops": {
+      "ok": true,
+      "version": "0.8.0"
+    },
+    "matplotlib": {
+      "ok": true,
+      "version": "3.7.0"
+    },
+    "sktime": {
+      "ok": true,
+      "version": "0.16.1"
+    },
+    "sympy": {
+      "ok": true,
+      "version": "1.11.1"
+    },
+    "pywt": {
+      "ok": true,
+      "version": "1.6.0"
+    },
+    "reformer_pytorch": {
+      "ok": true,
+      "version": "NA"
+    },
+    "local_attention": {
+      "ok": true,
+      "version": "NA"
+    }
+  },
+  "torch": {
+    "version": "2.1.0+cu121",
+    "cuda_runtime": "12.1",
+    "cuda_available": true,
+    "device_count": 2
+  }
+}
+

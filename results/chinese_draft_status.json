@@ -1,0 +1,24 @@
+{
+  "stage": "Chinese empirical draft",
+  "compile_exit_code": 0,
+  "pdf": "paper/chinese_empirical_draft/build/main.pdf",
+  "source_hashes": {
+    "reports/chinese_evidence_step1/mean_std.csv": "ac935563ef1d02b53f01a9bc654f0ab8127b9880307e5839e2c8e73f39ab4834",
+    "reports/chinese_evidence_step1/paired_deltas.csv": "d7f0a7f914093383f88f075b0f3cc6be8422f50ef22948ee909b8fad0f01c252",
+    "paper/chinese_empirical_draft/main.tex": "21ff29ddb47349bfa3ff6285ccaebff84ebf51d787b38072b02036d69253ddfd",
+    "paper/chinese_empirical_draft/tables/distribution.tex": "ddcef8128692c9c77e95e3923186a9a6d102e5d4c952a03bda5d10fc6d6aeb5c",
+    "paper/chinese_empirical_draft/tables/backbone.tex": "1a6bbce167f38bd76b99ee624b37a017417d696f8a75853e7a4ee0508e8e6576",
+    "paper/chinese_empirical_draft/tables/multiseed.tex": "d20bbad256e9a5d600c584c5b2de46004901fea8e1534d6ba09263ae2316e410"
+  },
+  "training_started": false,
+  "submission_ready": false,
+  "command": [
+    "/mnt/data/zza/anaconda3/pkgs/tectonic-0.16.9-ha39f199_0/bin/tectonic",
+    "--only-cached",
+    "--keep-logs",
+    "--keep-intermediates",
+    "--outdir",
+    "/mnt/data/zza/code/timeperceiver_meta_uq/paper/chinese_empirical_draft/build",
+    "main.tex"
+  ]
+}

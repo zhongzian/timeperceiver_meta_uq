@@ -1,0 +1,10 @@
+{
+  "stage": "gate4b_cross_dataset",
+  "variant": "gaussian_head",
+  "smoke_only": false,
+  "missing_type": "random",
+  "target_missing_rate": 0.3,
+  "error": "RuntimeError('quantile() input tensor is too large')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/data/zza/code/timeperceiver_meta_uq/scripts/gate4b_train_probabilistic.py\", line 407, in main\n    \"test_p90_element_nll\": float(torch.quantile(nll, .9)),\nRuntimeError: quantile() input tensor is too large\n",
+  "elapsed_seconds": 214.87602853775024
+}

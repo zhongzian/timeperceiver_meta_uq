@@ -1,0 +1,16 @@
+{
+  "stage": "gate5b1_probability_smoke",
+  "substage": "probability_replication",
+  "dataset": "electricity",
+  "backbone": "patchtst",
+  "variant": "gaussian_head",
+  "distribution": "gaussian",
+  "smoke_only": true,
+  "status": "FAILED",
+  "training_and_evaluation_completed_before_failure": true,
+  "formal_evidence": false,
+  "error": "TypeError: Object of type bool_ is not JSON serializable",
+  "error_type": "CODE_ERROR",
+  "error_location": "metrics.json serialization",
+  "retry_policy": "fix deterministic serialization bug and rerun with a new experiment ID"
+}

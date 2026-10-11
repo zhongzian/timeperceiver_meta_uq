@@ -1,0 +1,13 @@
+\begin{tabular}{lrrrrrrrrrrrrrrrr}
+\hline
+Dataset & Backbone & Gaussian NLL & Fixed-t NLL & Delta NLL & Gaussian CRPS & Fixed-t CRPS & Delta CRPS & Gaussian MSE & Fixed-t MSE & Delta MSE & Relative MSE change & NLL win & CRPS noninferior & Point noninferior & Full-pair pass & Evidence IDs \\
+\hline
+ETTh1 & TimePerceiver & 0.918535 & 0.864949 & -0.053587 & 0.344127 & 0.336548 & -0.007578 & 0.420332 & 0.413927 & -0.006405 & -1.524\% & True & True & True & True & EV-c99503d9f88f5a7c;EV-2ac76ca47b9c791c \\
+ETTh1 & PatchTST & 0.892433 & 0.857116 & -0.035317 & 0.338364 & 0.335825 & -0.002538 & 0.426829 & 0.421389 & -0.005439 & -1.274\% & True & True & True & True & EV-57173a919b946873;EV-0ef7cf552aaa7081 \\
+Weather & TimePerceiver & 0.586325 & 0.136165 & -0.450160 & 0.245442 & 0.208461 & -0.036981 & 0.212237 & 0.210994 & -0.001243 & -0.586\% & True & True & True & True & EV-66e560e95f941e4c;EV-02032d9eae47a090 \\
+Weather & PatchTST & 2.096352 & 0.277655 & -1.818698 & 0.274037 & 0.197832 & -0.076205 & 0.232359 & 0.182180 & -0.050179 & -21.595\% & True & True & True & True & EV-67c965d924784ed7;EV-dbdb5f56b1e863e3 \\
+Electricity & TimePerceiver & 0.440598 & 0.367009 & -0.073589 & 0.209453 & 0.207797 & -0.001656 & 0.167881 & 0.168473 & 0.000592 & +0.353\% & True & True & True & True & EV-bb02e612c87b13b1;EV-a945a052c1b9ed92 \\
+Electricity & PatchTST & 0.413581 & 0.330148 & -0.083433 & 0.206058 & 0.204371 & -0.001688 & 0.165829 & 0.167809 & 0.001980 & +1.194\% & True & True & False & False & EV-20423e30ef1dee37;EV-5651da87472d173e \\
+\hline
+\end{tabular}
+% Note: Deltas are fixed-t8 minus Gaussian within each backbone; negative values favor fixed-t8. The point-noninferiority threshold was pre-registered as a maximum 1% relative MSE increase. Absolute metrics are not used to rank backbones.

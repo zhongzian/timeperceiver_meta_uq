@@ -1,0 +1,4 @@
+split,seed,windows,actual_missing_rate,sha256,npz_path,metadata_path,status
+selection,43025,913,0.2999045695770093,aeef3fc99e3cc875f871c5613a628d806257bacee74fce735b9d92e5e14068d1,artifacts/gate4c_masks/etth1/selection/random/rate_0.3/seed_43025.npz,artifacts/gate4c_masks/etth1/selection/random/rate_0.3/seed_43025.metadata.json,PASS
+calibration,44025,914,0.29957278316140457,008f13390bcc2cd09f71b2da869d67198a902f706b2e46321fc20229a9d42066,artifacts/gate4c_masks/etth1/calibration/random/rate_0.3/seed_44025.npz,artifacts/gate4c_masks/etth1/calibration/random/rate_0.3/seed_44025.metadata.json,PASS
+test,2025,2785,0.30014400059844404,2814d0c2f8c1fc3dca854dee238f4984ff4f519f14f67b8bcbdfd688bda6bebc,artifacts/masks/etth1/random/rate_0.3/seed_2025.npz,artifacts/masks/etth1/random/rate_0.3/seed_2025.json,PASS

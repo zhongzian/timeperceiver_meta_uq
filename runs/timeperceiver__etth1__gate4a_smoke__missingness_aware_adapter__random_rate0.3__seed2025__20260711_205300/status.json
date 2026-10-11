@@ -1,0 +1,6 @@
+{
+  "status": "SUCCESS",
+  "variant": "missingness_aware_adapter",
+  "smoke_only": true,
+  "error_summary": ""
+}

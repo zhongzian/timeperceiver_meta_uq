@@ -1,0 +1,11 @@
+{
+  "dataset": "weather",
+  "end_time": "2026-07-01T20:29:23",
+  "error_summary": "training exited non-zero or metrics were not parsed",
+  "exit_code": 1,
+  "experiment_id": "timeperceiver__weather__official_baseline__seed2025__20260701_202912",
+  "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__weather__official_baseline__seed2025__20260701_202912/metrics.json",
+  "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__weather__official_baseline__seed2025__20260701_202912",
+  "start_time": "2026-07-01T20:29:14",
+  "status": "FAILED"
+}

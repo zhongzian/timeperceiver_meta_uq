@@ -1,0 +1,24 @@
+{
+  "checkpoint": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__etth1__official__smoke__seed2025__20260701_150238/checkpoints/last.pt",
+  "dataset": "etth1",
+  "duration_seconds": 0.754,
+  "eval_losses": [
+    {
+      "loss": 1.4038212299346924,
+      "split": "val"
+    },
+    {
+      "loss": 1.3511425256729126,
+      "split": "test"
+    }
+  ],
+  "experiment_id": "timeperceiver__etth1__official__smoke__seed2025__20260701_150238",
+  "num_parameters": 14188,
+  "smoke": true,
+  "test_mae": 0.7537689208984375,
+  "test_mape": 4.998907089233398,
+  "test_mse": 1.3511425256729126,
+  "test_mspe": 379.718017578125,
+  "test_rmse": 1.1623865365982056,
+  "train_one_step_loss": 1.1684831380844116
+}

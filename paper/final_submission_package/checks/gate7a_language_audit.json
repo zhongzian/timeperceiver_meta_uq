@@ -1,0 +1,40 @@
+{
+  "GATE7A_LANGUAGE_AUDIT_PASS": true,
+  "canonical_terms": [
+    "missing historical observations",
+    "fixed missing-history evaluation",
+    "fixed Student-t head",
+    "fixed df=8",
+    "probability-head training seed",
+    "point noninferiority",
+    "probabilistic-score improvement",
+    "point-prediction tradeoff"
+  ],
+  "generated_at": "2026-07-22T09:34:20.179536+00:00",
+  "overlong_sentence_count": 0,
+  "overlong_sentences": [],
+  "passive_voice_heuristic_count": 28,
+  "passive_voice_note": "Heuristic count is reported for editorial review and is not a failure criterion.",
+  "prohibited_hits": {},
+  "prohibited_unsupported_claim_count": 0,
+  "seen_abbreviations": [
+    "BRITS",
+    "CRPS",
+    "CRPS-",
+    "CSDI",
+    "CUDA",
+    "MAE",
+    "MC",
+    "MPIW",
+    "MSE",
+    "NLL",
+    "PICP",
+    "RMSE",
+    "SECOND"
+  ],
+  "status": "PASS",
+  "terminology_conflict_count": 0,
+  "terminology_conflicts": {},
+  "undefined_abbreviation_count": 0,
+  "undefined_abbreviations": []
+}

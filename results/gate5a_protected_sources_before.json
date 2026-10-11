@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "captured_at": "2026-07-18T22:49:37+0800",
+  "files": [
+    {
+      "path": "results/gate4a_formal_decision.json",
+      "exists": true,
+      "sha256": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd"
+    },
+    {
+      "path": "results/gate4b_multiseed_formal_decision.json",
+      "exists": true,
+      "sha256": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa"
+    },
+    {
+      "path": "results/gate4c_formal_decision.json",
+      "exists": true,
+      "sha256": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600"
+    },
+    {
+      "path": "reports/gate4b_multiseed_results.csv",
+      "exists": true,
+      "sha256": "a842d24eff2978b74271b6d748c8fe1ff30a4ce8d565f3fbd12c6dedc14dbf09"
+    },
+    {
+      "path": "reports/gate4b_multiseed_paired_deltas.csv",
+      "exists": true,
+      "sha256": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc"
+    },
+    {
+      "path": "results/final_project_status.json",
+      "exists": true,
+      "sha256": "288dd51a6eb1b9e6c6e8dadf57c95229d573c510ac05c7f473de707e5e091a84"
+    },
+    {
+      "path": "reports/final_project_synthesis.md",
+      "exists": true,
+      "sha256": "2381279e00fb4f6a0e6e8781a77f68d324c76a21623fb03bc0f3350a3546eab6"
+    },
+    {
+      "path": "results/final_evidence_registry.json",
+      "exists": true,
+      "sha256": "5cf1c486421a91a7996f91f6b83fffa5dfdb5e6e7ed26c32482e5b0cdd1f9ca3"
+    },
+    {
+      "path": "reports/final_evidence_registry.csv",
+      "exists": true,
+      "sha256": "47a95a9583bb47b46e620b44705af7b4b0172758ffb8c56a10e2ce4ac9754d56"
+    }
+  ]
+}

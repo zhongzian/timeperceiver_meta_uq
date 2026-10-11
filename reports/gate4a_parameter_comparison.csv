@@ -1,0 +1,4 @@
+variant,trainable_parameter_count,total_parameter_count,parameter_overhead_ratio
+official_baseline,0,,0.0
+static_adapter,33600,1169996,0.02956715792734223
+missingness_aware_adapter,39136,1175532,0.03443869918584719

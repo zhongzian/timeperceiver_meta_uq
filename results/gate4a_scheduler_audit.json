@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "gate3b_scheduler_entrypoint": "scripts/gate3b_full_scheduler.py",
+  "gate3b_queue_schema": "JSON-compatible YAML with top-level required_free_mib and task dictionaries",
+  "gate3b_task_command_representation": "scheduler constructs evaluator command from each task",
+  "gate3b_pid_management": "queue-specific runtime PID and detached process verification",
+  "gate3b_resource_wait_logic": "nvidia-smi free-memory polling with WAITING_RESOURCE",
+  "gate3b_oom_retry_logic": "limited cooling only; Gate 4a adds bounded OOM retries",
+  "gate3b_status_file": "per-run status.json plus scheduler log",
+  "gate3b_queue_complete_logic": "QUEUE_COMPLETE after all tasks succeed or are reused",
+  "reused_components": ["JSON queue parsing", "nvidia-smi GPU selection", "required_free_mib", "serial task execution", "queue-specific PID/log"]
+}

@@ -1,0 +1,11 @@
+{
+  "dataset": "electricity",
+  "end_time": "",
+  "error_summary": "",
+  "exit_code": null,
+  "experiment_id": "timeperceiver__electricity__official_baseline__seed2025__20260703_215305",
+  "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260703_215305/metrics.json",
+  "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260703_215305",
+  "start_time": "2026-07-03T21:53:05+08:00",
+  "status": "RUNNING"
+}

@@ -1,0 +1,11 @@
+{
+  "experiment_id": "timeperceiver__etth1__official_missing_eval_smoke__random_rate0.3__seed2025__20260709_153942",
+  "status": "SUCCESS",
+  "dataset": "etth1",
+  "mode": "official_missing_eval_smoke",
+  "start_time": "2026-07-09T15:39:57",
+  "end_time": "2026-07-09T15:40:09",
+  "exit_code": 0,
+  "error_summary": "",
+  "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__etth1__official_missing_eval_smoke__random_rate0.3__seed2025__20260709_153942/metrics.json"
+}

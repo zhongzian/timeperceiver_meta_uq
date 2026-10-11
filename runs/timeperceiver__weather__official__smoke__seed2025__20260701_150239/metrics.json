@@ -1,0 +1,24 @@
+{
+  "checkpoint": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__weather__official__smoke__seed2025__20260701_150239/checkpoints/last.pt",
+  "dataset": "weather",
+  "duration_seconds": 1.027,
+  "eval_losses": [
+    {
+      "loss": 0.3215910494327545,
+      "split": "val"
+    },
+    {
+      "loss": 0.24313092231750488,
+      "split": "test"
+    }
+  ],
+  "experiment_id": "timeperceiver__weather__official__smoke__seed2025__20260701_150239",
+  "num_parameters": 14412,
+  "smoke": true,
+  "test_mae": 0.303312212228775,
+  "test_mape": 0.4262145161628723,
+  "test_mse": 0.2431309074163437,
+  "test_mspe": 0.3400971591472626,
+  "test_rmse": 0.49308305978775024,
+  "train_one_step_loss": 0.34492212533950806
+}

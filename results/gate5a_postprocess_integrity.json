@@ -1,0 +1,193 @@
+{
+  "status": "PASS",
+  "stage": "gate5a_postprocess_closure",
+  "closure_only": true,
+  "training_run": false,
+  "optimizer_created": false,
+  "backward_called": false,
+  "gpu_used": false,
+  "scheduler_started": false,
+  "formal_checkpoints_modified": false,
+  "formal_metrics_modified": false,
+  "formal_decisions_modified": false,
+  "postformal_watcher_complete": true,
+  "postformal_exit_code": 0,
+  "postformal_completed_at": "2026-07-20T16:17:44.056639",
+  "gate5a_formal_tasks_complete": true,
+  "gate5a_logical_tasks": 12,
+  "gate5a_reused_tasks": 6,
+  "gate5a_new_tasks_succeeded": 6,
+  "gate5a_implementation_pass": true,
+  "gate5a_formal_decision": "FIXED_HEAVY_TAIL_SUFFICIENT",
+  "diagnostics_complete": true,
+  "efficiency_complete": true,
+  "paper_update_complete": true,
+  "canonical_evidence_rebuild_pass": true,
+  "final_synthesis_pass": true,
+  "paper_artifact_verification_pass": true,
+  "invalid_legacy_paper_rows": 0,
+  "smoke_paper_rows": 0,
+  "unsupported_claims": 0,
+  "source_hash_mismatches": 0,
+  "gate4a_gate4c_decisions_unchanged": true,
+  "gate4b_primary_csv_unchanged": true,
+  "gate5a_formal_decision_unchanged": true,
+  "gate5a_formal_results_unchanged": true,
+  "existing_equivalent_verification_file": "results/gate5a_artifact_verification.json",
+  "existing_equivalent_verification_sha256": "50ad261cd4f578c9b7a85203d69abd68edb89bd4965dba8c6dd46f49f87a2cfb",
+  "existing_equivalent_verification_status": "PASS",
+  "source_verification_file": "results/gate5a_artifact_verification.json",
+  "source_verification_sha256": "50ad261cd4f578c9b7a85203d69abd68edb89bd4965dba8c6dd46f49f87a2cfb",
+  "source_verification_status": "PASS",
+  "mapped_checks": {
+    "postformal_watcher_complete": true,
+    "protocol_smoke_6_of_6": true,
+    "formal_tasks_12_of_12": true,
+    "formal_task_partition_6_plus_6": true,
+    "formal_implementation_pass": true,
+    "formal_decision_fixed_heavy_tail": true,
+    "formal_distribution_rows_12": true,
+    "diagnostics_complete": true,
+    "efficiency_complete": true,
+    "paper_tables_complete": true,
+    "paper_figures_complete": true,
+    "canonical_evidence_rebuilt": true,
+    "final_synthesis_pass": true,
+    "paper_artifact_verification_pass": true,
+    "invalid_legacy_paper_rows_zero": true,
+    "smoke_paper_rows_zero": true,
+    "unsupported_claims_zero": true,
+    "registry_hash_mismatches_zero": true,
+    "existing_equivalent_verification_pass": true
+  },
+  "missing_required_checks": [],
+  "upstream_commit": "7e30cc07b51c709f408409fd60a34c81ae8990be",
+  "upstream_tracked_diff_empty": true,
+  "upstream_untracked": [
+    "?? __pycache__/",
+    "?? data_provider/__pycache__/",
+    "?? exp/__pycache__/",
+    "?? models/__pycache__/",
+    "?? utils/__pycache__/"
+  ],
+  "GATE5A_DIAGNOSTICS_COMPLETE": true,
+  "GATE5A_EFFICIENCY_COMPLETE": true,
+  "GATE5A_PAPER_UPDATE_COMPLETE": true,
+  "GATE5A_FINAL_EVIDENCE_REBUILD_PASS": true,
+  "GATE5A_FORMAL_INTEGRITY_PASS": true,
+  "GATE5A_POSTPROCESS_COMPLETE": true,
+  "FINAL_SYNTHESIS_PASS": true,
+  "READY_FOR_SECOND_BACKBONE_PLANNING": true,
+  "generated_at": "2026-07-20T17:23:15+08:00",
+  "generated_by": "scripts/gate5a_finalize_closure.py",
+  "write_allowlist": [
+    "scripts/gate5a_finalize_closure.py",
+    "scripts/gate5a_closure_status.sh",
+    "results/gate5a_postprocess_integrity.json",
+    "reports/gate5a_postprocess_integrity.md",
+    "results/gate5a_closure_verification.json",
+    "reports/gate5a_closure_verification.md",
+    "results/gate5a_status.json",
+    "reports/gate5a_status.md",
+    "artifacts/gate5a_closure/"
+  ],
+  "atomic_status_update": {
+    "temporary_file_used": true,
+    "temporary_file_fsync": true,
+    "os_replace_used": true,
+    "directory_fsync": true,
+    "reopened_validation": true
+  },
+  "formal_source_hashes": [
+    {
+      "path": "results/gate4a_formal_decision.json",
+      "pre_sha256": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd",
+      "post_sha256": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd",
+      "match": true
+    },
+    {
+      "path": "results/gate4b_expanded_formal_decision.json",
+      "pre_sha256": "fa78308c9344d69cfb06474204e9f1ce46af15c8ea6751d2ad0fb2e191584047",
+      "post_sha256": "fa78308c9344d69cfb06474204e9f1ce46af15c8ea6751d2ad0fb2e191584047",
+      "match": true
+    },
+    {
+      "path": "results/gate4b_cross_dataset_formal_decision.json",
+      "pre_sha256": "073f10e4f4828a8402d854b366ec3c45e329fde60e2c53403cd6d7a940f556e3",
+      "post_sha256": "073f10e4f4828a8402d854b366ec3c45e329fde60e2c53403cd6d7a940f556e3",
+      "match": true
+    },
+    {
+      "path": "results/gate4b_multiseed_formal_decision.json",
+      "pre_sha256": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa",
+      "post_sha256": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa",
+      "match": true
+    },
+    {
+      "path": "results/gate4c_formal_decision.json",
+      "pre_sha256": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600",
+      "post_sha256": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600",
+      "match": true
+    },
+    {
+      "path": "results/gate5a_formal_decision.json",
+      "pre_sha256": "78a1772ae34ee67fe84da1729917fe28d827c512e65a9f4cfa1f51de8eece8c7",
+      "post_sha256": "78a1772ae34ee67fe84da1729917fe28d827c512e65a9f4cfa1f51de8eece8c7",
+      "match": true
+    },
+    {
+      "path": "reports/gate4b_multiseed_paired_deltas.csv",
+      "pre_sha256": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc",
+      "post_sha256": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc",
+      "match": true
+    },
+    {
+      "path": "reports/gate4b_multiseed_dataset_summary.csv",
+      "pre_sha256": "16a3bf34ef050c4305316e8b6e9e7bb509dbe170369a4e09450986c431c9cfeb",
+      "post_sha256": "16a3bf34ef050c4305316e8b6e9e7bb509dbe170369a4e09450986c431c9cfeb",
+      "match": true
+    },
+    {
+      "path": "reports/gate4c_interval_metrics.csv",
+      "pre_sha256": "24cff2a4833e493dc81f19a8efd8b81b4c0c57fe60bdf4a9d4c4e7792dedc73d",
+      "post_sha256": "24cff2a4833e493dc81f19a8efd8b81b4c0c57fe60bdf4a9d4c4e7792dedc73d",
+      "match": true
+    },
+    {
+      "path": "reports/gate4c_conditioned_bin_metrics.csv",
+      "pre_sha256": "5102708f75a8ae1c6b68dce60405b8073525cc6432ced29d4ab900b72e31ebe9",
+      "post_sha256": "5102708f75a8ae1c6b68dce60405b8073525cc6432ced29d4ab900b72e31ebe9",
+      "match": true
+    },
+    {
+      "path": "reports/gate5a_distribution_results.csv",
+      "pre_sha256": "f3d1db235adcc414959a9a4a83e12ea7450a28794609cc8e9bb2eae36d63e595",
+      "post_sha256": "f3d1db235adcc414959a9a4a83e12ea7450a28794609cc8e9bb2eae36d63e595",
+      "match": true
+    },
+    {
+      "path": "reports/gate5a_pairwise_deltas.csv",
+      "pre_sha256": "913209971fe76e2e3ad750c7cb11bf1b83b46931e86d92a77a0aa806a6efb03d",
+      "post_sha256": "913209971fe76e2e3ad750c7cb11bf1b83b46931e86d92a77a0aa806a6efb03d",
+      "match": true
+    },
+    {
+      "path": "results/final_evidence_registry.json",
+      "pre_sha256": "ad2fbc18b069f91a167ffbb1ee58c6cd60a3bcf70ac1bdee42a05d46e95fa927",
+      "post_sha256": "ad2fbc18b069f91a167ffbb1ee58c6cd60a3bcf70ac1bdee42a05d46e95fa927",
+      "match": true
+    },
+    {
+      "path": "results/final_project_status.json",
+      "pre_sha256": "51d8d3546644a30ef86e6407d79bea177df57400aaecc9e9d7b0ad86dc17de7d",
+      "post_sha256": "51d8d3546644a30ef86e6407d79bea177df57400aaecc9e9d7b0ad86dc17de7d",
+      "match": true
+    },
+    {
+      "path": "results/paper_artifact_verification.json",
+      "pre_sha256": "0a7f996fca7bf5b10dc1522ff6c79b25792900751d8b7e69250e5c1b02ee2372",
+      "post_sha256": "0a7f996fca7bf5b10dc1522ff6c79b25792900751d8b7e69250e5c1b02ee2372",
+      "match": true
+    }
+  ]
+}

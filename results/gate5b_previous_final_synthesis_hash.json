@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "path": "reports/final_project_synthesis.md",
+  "sha256": "2381279e00fb4f6a0e6e8781a77f68d324c76a21623fb03bc0f3350a3546eab6",
+  "purpose": "Pre-Gate-5b final-synthesis snapshot; the source may change only during the verified Gate 5b rebuild."
+}

@@ -1,0 +1,17 @@
+\section{Probabilistic Forecasting Method}
+\label{sec:method}
+
+\subsection{Matched-capacity marginal heads}
+Given a frozen backbone representation $z_{h,c}$, two linear projections produce location $\mu_{h,c}$ and a positive scale $\sigma_{h,c}=\operatorname{softplus}(s_{h,c})+\epsilon$. Gaussian, Laplace, and fixed \StudentT{} heads use exactly these trainable projections. The fixed head is
+\begin{equation}
+y_{t+h,c}\sim \operatorname{StudentT}(\df=8,\mu_{h,c},\sigma_{h,c}).
+\label{eq:student-head}
+\end{equation}
+Thus it adds no trainable degrees-of-freedom parameters. A learned-$\df$ version is included only as an ablation and is not the proposed final method.
+
+The fixed value $\df=8$ is a reference degrees-of-freedom setting. It is empirically sufficient under the evaluated distribution-head protocol, not theoretically optimal, and was not selected separately for each dataset. One goal of the ablation is to ask whether extra tail flexibility is supported once location and scale capacity are controlled.
+
+\subsection{Training objective and forecast summaries}
+Probability heads minimize validation-selected NLL while the official backbone checkpoint remains fixed. No test observation or target is used for head selection. NLL is a distribution-sensitive proper score. CRPS is another proper score that combines calibration and sharpness; here it is estimated with 64 Monte Carlo samples using the fixed evaluation seed 52025, rather than reported as an exact analytic value. MSE and MAE evaluate the location forecast.
+
+For marginal intervals, prediction interval coverage probability (PICP) and mean prediction interval width (MPIW) describe coverage and sharpness separately. Neither PICP alone nor width alone is sufficient. The interval score combines coverage penalties with width for each marginal interval \citep{winkler1972interval}. These diagnostics do not imply joint calibration.

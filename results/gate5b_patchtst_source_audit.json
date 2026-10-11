@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "repository": "https://github.com/yuqinie98/PatchTST.git",
+  "remote_url": "https://github.com/yuqinie98/PatchTST.git",
+  "resolved_commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+  "license": "Apache-2.0",
+  "license_identified": true,
+  "official_supervised_code_found": true,
+  "supervised_model_files": [
+    "PatchTST_supervised/models/PatchTST.py",
+    "PatchTST_supervised/layers/PatchTST_backbone.py",
+    "PatchTST_supervised/layers/PatchTST_layers.py"
+  ],
+  "source_clean": true,
+  "local_modifications": [],
+  "python_import_compatibility": true,
+  "import_error": "",
+  "torch_compatibility": true,
+  "required_dependencies": [
+    "numpy",
+    "matplotlib",
+    "pandas",
+    "scikit-learn",
+    "torch"
+  ],
+  "missing_dependencies": []
+}

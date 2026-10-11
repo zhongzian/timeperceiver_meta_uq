@@ -1,0 +1,30 @@
+\section{Experimental Setup}
+\label{sec:setup}
+
+\subsection{Datasets and deterministic references}
+
+We evaluate ETTh1, Weather, and Electricity. Every experiment uses input length 384 and prediction length 96. We retain the official train, validation, and test boundaries for each dataset. Normalization statistics are fitted on the training split only and then frozen. Table~\ref{tab:clean-baselines} records the clean-input TimePerceiver references used to quantify degradation under missing history.
+
+\begin{table}[t]
+    \centering
+    \caption{Clean-input TimePerceiver references. Metrics are reproduced under the project protocol with one official training seed per dataset.}
+    \label{tab:clean-baselines}
+    \small
+    \input{tables/table1_clean_baselines}
+\end{table}
+
+\subsection{Missing-history protocol}
+
+Historical masking uses random, block, channel, and mixed masks at missing rates 0.1, 0.3, 0.5, and 0.7. Validation and test masks are generated once and reused across matched models. The fixed test-mask seed is 2025. Training masks follow the recorded deterministic seed rule for each formal experiment. Missingness changes only the historical input. Future targets remain complete and are never available to the model.
+
+\subsection{Probability-head training}
+
+TimePerceiver comparisons keep the official backbone checkpoint fixed and vary the probability-head training seed over 2021, 2022, 2023, and 2025. This is a four-seed head study rather than full end-to-end backbone retraining. The broader cross-condition and distribution-ablation experiments use seed 2025 unless stated otherwise.
+
+PatchTST uses one clean-backbone training seed and one probability-head seed, both 2025. Its second-backbone comparison is limited to random missingness at rate 0.3. Gaussian and fixed Student-$t$ heads share the backbone checkpoint, split, masks, optimizer budget, and validation-based checkpoint rule.
+
+\subsection{Metrics and model selection}
+
+We report NLL, CRPS, MSE, MAE, RMSE, prediction-interval coverage probability (PICP), mean prediction-interval width (MPIW), and interval score. CRPS uses 64 Monte Carlo (MC) samples with MC seed 52025. Native intervals come directly from each predictive distribution. Early stopping and checkpoint selection use validation NLL. Test metrics are not used for training, hyperparameter selection, or early stopping.
+
+For paired gates, lower NLL is a probabilistic win. CRPS must be noninferior under the registered comparison rule, and relative MSE degradation must not exceed 1\%. We report each component separately rather than collapsing a partial pass into a positive overall decision.

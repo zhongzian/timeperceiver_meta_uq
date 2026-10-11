@@ -1,0 +1,47 @@
+{
+  "queue": "/mnt/data/zza/code/timeperceiver_meta_uq/configs/queues/gate4b_cross_dataset.yaml",
+  "scheduler_pid": 3001413,
+  "status": "FAILED",
+  "tasks": {
+    "weather__random_rate0.3__gaussian_head": {
+      "status": "FAILED",
+      "variant": "gaussian_head",
+      "dataset": "weather",
+      "missing_type": "random",
+      "missing_rate": 0.3,
+      "experiment_id": "timeperceiver__weather__gate4b_cross_dataset__gaussian_head__random_rate0.3__seed2025__20260714_055111",
+      "run_pid": null,
+      "gpu_index": 1,
+      "gpu_uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb",
+      "gpu_name": "NVIDIA GeForce RTX 4090",
+      "free_mib_at_launch": 18576,
+      "oom_retry_count": 0,
+      "reused": false,
+      "exit_code": 2,
+      "last_error": "RuntimeError('quantile() input tensor is too large')",
+      "error_type": "CODE_ERROR"
+    },
+    "weather__random_rate0.3__student_t_head": {
+      "status": "PENDING",
+      "variant": "student_t_head",
+      "dataset": "weather",
+      "missing_type": "random",
+      "missing_rate": 0.3
+    },
+    "electricity__random_rate0.3__gaussian_head": {
+      "status": "PENDING",
+      "variant": "gaussian_head",
+      "dataset": "electricity",
+      "missing_type": "random",
+      "missing_rate": 0.3
+    },
+    "electricity__random_rate0.3__student_t_head": {
+      "status": "PENDING",
+      "variant": "student_t_head",
+      "dataset": "electricity",
+      "missing_type": "random",
+      "missing_rate": 0.3
+    }
+  },
+  "updated_at": "2026-07-14T05:51:11.073127"
+}

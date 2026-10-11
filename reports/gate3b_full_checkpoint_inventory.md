@@ -1,0 +1,5 @@
+# Gate 3b-full Checkpoints
+
+- etth1: `timeperceiver__etth1__official_baseline__seed2025__20260701_203054` `8a939fccc4942196ccc75aa76e170d8884e4670aaa666f5e7ca10b30b159f8e1`
+- weather: `timeperceiver__weather__official_baseline__seed2025__20260701_203558` `a99ec027aba651569e188a6c1ecd07d512ed6a077e3ea38f9f4db81aa8da635c`
+- electricity: `timeperceiver__electricity__official_baseline__seed2025__20260705_090044` `93fd70e275cc3f8764e0fc404d05bb32e0431c78aa09ecc3fa83ff111b5c5f1a`

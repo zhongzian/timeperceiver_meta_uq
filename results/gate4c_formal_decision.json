@@ -1,0 +1,46 @@
+{
+  "status": "CONFORMAL_MINIMAL_SIGNAL_NEGATIVE",
+  "decision": "CONFORMAL_MINIMAL_SIGNAL_NEGATIVE",
+  "GATE4C_IMPLEMENTATION_PASS": true,
+  "GATE4C_MARGINAL_GAUSSIAN_EFFECTIVE": false,
+  "GATE4C_MARGINAL_STUDENT_T_EFFECTIVE": false,
+  "conditioned_worst_bin_improvement_count": 0,
+  "conditioned_worst_bin_errors": {
+    "90": 0.030378019809722878,
+    "95": 0.016439604759216353
+  },
+  "marginal_worst_bin_errors": {
+    "90": 0.028187429904937722,
+    "95": 0.014956402778625533
+  },
+  "GATE4C_CONDITIONED_STUDENT_T_GROUP_BENEFIT": false,
+  "GATE4C_CONDITIONED_STUDENT_T_SCORE_NONINFERIOR": true,
+  "GATE4C_STUDENT_T_CONFORMAL_EFFICIENCY": true,
+  "GATE4C_SIGNAL_POSITIVE": false,
+  "ENTER_GATE4C_EXPANDED_MATRIX": false,
+  "implementation_checks": {
+    "formal_tasks_2_of_2_succeeded": true,
+    "scheduler_complete": true,
+    "selection_calibration_raw_overlap_zero": true,
+    "calibration_labels_not_used_for_training": true,
+    "calibration_labels_not_used_for_selection": true,
+    "test_labels_not_used_for_calibration": true,
+    "all_qhat_finite_nonnegative": true,
+    "all_conditioned_bins_valid": true,
+    "all_intervals_finite_nested": true,
+    "point_predictions_unchanged": true,
+    "backbone_frozen": true,
+    "no_leakage": true,
+    "upstream_tracked_diff_empty": true
+  },
+  "thresholds": {
+    "conditioned_worst_bin_improvement_count": ">=1 of 2",
+    "conditioned_overall_ace_allowance": 0.005,
+    "conditioned_interval_score_ratio": 1.02
+  },
+  "conformal_mode": "split_conformal",
+  "coverage_target": "elementwise_marginal",
+  "time_series_dependence_present": true,
+  "exact_exchangeability_guarantee_claimed": false,
+  "upstream_tracked_diff_empty": true
+}

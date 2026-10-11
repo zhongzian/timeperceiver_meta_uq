@@ -1,0 +1,11 @@
+{
+  "dataset": "electricity",
+  "end_time": "",
+  "error_summary": "created retry run; waiting for RTX 4090 free memory",
+  "exit_code": null,
+  "experiment_id": "timeperceiver__electricity__official_baseline__seed2025__20260701_223027",
+  "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260701_223027/metrics.json",
+  "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260701_223027",
+  "start_time": "2026-07-01T22:30:27+08:00",
+  "status": "WAITING_RESOURCE"
+}

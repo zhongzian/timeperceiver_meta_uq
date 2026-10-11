@@ -1,0 +1,12 @@
+{
+  "status": "PREPARED",
+  "generated_at": "2026-07-22T11:49:31.530843+00:00",
+  "target_venue": "Journal of Forecasting",
+  "frozen_source_count": 15,
+  "venue_root": "paper/venues/journal_of_forecasting",
+  "mother_manuscript_modified": false,
+  "gate7a_package_modified": false,
+  "training": false,
+  "inference": false,
+  "gpu": false
+}

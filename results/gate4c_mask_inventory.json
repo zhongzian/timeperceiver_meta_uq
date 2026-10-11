@@ -1,0 +1,65 @@
+{
+  "stage": "Gate 4c mask inventory",
+  "status": "PASS",
+  "rows": [
+    {
+      "split": "selection",
+      "seed": 43025,
+      "windows": 913,
+      "shape": [
+        913,
+        384,
+        7
+      ],
+      "dtype": "uint8",
+      "actual_missing_rate": 0.2999045695770093,
+      "sha256": "aeef3fc99e3cc875f871c5613a628d806257bacee74fce735b9d92e5e14068d1",
+      "npz_path": "artifacts/gate4c_masks/etth1/selection/random/rate_0.3/seed_43025.npz",
+      "metadata_path": "artifacts/gate4c_masks/etth1/selection/random/rate_0.3/seed_43025.metadata.json",
+      "status": "PASS"
+    },
+    {
+      "split": "calibration",
+      "seed": 44025,
+      "windows": 914,
+      "shape": [
+        914,
+        384,
+        7
+      ],
+      "dtype": "uint8",
+      "actual_missing_rate": 0.29957278316140457,
+      "sha256": "008f13390bcc2cd09f71b2da869d67198a902f706b2e46321fc20229a9d42066",
+      "npz_path": "artifacts/gate4c_masks/etth1/calibration/random/rate_0.3/seed_44025.npz",
+      "metadata_path": "artifacts/gate4c_masks/etth1/calibration/random/rate_0.3/seed_44025.metadata.json",
+      "status": "PASS"
+    },
+    {
+      "split": "test",
+      "seed": 2025,
+      "windows": 2785,
+      "shape": [
+        2785,
+        384,
+        7
+      ],
+      "dtype": "uint8",
+      "actual_missing_rate": 0.30014400059844404,
+      "sha256": "2814d0c2f8c1fc3dca854dee238f4984ff4f519f14f67b8bcbdfd688bda6bebc",
+      "npz_path": "artifacts/masks/etth1/random/rate_0.3/seed_2025.npz",
+      "metadata_path": "artifacts/masks/etth1/random/rate_0.3/seed_2025.json",
+      "status": "PASS"
+    }
+  ],
+  "checks": {
+    "selection_masks_verified_1_of_1": true,
+    "calibration_masks_verified_1_of_1": true,
+    "test_masks_verified_1_of_1": true,
+    "hash_mismatch_count": 0,
+    "metadata_mismatch_count": 0,
+    "selection_and_calibration_paths_differ": true,
+    "selection_and_calibration_hashes_differ": true
+  },
+  "test_mask_reused_from_gate3a": true,
+  "test_mask_regenerated": false
+}

@@ -1,0 +1,126 @@
+\subsection{Additional Results}
+\label{app:additional-results}
+
+\subsubsection{Adapter ablation}
+\label{app:adapter}
+
+Table~\ref{tab:adapter-ablation} gives the full Gate 4a comparison. Figure~\ref{fig:adapter-ablation} visualizes the same test MSE values. The missingness-aware FiLM branch is active, but it does not outperform the static adapter.
+
+\begin{table}[ht]
+    \centering
+    \caption{Gate 4a adapter comparison on ETTh1 random-0.3.}
+    \label{tab:adapter-ablation}
+    \scriptsize
+    \input{tables/table3_adapter_ablation}
+\end{table}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.78\linewidth]{figures/figA1_gate4a_adapter.pdf}
+    \caption{Static and missingness-aware adapter results relative to the official reference.}
+    \label{fig:adapter-ablation}
+\end{figure}
+
+\subsubsection{Cross-condition TimePerceiver evidence}
+
+Table~\ref{tab:etth1-cross-condition} reports the ETTh1 condition matrix. It uses the same fixed evaluation assets for Gaussian and Student-$t$ heads within each condition.
+
+\begin{table}[ht]
+    \centering
+    \caption{ETTh1 cross-condition paired comparison.}
+    \label{tab:etth1-cross-condition}
+    \scriptsize
+    \resizebox{\linewidth}{!}{\input{tables/table5_etth1_cross_condition}}
+\end{table}
+
+\subsubsection{Conformal details}
+
+Tables~\ref{tab:conformal-main} and~\ref{tab:conformal-mechanism} retain the formal conformal results and mechanism audit. Figure~\ref{fig:calibration-shift} compares calibration and test coverage. Figures~\ref{fig:channel-coverage} and~\ref{fig:horizon-coverage} show channel- and horizon-level diagnostics.
+
+\begin{table}[ht]
+    \centering
+    \caption{Formal additive conformal results.}
+    \label{tab:conformal-main}
+    \scriptsize
+    \input{tables/table6_conformal}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \caption{Conformal mechanism audit. Counterfactual values are diagnostic and not formal calibration.}
+    \label{tab:conformal-mechanism}
+    \scriptsize
+    \resizebox{\linewidth}{!}{\input{tables/table7_conformal_mechanism}}
+\end{table}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.78\linewidth]{figures/fig6_calibration_test_shift.pdf}
+    \caption{Descriptive calibration-to-test coverage shift under the strict temporal split.}
+    \label{fig:calibration-shift}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.48\linewidth]{figures/figA2_gate4c_channel_coverage.pdf}
+    \includegraphics[width=0.48\linewidth]{figures/figA3_gate4c_horizon_coverage.pdf}
+    \caption{Channel-level and horizon-level coverage diagnostics for the Gate 4c experiment.}
+    \label{fig:channel-coverage}
+    \label{fig:horizon-coverage}
+\end{figure}
+
+\subsubsection{Complete fixed-mask degradation matrix}
+
+Tables~\ref{tab:full-mask-etth1}--\ref{tab:full-mask-electricity} retain every Gate 3b cell while splitting the matrix by dataset for readability.
+
+\begin{table}[ht]
+    \centering
+    \caption{Full ETTh1 fixed-mask degradation matrix.}
+    \label{tab:full-mask-etth1}
+    \scriptsize
+    \input{tables/tableA1_etth1}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \caption{Full Weather fixed-mask degradation matrix.}
+    \label{tab:full-mask-weather}
+    \scriptsize
+    \input{tables/tableA1_weather}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \caption{Full Electricity fixed-mask degradation matrix.}
+    \label{tab:full-mask-electricity}
+    \scriptsize
+    \input{tables/tableA1_electricity}
+\end{table}
+
+\subsubsection{All conformal heads}
+
+Table~\ref{tab:all-conformal-heads} reports every retained head and interval method. Extra probability diagnostics are shown in Figures~\ref{fig:pit-diagnostic}--\ref{fig:patchtst-tail}.
+
+\begin{table}[ht]
+    \centering
+    \caption{All Gate 4c head and interval-method combinations.}
+    \label{tab:all-conformal-heads}
+    \scriptsize
+    \resizebox{\linewidth}{!}{\input{tables/tableA2_conformal_all_heads}}
+\end{table}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.48\linewidth]{figures/fig_gate5a_pit_histograms.pdf}
+    \includegraphics[width=0.48\linewidth]{figures/fig_gate5a_qq.pdf}
+    \caption{Descriptive probability integral transform and quantile diagnostics.}
+    \label{fig:pit-diagnostic}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.48\linewidth]{figures/fig_gate5a_kurtosis_df.pdf}
+    \includegraphics[width=0.48\linewidth]{figures/fig_gate5b_patchtst_tail_nll_gain.pdf}
+    \caption{Channel-tail diagnostics and the descriptive PatchTST residual-percentile NLL decomposition.}
+    \label{fig:patchtst-tail}
+\end{figure}

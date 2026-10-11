@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "GATE5A_ARTIFACT_VERIFICATION_PASS": true,
+  "checks": {
+    "gate4a_to_gate4c_decisions_unchanged": true,
+    "gate4b_primary_csv_unchanged": true,
+    "previous_final_synthesis_hash_recorded": true,
+    "old_unmasked_paper_rows_zero": true,
+    "smoke_paper_rows_zero": true,
+    "gate5a_formal_rows_12": true,
+    "table8_traceable": true,
+    "table9_traceable": true,
+    "gate5a_figures_traceable": true,
+    "canonical_registry_pass": true,
+    "final_synthesis_pass": true,
+    "upstream_tracked_diff_empty": true
+  },
+  "immutable_before": {
+    "results/gate4a_formal_decision.json": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd",
+    "results/gate4b_multiseed_formal_decision.json": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa",
+    "results/gate4c_formal_decision.json": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600",
+    "reports/gate4b_multiseed_results.csv": "a842d24eff2978b74271b6d748c8fe1ff30a4ce8d565f3fbd12c6dedc14dbf09",
+    "reports/gate4b_multiseed_paired_deltas.csv": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc"
+  },
+  "immutable_after": {
+    "results/gate4a_formal_decision.json": "4fcd85430744941160cbe1108250c762764a81280ad54f2d5b2c85e3ce18d0bd",
+    "results/gate4b_multiseed_formal_decision.json": "4f1abbaca515faddfa56bf635f03815028122a3d2161eb8188a1ff9881b9c0aa",
+    "results/gate4c_formal_decision.json": "5e9d19bd8b3693510df80196e539a61464ecf403e6b612788e9e2d0806653600",
+    "reports/gate4b_multiseed_results.csv": "a842d24eff2978b74271b6d748c8fe1ff30a4ce8d565f3fbd12c6dedc14dbf09",
+    "reports/gate4b_multiseed_paired_deltas.csv": "40da6068c4deabce2eca223bb79d2584be283a0920699773463da8fda82cb2dc"
+  },
+  "upstream_tracked_status": []
+}

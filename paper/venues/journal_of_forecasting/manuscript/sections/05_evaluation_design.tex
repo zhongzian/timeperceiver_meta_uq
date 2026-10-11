@@ -1,0 +1,17 @@
+\section{Evaluation Design}
+\label{sec:evaluation}
+
+\subsection{Datasets and fixed missing-history protocol}
+Experiments use ETTh1, Weather, and Electricity with input length 384 and prediction length 96. The official splits and preprocessing rules are preserved, normalization is fitted on training data only, and fixed validation and test masks are reused within paired comparisons. Historical inputs alone are masked. The test set is never used for training, hyperparameter selection, early stopping, or conformal calibration.
+
+The deterministic audit covers four mask types and four rates. The probabilistic TimePerceiver and PatchTST comparisons use the corrected fixed-mask pipeline; invalid historical runs in which masks were not applied are excluded from every result. Head selection uses validation NLL. Gaussian and \StudentT{} heads within a pair use the same backbone checkpoint, mask, split, target, training budget, and evaluation code.
+
+\subsection{Seed scope and decision criteria}
+The TimePerceiver comparison uses four probability-head training seeds (2021, 2022, 2023, and 2025) on a fixed official backbone checkpoint per dataset. It is therefore a probability-head seed study, not an end-to-end backbone retraining study. The PatchTST comparison uses one backbone seed and one probability-head seed (2025) per dataset under random missingness at rate $0.3$.
+
+The paired criteria require lower NLL, CRPS noninferiority, and point-prediction noninferiority. Point noninferiority permits a relative MSE increase of at most $1\%$:
+\begin{equation}
+\frac{\operatorname{MSE}_{t}-\operatorname{MSE}_{g}}{\operatorname{MSE}_{g}}\leq 0.01,
+\label{eq:point-gate}
+\end{equation}
+where subscripts $t$ and $g$ denote fixed \StudentT{} and Gaussian heads. This tolerance was fixed before the second-backbone decision. Test results do not alter it. All reported comparisons are descriptive; no formal significance test is performed.

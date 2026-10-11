@@ -1,0 +1,26 @@
+{
+  "status": "STUDENT_T_MINIMAL_SIGNAL_POSITIVE",
+  "corrected_fixed_mask_protocol": true,
+  "historical_unmasked_results_valid": false,
+  "gaussian_run": "runs/timeperceiver__etth1__gate4b_corrected_minimal__gaussian_head__random_rate0.3__seed2025__20260713_130557",
+  "student_t_run": "runs/timeperceiver__etth1__gate4b_corrected_minimal__student_t_head__random_rate0.3__seed2025__20260713_130713",
+  "gaussian": {
+    "best_epoch": 6,
+    "best_validation_nll": 1.2646063484928824,
+    "test_mean_nll": 0.9185353517532349,
+    "test_crps": 0.34412652800263954,
+    "test_mse": 0.42033201456069946
+  },
+  "student_t": {
+    "best_epoch": 6,
+    "best_validation_nll": 1.1541005725210363,
+    "test_mean_nll": 0.8771538734436035,
+    "test_crps": 0.3402626274365222,
+    "test_mse": 0.4191768169403076
+  },
+  "GATE4B_STUDENT_T_NLL_BEATS_GAUSSIAN": true,
+  "GATE4B_STUDENT_T_CRPS_NONINFERIOR": true,
+  "GATE4B_STUDENT_T_POINT_NONINFERIOR": true,
+  "GATE4B_STUDENT_T_SIGNAL_POSITIVE": true,
+  "ENTER_GATE4B_EXPANDED_MATRIX": true
+}

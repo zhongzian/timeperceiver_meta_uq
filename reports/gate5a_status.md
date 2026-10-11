@@ -1,0 +1,60 @@
+# Gate 5a Status
+
+Gate 5a: **COMPLETE**
+
+- Formal decision: `FIXED_HEAVY_TAIL_SUFFICIENT`
+- Formal status: `COMPLETE`
+- Postprocess: `COMPLETE`
+- Final synthesis: `PASS`
+- Ready for second-backbone planning: `TRUE`
+- Closure-only update: `TRUE`
+- Formal results modified: `FALSE`
+- Formal decision modified: `FALSE`
+
+```json
+{
+  "status": "COMPLETE",
+  "GATE5A_IMPLEMENTATION_PASS": true,
+  "logical_tasks": 12,
+  "reused_tasks": 6,
+  "active_tasks_succeeded": 6,
+  "scheduler_status": "COMPLETE",
+  "scheduler_pid": 2208643,
+  "scheduler_log": "logs/gate5a_distribution_ablation_scheduler_20260720_134744.log",
+  "implementation_checks": {
+    "datasets_3": true,
+    "logical_rows_12": true,
+    "active_success_6": true,
+    "corrected_fixed_mask": true,
+    "old_unmasked_excluded": true,
+    "hashes_paired": true,
+    "metrics_finite": true,
+    "scales_positive": true,
+    "fixed_df_exactly_8": true,
+    "backbone_frozen": true,
+    "no_test_selection": true,
+    "upstream_tracked_diff_empty": true,
+    "queue_complete": true
+  },
+  "upstream_tracked_status": [],
+  "postprocess_status": "COMPLETE",
+  "formal_status": "COMPLETE",
+  "GATE5A_DIAGNOSTICS_COMPLETE": true,
+  "GATE5A_EFFICIENCY_COMPLETE": true,
+  "GATE5A_PAPER_UPDATE_COMPLETE": true,
+  "GATE5A_FINAL_EVIDENCE_REBUILD_PASS": true,
+  "GATE5A_FORMAL_INTEGRITY_PASS": true,
+  "GATE5A_POSTPROCESS_COMPLETE": true,
+  "FINAL_SYNTHESIS_PASS": true,
+  "READY_FOR_SECOND_BACKBONE_PLANNING": true,
+  "decision": "FIXED_HEAVY_TAIL_SUFFICIENT",
+  "closure_only_update": true,
+  "formal_results_modified": false,
+  "formal_decision_modified": false,
+  "training_restarted": false,
+  "scheduler_restarted": false,
+  "closure_integrity_file": "results/gate5a_postprocess_integrity.json",
+  "closure_completed_at": "2026-07-20T17:23:15+08:00",
+  "previous_status": "FORMAL_RESULTS_COMPLETE_PENDING_DECISION"
+}
+```

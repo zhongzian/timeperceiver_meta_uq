@@ -1,0 +1,33 @@
+{
+  "source_project": "timeperceiver_meta_uq",
+  "source_directory": "/mnt/data/zza/code/timeperceiver_meta_uq",
+  "snapshot_date": "2026-10-11",
+  "publication": "public GitHub repository requested by source owner",
+  "git_provenance": [
+    {
+      "path": ".",
+      "head": null,
+      "status_entries": null,
+      "upstreams": []
+    },
+    {
+      "path": "upstream/PatchTST",
+      "head": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+      "status_entries": 0,
+      "upstreams": [
+        "https://github.com/yuqinie98/PatchTST"
+      ]
+    },
+    {
+      "path": "upstream/TimePerceiver",
+      "head": "7e30cc07b51c709f408409fd60a34c81ae8990be",
+      "status_entries": 0,
+      "upstreams": [
+        "https://github.com/efficient-learning-lab/TimePerceiver"
+      ]
+    }
+  ],
+  "scope": "Code, configurations, dependency records, licenses and lightweight documentation.",
+  "omitted": "Raw data, model weights, environments, caches, large files, credentials and restricted third-party source.",
+  "history": "Original repositories and histories remain untouched. This publication is a new filtered snapshot; old Git blobs are not pushed."
+}

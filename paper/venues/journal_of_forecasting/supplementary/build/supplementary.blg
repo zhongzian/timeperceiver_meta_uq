@@ -1,0 +1,11 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: supplementary.aux
+I couldn't open style file apalike.bst
+---line 47 of file supplementary.aux
+ : \bibstyle{apalike
+ :                  }
+I'm skipping whatever remains of this command
+I found no \citation commands---while reading file supplementary.aux
+I found no style file---while reading file supplementary.aux
+(There were 3 error messages)

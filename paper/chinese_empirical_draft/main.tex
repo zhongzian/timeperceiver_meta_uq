@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper,twocolumn]{article}
+\usepackage[margin=19mm,columnsep=7mm]{geometry}
+\usepackage{fontspec,xeCJK}
+\setCJKmainfont{WenQuanYi Micro Hei}
+\setCJKsansfont{WenQuanYi Micro Hei}
+\usepackage{amsmath,amssymb,booktabs,graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption}
+\captionsetup{font=small}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{2pt}
+\newcommand{\E}{\mathbb{E}}
+\title{缺失历史观测下的重尾概率预测：\\一项严格配对的实证研究}
+\author{中文研究初稿}
+\date{2026年9月11日}
+\begin{document}
+\twocolumn[\maketitle
+\begin{minipage}{\textwidth}
+\textbf{摘要：}
+历史观测缺失改变了预测器可利用的信息，点预测误差相近的模型仍可能给出不同的预测分布。如何把分布选择的作用与主干表示、缺失样本及训练随机性区分开，是评价概率预测的重要问题。
+
+本文围绕这一问题建立固定历史掩码下的配对比较协议。在训练集统计量归一化、固定主干检查点和一致测试窗口下，比较 Gaussian、Laplace、固定自由度为8的 Student-t 与可学习自由度 Student-t。实验覆盖 ETTh1、Weather、Electricity，并以 TimePerceiver 和 PatchTST 分别考察分布头的作用。
+
+在随机缺失率为0.3、预测长度为96的已核验实验中，固定 Student-t 相对 Gaussian 在两个主干的六组单种子配对中均降低 NLL 与 CRPS。TimePerceiver 上另有四个概率头种子的独立训练比较，可学习自由度 Student-t 在三个数据集上的平均 NLL 差值分别为 $-0.043900$、$-0.473557$ 和 $-0.074296$。Electricity 上概率评分与点预测误差呈现不同方向，说明分布质量应与点预测性能联合评价。研究结果支持将重尾分布作为缺失历史预测的实证参照，并区分固定自由度证据与可学习自由度的训练稳定性证据。
+
+\smallskip\textbf{关键词：} 时间序列预测；历史观测缺失；概率预测；Student-t 分布；配对评估
+\end{minipage}\vspace{5mm}]
+
+\section{引言}
+多变量时间序列预测通常从一个完整历史窗口估计未来状态。传感器掉线、记录延迟或通道停用会使窗口中的部分信息不可用。缺失值的影响并不止于预测均值：同一个点预测偏差，在窄分布下可能意味着过度自信，在较宽分布下则对应不同的风险判断。因此，比较缺失历史预测器时，需要同时考察中心位置、分布形状和区间行为。
+
+现有预测主干已形成多种有效的表示方式。PatchTST 将序列分块并采用通道独立建模\cite{patchtst}；TimePerceiver 采用编码器与解码器框架处理时间序列预测\cite{timeperceiver}。当这些表示保持不变时，预测头所作的分布假设能否改善概率评分，是一个可以直接检验的问题。本文不把标准 Student-t 分布重新定义为新模型，而是把输出分布作为受控因素，研究其在缺失历史输入上的效果。
+
+这种比较容易受到实验协议的干扰。不同测试掩码会改变样本难度；重训主干会同时改变特征和输出头；把初始化为8的可学习自由度写成固定自由度，则会混淆不同假设。为此，本文以运行级证据组织实验：每一组配对共享主干检查点、测试窗口和掩码，记录分布参数是否参与优化，并将概率头种子与主干种子分开报告。
+
+本文的工作包括三个方面。构建可追溯的固定掩码配对协议，使分布头比较具有明确的输入和检查点对应关系；在三个数据集、两个主干上比较固定重尾分布与 Gaussian，并通过 TimePerceiver 分布消融和多种子结果解释自由度的作用；联合报告概率评分和点误差，保留指标间的权衡，避免用单一胜率替代完整结论。
+
+\section{相关研究}
+\subsection{预测表示与概率输出}
+时间序列 Transformer 的分块表示与通道建模为长历史输入提供了不同的计算路径\cite{patchtst}。本文使用已训练的 TimePerceiver 和 PatchTST 作为表示来源，概率头阶段冻结主干。研究对象因此是给定表示上的分布选择，而不是两个主干端到端训练能力的排名。
+
+概率预测用分布描述未来变量，评分规则用于评价预测分布与真实观测的一致性。NLL 关注观测处的密度，CRPS 则结合预测分布与观测之间的距离；二者提供互补信息\cite{scoring}。重尾分布允许在中心区域与尾部之间作不同于 Gaussian 的概率分配，但这一性质是否转化为更好的预测，需要在相同数据条件下验证。
+
+\subsection{缺失历史与受控比较}
+历史插补与未来预测的评价目标不同。前者重建历史位置，后者估计未发生的目标。本文遮挡历史窗口而保持未来标签不变，并在固定评估资产上比较预测头。该设计将缺失输入引起的变化与测试样本随机重采样分离，所有结论均对应本文定义的输入处理与预测范围。
+
+\section{问题定义与分布头}
+\subsection{缺失输入协议}
+记历史窗口为 $X\in\mathbb{R}^{L\times C}$，未来目标为 $Y\in\mathbb{R}^{H\times C}$，观测掩码为 $M\in\{0,1\}^{L\times C}$，其中1表示保留。训练集拟合的归一化变换记为 $S$，缺失输入为
+\begin{equation}
+ \widetilde X=M\odot S(X).
+\end{equation}
+缺失位置在标准化空间置零，未来目标不参与掩码生成。预测头输出各时刻、各通道的边际分布；本文的区间指标也对应边际区间，而非整个未来轨迹的联合覆盖。
+
+\subsection{匹配位置与尺度映射}
+令冻结主干产生的表示为 $Z=f_{\theta}(\widetilde X)$。各分布头采用相同结构的位置与尺度投影：
+\begin{align}
+ \mu &= W_{\mu}Z+b_{\mu},\\
+ s &= \operatorname{softplus}(W_sZ+b_s)+10^{-4}.
+\end{align}
+这里的“相同”指映射结构和初始化协议，不表示训练后的权重绑定。位置映射由主干的点预测投影初始化；优化器更新概率头参数，主干参数保持冻结。Gaussian、Laplace 与固定 Student-t 具有相同的可训练参数数量，可学习 Student-t 额外引入通道级自由度参数。
+
+Gaussian 使用 $\mathcal N(\mu,s^2)$，Laplace 使用位置为 $\mu$、尺度为 $s$ 的分布。Student-t 的密度为
+\begin{equation}
+ p(y)=\frac{\Gamma((\nu+1)/2)}{\Gamma(\nu/2)\sqrt{\nu\pi}s}
+ \left(1+\frac{(y-\mu)^2}{\nu s^2}\right)^{-(\nu+1)/2}.
+\end{equation}
+固定版本取 $\nu=8$；可学习版本按通道使用 $\nu_c=2.01+\operatorname{softplus}(a_c)$，初始值为8。后者不是输入条件化自由度，同一通道的自由度参数在样本之间共享。
+
+Student-t 的方差为 $s^2\nu/(\nu-2)$。因此，匹配尺度投影的结构不等于匹配预测方差；固定 $\nu=8$ 时，其方差为 $4s^2/3$。本文将这一数学区别与实验观察分开，当前比较不把收益全部归因于尾部形状。
+
+\section{实验协议}
+\subsection{数据与证据分组}
+所有核心结果采用 $L=384$、$H=96$、随机缺失率0.3。ETTh1 包含7个数值通道，采用官方12个月训练、4个月验证、4个月测试的边界。Weather 与 Electricity 分别包含21和321个数值通道，采用官方70\%训练、10\%验证、20\%测试划分。验证及测试的历史窗口允许使用边界之前的历史上下文；归一化统计量由训练段拟合。
+
+测试掩码种子固定为2025，验证掩码种子固定为43025。训练掩码按已存储的种子规则生成，不读取测试掩码。不同阶段的历史规则保留在运行配置中，本文不将阶段标签本身当成新样本。核心清单共有42条阶段引用，去重后为36个概率训练运行。
+
+实验分为三组：TimePerceiver 的 Gaussian 与可学习 Student-t 使用2021、2022、2023、2025四个概率头种子；TimePerceiver 的四分布消融使用种子2025；PatchTST 的 Gaussian 与固定 Student-t 使用种子2025。每个数据集、每个主干内共享对应的固定主干检查点。四个概率头种子不代表四次主干训练，也不作为固定自由度结果的重复试验。
+
+\subsection{评价与统计口径}
+训练采用概率负对数似然，检查点按验证 NLL 选择，不以测试指标早停。NLL、MSE、MAE 在对应官方标准化空间计算。CRPS 定义为
+\begin{equation}
+ \operatorname{CRPS}(F,y)=\E|U-y|-\tfrac12\E|U-U'|,
+\end{equation}
+其中 $U,U'$ 为来自 $F$ 的独立样本。已有运行采用64样本 Monte Carlo 估计与固定评价种子52025。本稿延续该口径，不将其写成解析 CRPS。
+
+多种子表使用样本标准差，分母为 $n-1$。配对差值统一定义为目标分布头减 Gaussian，负值表示相应误差或评分下降。单种子结果直接报告观测值，不填补标准差。本文报告的均值差异属于描述性统计，不赋予尚未计算的置信区间或显著性。
+
+\section{实验结果}
+\subsection{可学习自由度的训练稳定性}
+\input{tables/multiseed.tex}
+表\ref{tab:multiseed}展示了固定主干上的四概率头种子结果。可学习 Student-t 在三个数据集上的 NLL 和 CRPS 均值均低于 Gaussian。Weather 的平均 NLL 从0.577226降至0.103670，CRPS 从0.244788降至0.207544；相较之下，MSE 的变化为 $-0.000488$。概率评分与点误差变化幅度不同，表明二者刻画了不同的预测性质。
+
+ETTh1 的 NLL 平均差值为 $-0.043900$，Electricity 为 $-0.074296$。Electricity 的 MSE 均值从0.167419升至0.167703，与 NLL 改善方向相反。重尾头的评估因而不能简化为点预测全面优于 Gaussian，也不能由这一点误差变化否定概率评分收益。
+
+\subsection{固定与可学习自由度}
+\input{tables/distribution.tex}
+表\ref{tab:distribution}将四种分布置于相同的种子2025条件下。ETTh1 上固定 Student-t 的 NLL 为0.864949，低于可学习版本的0.877154；Weather 和 Electricity 上则由可学习版本取得更低 NLL。固定与可学习自由度之间存在数据集差异，不能由四种子 learned-df 表直接推出固定自由度的稳定性。
+
+与 Gaussian 相比，固定 Student-t 在三个数据集均降低 NLL 和 CRPS。Laplace 也改善了这两项评分，但其 MSE 排序与概率评分并不一致。该结果使研究问题从“是否需要更多参数”进一步转向“哪种分布约束适合给定数据”，因为 Gaussian、Laplace 和固定 Student-t 的位置与尺度映射容量一致。
+
+\subsection{第二主干上的配对结果}
+\input{tables/backbone.tex}
+表\ref{tab:backbone}显示固定 Student-t 相对 Gaussian 的变化。六组数据集与主干配对的 NLL、CRPS 差值均为负。PatchTST 的 Weather 配对具有较大的 NLL 变化，本文保留原始差值，不据此推断跨主干的整体排名，因为不同主干的训练器及指标协议标识并不完全相同。
+
+Electricity 上，TimePerceiver 的 MSE 增量为0.000592，PatchTST 为0.001980，后者相对增幅约1.194\%。当点预测容许增幅取1\%时，PatchTST 的这一配对不满足阈值。阈值不改变原始指标，只改变“是否接受该权衡”的决策，因此应与原始差值一同公开。
+
+\section{讨论与可复现性}
+实证结果显示，概率头能够在不更新主干的条件下改变预测分布质量。固定 Student-t 与可学习 Student-t 均提供了正向概率评分证据，但两者回答的问题不同：前者检验预设分布形状，后者同时允许训练调整通道级自由度。把二者合并会掩盖这一机制差别。
+
+方差与尾部形状也应分开解释。当前映射容量对照排除了新增位置或尺度投影参数这一因素，却没有构成预测方差匹配对照。进一步的方差匹配和自由度敏感性实验将用于检验收益来源，而不是回溯修改本稿已报告的对照定义。
+
+复现材料按运行目录保存配置、指标和状态，源检查点与验证、测试掩码通过 SHA256 对应。本轮审计核对了三张核心表的72个 NLL、CRPS、MSE 数值，并生成独立结果清单。阶段之间复用的运行不重复计数。原始记录中的继承配置 ID 和缺项另列在审计文件中，不通过修改历史产物消除差异。
+
+本文的核心表对应随机缺失率0.3和预测长度96。其他机制、预测长度与独立主干种子的扩展属于后续验证范围；这一区分决定结论适用的实验条件。时间窗口具有重叠，后续配对统计需要考虑时序依赖，不能把窗口内每个元素当作独立重复。
+
+\section{结论}
+本文以固定历史掩码、冻结主干和运行级溯源组织重尾概率预测比较。在三个数据集和两个主干的单种子配对中，固定 Student-t 相对 Gaussian 改善 NLL 与 CRPS；TimePerceiver 的四概率头种子实验进一步支持可学习 Student-t 的平均概率评分收益。Electricity 的点误差权衡与自由度消融表明，分布评分、点预测表现和参数约束需要共同构成结论。该配对框架为后续检验方差匹配、自由度敏感性及更广缺失条件提供了可复核的参照。
+
+\begin{thebibliography}{9}
+\bibitem{timeperceiver} J. Lee and H. Lee. TimePerceiver: An Encoder-Decoder Framework for Generalized Time-Series Forecasting. NeurIPS, 2025.
+\bibitem{patchtst} Y. Nie, N. H. Nguyen, P. Sinthong, and J. Kalagnanam. A Time Series is Worth 64 Words: Long-term Forecasting with Transformers. ICLR, 2023.
+\bibitem{scoring} T. Gneiting and A. E. Raftery. Strictly Proper Scoring Rules, Prediction, and Estimation. Journal of the American Statistical Association, 102(477):359--378, 2007.
+\end{thebibliography}
+\end{document}

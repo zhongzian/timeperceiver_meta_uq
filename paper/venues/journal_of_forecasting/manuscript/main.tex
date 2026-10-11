@@ -1,0 +1,41 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,array,booktabs,graphicx,longtable}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\newcommand{\citep}[1]{\cite{#1}}
+\makeatletter
+\renewcommand{\@cite}[2]{(#1\if@tempswa, #2\fi)}
+\makeatother
+\input{macros}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{0.25em}
+\setlength{\emergencystretch}{4em}
+\graphicspath{{figures/}}
+
+\begin{document}
+\input{title_page}
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+\noindent\textbf{Keywords:} probabilistic forecasting; time-series forecasting; missing observations; Student-$t$ distribution; proper scoring rules; heavy-tailed errors
+
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_forecasting_problem}
+\input{sections/04_probabilistic_method}
+\input{sections/05_evaluation_design}
+\input{sections/06_empirical_results}
+\input{sections/07_diagnostics_and_negative_results}
+\input{sections/08_discussion}
+\input{sections/09_limitations}
+\input{sections/10_conclusion}
+
+\section*{Statements and Declarations}
+\textbf{Data availability.} The datasets are publicly available from their original repositories; sources and preprocessing details are documented in the supplementary material.\\
+\textbf{Code availability.} [AUTHOR ACTION REQUIRED: provide the verified repository URL and release timing.]\\
+\textbf{Funding, conflicts, and contributions.} [AUTHOR INPUT REQUIRED.]\\
+\textbf{Generative AI.} [AUTHOR CONFIRMATION REQUIRED: see the separate disclosure draft.]
+
+\input{references_list}
+\end{document}

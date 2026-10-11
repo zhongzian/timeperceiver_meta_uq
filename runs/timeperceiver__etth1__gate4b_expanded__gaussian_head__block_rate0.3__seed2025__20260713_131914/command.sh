@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/mnt/data/zza/anaconda3/envs/timeperceiver_meta_uq/bin/python /mnt/data/zza/code/timeperceiver_meta_uq/scripts/gate4b_train_probabilistic.py --task-file /mnt/data/zza/code/timeperceiver_meta_uq/runtime/gate4b_gate4b_expanded_etth1_6.json --run-dir /mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__etth1__gate4b_expanded__gaussian_head__block_rate0.3__seed2025__20260713_131914 --device cuda

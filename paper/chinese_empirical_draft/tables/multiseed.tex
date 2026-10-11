@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering\small
+\caption{TimePerceiver 四概率头种子结果：均值 $\pm$ 样本标准差。Student-t 为可学习自由度；每个数据集共享一个主干检查点。}\label{tab:multiseed}
+\begin{tabular}{llrrr}
+\toprule
+数据集 & 分布头/主干 & NLL & CRPS & MSE \\
+\midrule
+ETTh1 & Gaussian & $0.915014\pm0.006643$ & $0.342011\pm0.002338$ & $0.416862\pm0.003302$ \\
+ETTh1 & Student-t (learned) & $0.871113\pm0.007801$ & $0.337656\pm0.002124$ & $0.415611\pm0.002699$ \\
+Weather & Gaussian & $0.577226\pm0.017061$ & $0.244788\pm0.003197$ & $0.210306\pm0.001462$ \\
+Weather & Student-t (learned) & $0.103670\pm0.020066$ & $0.207544\pm0.000670$ & $0.209818\pm0.000964$ \\
+Electricity & Gaussian & $0.439644\pm0.002139$ & $0.209365\pm0.000178$ & $0.167419\pm0.000420$ \\
+Electricity & Student-t (learned) & $0.365348\pm0.000800$ & $0.207395\pm0.000338$ & $0.167703\pm0.000613$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

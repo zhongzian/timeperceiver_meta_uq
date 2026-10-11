@@ -1,0 +1,73 @@
+table,dataset,actual_head,metric,numeric_match,semantic_correction
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,etth1,gaussian,nll,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,etth1,gaussian,crps,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,etth1,gaussian,mse,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,etth1,learned_student_t,nll,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,etth1,learned_student_t,crps,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,etth1,learned_student_t,mse,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,weather,gaussian,nll,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,weather,gaussian,crps,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,weather,gaussian,mse,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,weather,learned_student_t,nll,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,weather,learned_student_t,crps,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,weather,learned_student_t,mse,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,electricity,gaussian,nll,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,electricity,gaussian,crps,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,electricity,gaussian,mse,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,electricity,learned_student_t,nll,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,electricity,learned_student_t,crps,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table4_timeperceiver_multiseed.tex,electricity,learned_student_t,mse,True,"Student-t column is learned-df, not fixed-df8"
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,etth1,gaussian,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,etth1,gaussian,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,etth1,gaussian,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,etth1,laplace,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,etth1,laplace,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,etth1,laplace,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,etth1,fixed_student_t_df8,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,etth1,fixed_student_t_df8,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,etth1,fixed_student_t_df8,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,etth1,learned_student_t,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,etth1,learned_student_t,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,etth1,learned_student_t,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,weather,gaussian,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,weather,gaussian,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,weather,gaussian,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,weather,laplace,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,weather,laplace,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,weather,laplace,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,weather,fixed_student_t_df8,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,weather,fixed_student_t_df8,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,weather,fixed_student_t_df8,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,weather,learned_student_t,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,weather,learned_student_t,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,weather,learned_student_t,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,electricity,gaussian,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,electricity,gaussian,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,electricity,gaussian,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,electricity,laplace,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,electricity,laplace,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,electricity,laplace,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,electricity,fixed_student_t_df8,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,electricity,fixed_student_t_df8,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,electricity,fixed_student_t_df8,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,electricity,learned_student_t,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,electricity,learned_student_t,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table8_distribution_ablation.tex,electricity,learned_student_t,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,etth1,fixed_student_t_df8_minus_gaussian,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,etth1,fixed_student_t_df8_minus_gaussian,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,etth1,fixed_student_t_df8_minus_gaussian,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,etth1,fixed_student_t_df8_minus_gaussian,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,etth1,fixed_student_t_df8_minus_gaussian,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,etth1,fixed_student_t_df8_minus_gaussian,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,weather,fixed_student_t_df8_minus_gaussian,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,weather,fixed_student_t_df8_minus_gaussian,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,weather,fixed_student_t_df8_minus_gaussian,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,weather,fixed_student_t_df8_minus_gaussian,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,weather,fixed_student_t_df8_minus_gaussian,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,weather,fixed_student_t_df8_minus_gaussian,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,electricity,fixed_student_t_df8_minus_gaussian,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,electricity,fixed_student_t_df8_minus_gaussian,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,electricity,fixed_student_t_df8_minus_gaussian,mse,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,electricity,fixed_student_t_df8_minus_gaussian,nll,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,electricity,fixed_student_t_df8_minus_gaussian,crps,True,single head seed2025
+paper/venues/journal_of_forecasting/manuscript/tables/table10_second_backbone.tex,electricity,fixed_student_t_df8_minus_gaussian,mse,True,single head seed2025

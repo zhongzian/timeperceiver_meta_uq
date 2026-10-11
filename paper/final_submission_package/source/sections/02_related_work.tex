@@ -1,0 +1,22 @@
+\section{Related Work}
+\label{sec:related}
+
+\subsection{Probabilistic time-series forecasting}
+
+Neural probabilistic forecasters learn predictive distributions rather than only conditional means. DeepAR, for example, trains a shared autoregressive recurrent model over related series and optimizes a parametric likelihood \cite{salinas2020deepar}. Such models make distributional assumptions explicit and enable evaluation with proper scoring rules. Log score assesses predictive density at the realized target, while CRPS evaluates the full univariate cumulative distribution \cite{gneiting2007proper}. Our study adopts both scores and also reports point metrics from the predictive location.
+
+\subsection{Heavy-tailed predictive distributions}
+
+Location-scale likelihoods differ primarily in how they allocate mass away from the center. A Gaussian density decays rapidly, a Laplace density has exponential tails, and a Student-$t$ density has polynomial tails. The degrees of freedom control the Student-$t$ tail weight. We compare these families under matched location-scale capacity. Unlike an adaptive shape model, our selected form fixes df=8 and introduces no trainable degrees-of-freedom parameter.
+
+\subsection{Forecasting with missing historical observations}
+
+Time-series missingness has often been addressed through imputation. BRITS learns missing values in a bidirectional recurrent system and evaluates downstream prediction tasks \cite{cao2018brits}. CSDI instead models a conditional distribution over missing values with score-based diffusion and supports probabilistic imputation \cite{tashiro2021csdi}. These methods motivate careful treatment of observation masks. Our protocol asks a narrower question: given a fixed incomplete history, how do point and probabilistic forecast metrics change when the forecasting head changes? We do not present a new imputation method.
+
+\subsection{Conformal prediction for time series}
+
+Conformal methods transform calibration residuals into prediction sets under explicit assumptions about calibration and test examples. Time-series extensions address multi-horizon forecasting and weakened exchangeability conditions \cite{stankeviciute2021conformal}. Our conformal experiment is deliberately limited to an additive split procedure with a strict temporal split and embargo. Its negative outcome is specific to that design and does not generalize to other conformal scores or online methods.
+
+\subsection{General-purpose forecasting backbones}
+
+TimePerceiver uses latent bottlenecks and timestamp-aligned decoder queries to support multiple temporal prediction layouts \cite{lee2025timeperceiver}. PatchTST tokenizes temporal patches and shares Transformer weights across channels \cite{nie2023patchtst}. They provide structurally different frozen backbones for the present head comparison. We treat their clean checkpoints as fixed feature extractors and avoid ranking the two architectures by their absolute metrics.

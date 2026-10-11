@@ -1,0 +1,102 @@
+# Gate 4b Expanded Condition Deltas
+
+```json
+[
+  {
+    "condition": "random_rate0.1",
+    "delta_test_mean_nll": -0.07802492380142212,
+    "delta_test_crps": -0.006112709250869652,
+    "delta_test_mse": -0.0022309720516204834,
+    "delta_test_mae": -0.002579033374786377,
+    "delta_test_rmse": -0.0018326112047992726,
+    "delta_mean_absolute_coverage_error": -0.021220597624778736,
+    "delta_mean_interval_score": -0.028676867485046387,
+    "delta_mean_interval_width": -0.11956965923309326,
+    "relative_crps_improvement": 0.019575866690907006,
+    "relative_mse_improvement": 0.006003437065760488,
+    "student_t_nll_win": true,
+    "student_t_crps_noninferior": true,
+    "student_t_point_noninferior": true
+  },
+  {
+    "condition": "random_rate0.3",
+    "delta_test_mean_nll": -0.04138147830963135,
+    "delta_test_crps": -0.003863900566117351,
+    "delta_test_mse": -0.0011551976203918457,
+    "delta_test_mae": -0.002782583236694336,
+    "delta_test_rmse": -0.0008915152078824429,
+    "delta_mean_absolute_coverage_error": -0.017830419540405262,
+    "delta_mean_interval_score": -0.0023182928562164307,
+    "delta_mean_interval_width": -0.08197611570358276,
+    "relative_crps_improvement": 0.011228139221187022,
+    "relative_mse_improvement": 0.002748297965357634,
+    "student_t_nll_win": true,
+    "student_t_crps_noninferior": true,
+    "student_t_point_noninferior": true
+  },
+  {
+    "condition": "random_rate0.5",
+    "delta_test_mean_nll": -0.013720393180847168,
+    "delta_test_crps": 0.0006556543945563376,
+    "delta_test_mse": 0.007100403308868408,
+    "delta_test_mae": 0.0010613203048706055,
+    "delta_test_rmse": 0.0049507164405923065,
+    "delta_mean_absolute_coverage_error": -0.011728411912918069,
+    "delta_mean_interval_score": 0.03213226795196533,
+    "delta_mean_interval_width": -0.04276403784751892,
+    "relative_crps_improvement": -0.0016808164771104327,
+    "relative_mse_improvement": -0.013903255748595056,
+    "student_t_nll_win": true,
+    "student_t_crps_noninferior": false,
+    "student_t_point_noninferior": false
+  },
+  {
+    "condition": "block_rate0.3",
+    "delta_test_mean_nll": -0.061086058616638184,
+    "delta_test_crps": -0.0077382329937698,
+    "delta_test_mse": -0.0048340559005737305,
+    "delta_test_mae": -0.008210599422454834,
+    "delta_test_rmse": -0.0037859390216161692,
+    "delta_mean_absolute_coverage_error": -0.01823275089263915,
+    "delta_mean_interval_score": 4.723668098449707e-05,
+    "delta_mean_interval_width": -0.14710356295108795,
+    "relative_crps_improvement": 0.022999203926964945,
+    "relative_mse_improvement": 0.011790274934871604,
+    "student_t_nll_win": true,
+    "student_t_crps_noninferior": true,
+    "student_t_point_noninferior": true
+  },
+  {
+    "condition": "channel_rate0.3",
+    "delta_test_mean_nll": -0.07150375843048096,
+    "delta_test_crps": -0.004848959564785538,
+    "delta_test_mse": 0.0010222792625427246,
+    "delta_test_mae": -0.0004425048828125,
+    "delta_test_rmse": 0.0006754132028123916,
+    "delta_mean_absolute_coverage_error": -0.018275916576385498,
+    "delta_mean_interval_score": 0.07116544246673584,
+    "delta_mean_interval_width": -0.245391845703125,
+    "relative_crps_improvement": 0.012167928218014365,
+    "relative_mse_improvement": -0.0017865584058036534,
+    "student_t_nll_win": true,
+    "student_t_crps_noninferior": true,
+    "student_t_point_noninferior": true
+  },
+  {
+    "condition": "mixed_rate0.3",
+    "delta_test_mean_nll": -0.07066452503204346,
+    "delta_test_crps": -0.0032862550184809547,
+    "delta_test_mse": 0.001168966293334961,
+    "delta_test_mae": 0.0006631910800933838,
+    "delta_test_rmse": 0.0008399410369317462,
+    "delta_mean_absolute_coverage_error": -0.01964593231678008,
+    "delta_mean_interval_score": 0.0346950888633728,
+    "delta_mean_interval_width": -0.16670365631580353,
+    "relative_crps_improvement": 0.009067620477000533,
+    "relative_mse_improvement": -0.0024170185117835816,
+    "student_t_nll_win": true,
+    "student_t_crps_noninferior": true,
+    "student_t_point_noninferior": true
+  }
+]
+```

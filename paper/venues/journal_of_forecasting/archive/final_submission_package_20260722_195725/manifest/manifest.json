@@ -1,0 +1,317 @@
+{
+  "package": "Journal of Forecasting Free Format submission package",
+  "generated_at": "2026-07-22T11:40:15.628455+00:00",
+  "file_count_excluding_manifest_files": 62,
+  "files": [
+    {
+      "path": "administrative/cover_letter_draft.pdf",
+      "size_bytes": 17826,
+      "sha256": "e1f8f325554f81565819d76d6e338bf6b073c0348dbadc46e3209ad3f70928fd"
+    },
+    {
+      "path": "administrative/declarations/author_contributions.md",
+      "size_bytes": 151,
+      "sha256": "63c933e90883c970190fdb032ab7b01faf4987344f60eb6271ddb790d998f3cf"
+    },
+    {
+      "path": "administrative/declarations/code_availability_statement.md",
+      "size_bytes": 322,
+      "sha256": "ff515e48bf0f8cfdf0542b73a48eaafc2dcf634411c7dd07a08ef4a8a9f3cded"
+    },
+    {
+      "path": "administrative/declarations/conflict_of_interest_statement.md",
+      "size_bytes": 156,
+      "sha256": "164270182ff446483e608c61608326aee332287eea25aa5e09cf6cebfcb443de"
+    },
+    {
+      "path": "administrative/declarations/data_availability_statement.md",
+      "size_bytes": 208,
+      "sha256": "5f7c74d3d810d208f9d770a955c2470341feff17a90f24a69efc15948e9feb29"
+    },
+    {
+      "path": "administrative/declarations/ethics_statement.md",
+      "size_bytes": 226,
+      "sha256": "c8d5f6daa83d8fd24bf08179a391fd89350f7cc73cb57277d827eae28ca0c666"
+    },
+    {
+      "path": "administrative/declarations/funding_statement.md",
+      "size_bytes": 209,
+      "sha256": "a861721bda8918d6c81dfa3040cc69932fd2dae05d849f598d9fe040804a457c"
+    },
+    {
+      "path": "administrative/declarations/generative_ai_disclosure.md",
+      "size_bytes": 514,
+      "sha256": "87205e8d8fe8fbf40e4681830b9866f3d3bb6fb3638fc743e36ee902d0fc4dd3"
+    },
+    {
+      "path": "administrative/submission_checklist.md",
+      "size_bytes": 972,
+      "sha256": "3bed4c90d2a6f23785453bef9cef601878511a81a8586a505056c9449d547395"
+    },
+    {
+      "path": "administrative/submission_metadata.md",
+      "size_bytes": 2945,
+      "sha256": "0a4711d1fa0fe17c108386bd5d13d541eadc51f5687ec48ff217698e0b9e817d"
+    },
+    {
+      "path": "administrative/title_page.pdf",
+      "size_bytes": 15667,
+      "sha256": "0eae05659de39fff193130bd03cabbdcaa8840ed156bc2b9e0d142dc90afc6a6"
+    },
+    {
+      "path": "checks/gate7b1_jof_anonymization_audit.json",
+      "size_bytes": 317,
+      "sha256": "d1f5ab02613c08cd85cf5fee3d5294530361abe7f8934ac99601566d8403f32b"
+    },
+    {
+      "path": "checks/gate7b1_jof_anonymization_audit.md",
+      "size_bytes": 257,
+      "sha256": "d65c804abe7f8d4c3ba934bda37b86db388c173605e03ae918619135b34b2734"
+    },
+    {
+      "path": "checks/gate7b1_jof_claim_audit.json",
+      "size_bytes": 583,
+      "sha256": "1c99e6fd0652b827c56af8497259fcb7e6dc0a1b330878f96a0474600c415f49"
+    },
+    {
+      "path": "checks/gate7b1_jof_claim_audit.md",
+      "size_bytes": 628,
+      "sha256": "a8d86f45ffae2e657ce70cc91cf1e900c8e94b024e84cee94196e17b1d403682"
+    },
+    {
+      "path": "checks/gate7b1_jof_compile_audit.json",
+      "size_bytes": 916,
+      "sha256": "ccd7ec9d8f2d135369ad3834fe982c68680747db4cf302aa9f44f3d65acbdf28"
+    },
+    {
+      "path": "checks/gate7b1_jof_compile_audit.md",
+      "size_bytes": 361,
+      "sha256": "f2279f292e65efe0045ae8c6b9cdd394345a715592e24b9f87d71d1dfeafa65e"
+    },
+    {
+      "path": "checks/gate7b1_jof_crossref_audit.json",
+      "size_bytes": 732,
+      "sha256": "93a742448f8d0124a9137c8aaffcd89ff9a8bf0bb2ebbce6f1c67a069bc45bdc"
+    },
+    {
+      "path": "checks/gate7b1_jof_crossref_audit.md",
+      "size_bytes": 257,
+      "sha256": "5a218970d644a05761768845558f90029eb2d9c8aee8a3a7fd87a77b4705fc12"
+    },
+    {
+      "path": "checks/gate7b1_jof_guideline_audit.json",
+      "size_bytes": 3256,
+      "sha256": "b206c56d8aeedeb6d876e94d4664a6f4b19e5e47e204ba072945d58be6f509dc"
+    },
+    {
+      "path": "checks/gate7b1_jof_guideline_audit.md",
+      "size_bytes": 1814,
+      "sha256": "042e228bb7ef1c5f9210b81896b78d52d889b054f87ec1c2c44e09122cc1a810"
+    },
+    {
+      "path": "checks/gate7b1_jof_number_audit.json",
+      "size_bytes": 1111,
+      "sha256": "4920053ddad38fa1d1ab4072b24e90bbf48b007da37e9966e0fc060f3969ed93"
+    },
+    {
+      "path": "checks/gate7b1_jof_number_audit.md",
+      "size_bytes": 468,
+      "sha256": "9711e345e1479d3bc10891df7e9ad7598f4462c51322ecc70e814bd0471ec8d1"
+    },
+    {
+      "path": "checks/gate7b1_reference_audit.csv",
+      "size_bytes": 6442,
+      "sha256": "d80eef32a09da4fbda14fd7587bf859383c7739a6552275b9bd4f37bd2578509"
+    },
+    {
+      "path": "checks/gate7b1_reference_audit.json",
+      "size_bytes": 624,
+      "sha256": "3b5a59e615c0bfa38ac239f85cbd523304dc4b89b3f76e5008fbb471ae3f61d3"
+    },
+    {
+      "path": "checks/gate7b1_reference_audit.md",
+      "size_bytes": 574,
+      "sha256": "4615acc38acb147e745c0aa350daa246a0f43f880e158141ad972672941c726f"
+    },
+    {
+      "path": "figures/fig1_missingness_degradation.pdf",
+      "size_bytes": 23486,
+      "sha256": "cebde53754faa1c6ea1a50405c8355de929c4645bc26cf994721439d6482c98a"
+    },
+    {
+      "path": "figures/fig2_multiseed_nll_deltas.pdf",
+      "size_bytes": 15543,
+      "sha256": "06c5a73e7ce56660b5fad255d789d081e2191ca5a682e16e045898b82e193cdc"
+    },
+    {
+      "path": "figures/fig3a_multiseed_nll.pdf",
+      "size_bytes": 14581,
+      "sha256": "3a69ef3992edd1c8ad92c30c4a63aac28415575b0c3f6b607fe638856e798570"
+    },
+    {
+      "path": "figures/fig3b_multiseed_crps.pdf",
+      "size_bytes": 14974,
+      "sha256": "3c596d5999a96bd8555bd63083f06ecd10bf15fe2f4ae1240877a9623ca1aa48"
+    },
+    {
+      "path": "figures/fig3c_multiseed_mse.pdf",
+      "size_bytes": 14239,
+      "sha256": "cd2fb2f951114d0e8280677bb40eef0d0e0a7fe309b23756561c083df66a7c17"
+    },
+    {
+      "path": "figures/fig4_student_t_df.pdf",
+      "size_bytes": 16085,
+      "sha256": "d1856c6baea42dd88df1f9e7e168527375d6e7d0a97d6ae90c36912d329125f8"
+    },
+    {
+      "path": "figures/fig5_conformal_tradeoff.pdf",
+      "size_bytes": 17782,
+      "sha256": "f5204a89e25aa9e6de0e2aae3a5a37af90158ccff68dd20601f3f5d0220f954e"
+    },
+    {
+      "path": "figures/fig6_calibration_test_shift.pdf",
+      "size_bytes": 15661,
+      "sha256": "78dc75be7bdc8f50bc6d014db6806d2016b3382ec9ea4e7ad2fbdc74e8f78222"
+    },
+    {
+      "path": "figures/figA1_gate4a_adapter.pdf",
+      "size_bytes": 13401,
+      "sha256": "aa9f1152aefafa3206e103134e5fab2382465af0cf87c1fed63bc7e649021c71"
+    },
+    {
+      "path": "figures/figA2_gate4c_channel_coverage.pdf",
+      "size_bytes": 16872,
+      "sha256": "a6f78d47b4ca87c077bc7a815fe712246a812782283273e3f76da78505c61c12"
+    },
+    {
+      "path": "figures/figA3_gate4c_horizon_coverage.pdf",
+      "size_bytes": 19263,
+      "sha256": "b75b4c867d3eab83149567a434b8bf4b2110c812ce105e8e38fdebffa7740026"
+    },
+    {
+      "path": "figures/fig_gate5a_kurtosis_df.pdf",
+      "size_bytes": 17330,
+      "sha256": "af682615d80813dbc54024a69cef6019032351be7befbdae6ff54dfd242ccb20"
+    },
+    {
+      "path": "figures/fig_gate5a_pit_histograms.pdf",
+      "size_bytes": 20491,
+      "sha256": "fde08bcd87fd49cc61d163cdea3d8d4640d5fa531e0c4bbf42b06e667c0bf7b4"
+    },
+    {
+      "path": "figures/fig_gate5a_qq.pdf",
+      "size_bytes": 16133,
+      "sha256": "7ad083f0faa6b6c1e064ac166706efc21f181297e9b06dda9eeaf08fce7c7352"
+    },
+    {
+      "path": "figures/fig_gate5a_tail_nll_gain.pdf",
+      "size_bytes": 17074,
+      "sha256": "a3f263da608065941e2185ff73c81d856f6ad9ed0bc1570ef0f97cf38c277422"
+    },
+    {
+      "path": "figures/fig_gate5b_cross_backbone_deltas.pdf",
+      "size_bytes": 19179,
+      "sha256": "c93d8e483b84de528129a6955e0239f5ff04437c53903f770ac40b995e46a049"
+    },
+    {
+      "path": "figures/fig_gate5b_patchtst_tail_nll_gain.pdf",
+      "size_bytes": 18073,
+      "sha256": "8f78cb60eabf22fb8db31edcd2c48a0cb161d7b7c5c464a0bbcaf98b73d3f92c"
+    },
+    {
+      "path": "manuscript/manuscript.pdf",
+      "size_bytes": 165585,
+      "sha256": "4325e7f83a75ac4b6fe5f3507050c608ce700f971a9833a9852b0ceef2fbbdb5"
+    },
+    {
+      "path": "manuscript/manuscript_anonymous.pdf",
+      "size_bytes": 167619,
+      "sha256": "6569aa42a92746123487c9382aa5696b309a7daac0feb6f1df3a497077156df9"
+    },
+    {
+      "path": "manuscript/manuscript_source.tar.gz",
+      "size_bytes": 120278,
+      "sha256": "85f618f1c009b0e07eda0fcf992656afea06bd34f4dce997b38f306704ecb315"
+    },
+    {
+      "path": "supplementary/supplementary.pdf",
+      "size_bytes": 214294,
+      "sha256": "72e93949e0be2b124649d92a5adea3cfafce660e9e866442a13ae8b271c7bfd5"
+    },
+    {
+      "path": "supplementary/supplementary_source.tar.gz",
+      "size_bytes": 110161,
+      "sha256": "ae6fc9662ceca815ce0f42f28a542716c92a1d4e4eba02aaa419f8ce6898513d"
+    },
+    {
+      "path": "tables/table10_second_backbone.tex",
+      "size_bytes": 771,
+      "sha256": "ae4848815ddc4b48718b6539a6a61273ad36f8d7d0f46526b9ee5f92cf6fee22"
+    },
+    {
+      "path": "tables/table1_clean_baselines.tex",
+      "size_bytes": 265,
+      "sha256": "0e9d3dc1074c8b3c27af11d30e97c4331725807fd289348ac1e5dd25ac089269"
+    },
+    {
+      "path": "tables/table2_fixed_mask_degradation.tex",
+      "size_bytes": 999,
+      "sha256": "b06cc983adbecce26c88a95de000c79872f853343c0a363bc108c2e94078f55c"
+    },
+    {
+      "path": "tables/table3_adapter_ablation.tex",
+      "size_bytes": 374,
+      "sha256": "af163c6a247664a3b58c714b98a8c5fb9b91a5ae652f785469125d0d8da532a5"
+    },
+    {
+      "path": "tables/table4_timeperceiver_multiseed.tex",
+      "size_bytes": 570,
+      "sha256": "5303a8c78c1404d77a64c88c83d4b06ac20058252ee2328bd548a652c1ac1904"
+    },
+    {
+      "path": "tables/table5_etth1_cross_condition.tex",
+      "size_bytes": 563,
+      "sha256": "5b8534103e99299e1db810f12e00a88b3bd12018013de661b54a799b2fee1a68"
+    },
+    {
+      "path": "tables/table6_conformal.tex",
+      "size_bytes": 590,
+      "sha256": "efa4330f66ccf637bd22d25bfa8f6ae0b0d51abd475e6933687877da3abec6a0"
+    },
+    {
+      "path": "tables/table7_conformal_mechanism.tex",
+      "size_bytes": 460,
+      "sha256": "f9aa1934cd70b73c4df47477191ce01a5b39a2e5d75d227f1c42de3c4f7012f5"
+    },
+    {
+      "path": "tables/table8_distribution_ablation.tex",
+      "size_bytes": 1111,
+      "sha256": "967901fe2c0d6eb9fa1eae65e7374bcb4c69ff8483fce09822af34e2fdd9432b"
+    },
+    {
+      "path": "tables/table9_efficiency.tex",
+      "size_bytes": 1199,
+      "sha256": "c16f4afea0ada0fc90fc5e193c80f0756143a8af582d0f8911d235c7ce13401e"
+    },
+    {
+      "path": "tables/tableA1_electricity.tex",
+      "size_bytes": 903,
+      "sha256": "5662269d768959f16cd09c53efc63d034e892f315b3c858d1ab67c6fea380f1b"
+    },
+    {
+      "path": "tables/tableA1_etth1.tex",
+      "size_bytes": 903,
+      "sha256": "2ac5742ea1f1d83ff326f9e8f434a79056a23b17a6515b32f80f987892bc958e"
+    },
+    {
+      "path": "tables/tableA1_weather.tex",
+      "size_bytes": 903,
+      "sha256": "adf97bf80a659e0e31dc827f1af08fba0266d934176af8e688a7991c9fc5106c"
+    },
+    {
+      "path": "tables/tableA2_conformal_all_heads.tex",
+      "size_bytes": 1184,
+      "sha256": "8f1fb173a64de553272ebf68c019c79e81bc448278c7e372d6c064f33217c0d5"
+    }
+  ]
+}

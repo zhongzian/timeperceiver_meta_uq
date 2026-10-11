@@ -1,0 +1,5 @@
+venue,scope_fit,method_novelty_fit,experimental_evidence_fit,forecasting_community_fit,manuscript_format_fit,negative_reproducibility_fit,submission_policy_compatibility,risk_adjusted_acceptance_fit,total,overall_risk,unresolved_scope_blocker,estimated_revision_effort,recommended_role
+Applied Intelligence,21,13,12,8,8,5,4,5,76,HIGH,False,MODERATE_TO_HIGH,BACKUP_2
+Neural Computing and Applications,24,14,13,9,8,4,5,7,84,MODERATE,False,MODERATE,BACKUP_1
+Journal of Forecasting,25,14,12,10,9,5,5,7,87,MODERATE,False,MODERATE,PRIMARY
+Engineering Applications of Artificial Intelligence,11,12,10,7,6,3,5,2,56,VERY_HIGH,True,VERY_HIGH_AND_REQUIRES_NEW_SCIENTIFIC_SCOPE,NOT_RECOMMENDED

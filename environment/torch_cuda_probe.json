@@ -1,0 +1,24 @@
+{
+  "python": "3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]",
+  "torch_version": "2.1.0+cu121",
+  "torch_cuda_runtime": "12.1",
+  "cudnn_version": 8902,
+  "cuda_available": true,
+  "device_count": 2,
+  "devices": [
+    {
+      "logical_index": 0,
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_memory": 25393692672,
+      "capability": "8.9"
+    },
+    {
+      "logical_index": 1,
+      "name": "NVIDIA GeForce RTX 4080",
+      "total_memory": 16857825280,
+      "capability": "8.9"
+    }
+  ],
+  "tiny_cuda_result": 2.0
+}
+

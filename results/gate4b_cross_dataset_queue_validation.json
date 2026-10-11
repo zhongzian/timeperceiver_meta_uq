@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "queue": "/mnt/data/zza/code/timeperceiver_meta_uq/configs/queues/gate4b_cross_dataset.yaml",
+  "dataset_count": 2,
+  "logical_probability_tasks": 4,
+  "result_row_target": 6,
+  "reused": 0,
+  "active": 4,
+  "required_free_mib": {
+    "weather": 7000,
+    "electricity": 10000
+  },
+  "errors": []
+}

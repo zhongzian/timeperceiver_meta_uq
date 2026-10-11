@@ -1,0 +1,15 @@
+{
+  "stage": "Chinese revision step 1",
+  "status": "PASS_WITH_DOCUMENT_CORRECTIONS",
+  "scope": "Gate4b multiseed, Gate5a distribution, Gate5b probability; Table4/8/10 NLL, CRPS, MSE and head identity audit",
+  "run_appearances": 42,
+  "unique_runs": 36,
+  "asset_and_source_files_hashed": 126,
+  "inputs_unchanged": true,
+  "errors": [],
+  "provenance_warning_count": 76,
+  "table_numeric_checks": 72,
+  "training_started": false,
+  "frozen_manuscript_modified": false,
+  "whole_manuscript_audit_complete": false
+}

@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/mnt/data/zza/anaconda3/envs/timeperceiver_meta_uq/bin/python /mnt/data/zza/code/timeperceiver_meta_uq/scripts/gate4b_train_probabilistic.py --task-file /mnt/data/zza/code/timeperceiver_meta_uq/runtime/gate5a_gate5a_distribution_ablation_6.json --run-dir /mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__weather__gate5a__student_t_fixed_df8__random_rate0.3__seed2025__20260720_135719 --device cuda

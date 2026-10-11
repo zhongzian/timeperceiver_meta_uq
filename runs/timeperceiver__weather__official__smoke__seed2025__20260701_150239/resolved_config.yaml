@@ -1,0 +1,86 @@
+experiment_id: "timeperceiver__weather__official__smoke__seed2025__20260701_150239"
+smoke: true
+dataset:
+  key: "weather"
+  root_path: "data/weather"
+  data_path: "weather.csv"
+  data: "custom"
+  features: "M"
+  target: "OT"
+  freq: "h"
+  enc_in: 21
+  official_script: "upstream/TimePerceiver/scripts/Weather/TimePerceiver.sh"
+  url: "gdrive://iTransformer_datasets.zip/dataset/weather/weather.csv"
+data_info:
+  status: "reused"
+  path: "/mnt/data/zza/code/timeperceiver_meta_uq/data/weather/weather.csv"
+  bytes: 7235425
+  sha256: "34ee981d07313e51da2a50bb600072c8ae4a69cb4b0651f4cb93a069d7a2ba63"
+  source_member: "dataset/weather/weather.csv"
+  csv:
+    path: "/mnt/data/zza/code/timeperceiver_meta_uq/data/weather/weather.csv"
+    rows: 52696
+    columns: 22
+    header_first:
+      - "date"
+      - "p (mbar)"
+      - "T (degC)"
+      - "Tpot (K)"
+      - "Tdew (degC)"
+    has_date: true
+    has_ot: true
+args:
+  is_training: 1
+  model_id: "weather__smoke"
+  model: "TimePerceiver"
+  data: "custom"
+  root_path: "/mnt/data/zza/code/timeperceiver_meta_uq/data/weather/"
+  data_path: "weather.csv"
+  features: "M"
+  target: "OT"
+  checkpoints: "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__weather__official__smoke__seed2025__20260701_150239/checkpoints"
+  freq: "h"
+  augmentation_ratio: 0
+  seq_len: 24
+  label_len: 0
+  pred_len: 24
+  inverse: false
+  seasonal_patterns: "Monthly"
+  enc_in: 21
+  d_model: 16
+  n_heads: 2
+  d_ff: 32
+  dropout: 0.1
+  embed: "timeF"
+  num_workers: 0
+  itr: 1
+  train_epochs: 1
+  warmup_epochs: 0
+  batch_size: 2
+  patience: 1
+  learning_rate: 0.0005
+  weight_decay: 0.0
+  des: "gate1_smoke"
+  loss: "MSE"
+  lradj: "type3"
+  use_amp: false
+  use_gpu: false
+  gpu: 0
+  gpu_type: "cpu"
+  use_multi_gpu: false
+  devices: "0"
+  num_latents: 4
+  latent_dim: 16
+  latent_d_ff: 32
+  use_latent: 1
+  generalized: 1
+  standard: 0
+  num_latent_blocks: 1
+  query_share: 1
+  patch_len: 12
+  separate_ratio: 1.0
+  device: "cpu"
+notes:
+  - "Gate 1 smoke-only configuration."
+  - "Uses official data loader, official TimePerceiver model, and official split/scaling rules."
+  - "Tiny seq_len/pred_len/model/batch and one optimizer step are not formal reproduction settings."

@@ -1,0 +1,11 @@
+{
+  "dataset": "electricity",
+  "end_time": "2026-07-01T22:44:03+08:00",
+  "error_summary": "CUDA out of memory under unchanged official config",
+  "exit_code": 1,
+  "experiment_id": "timeperceiver__electricity__official_baseline__seed2025__20260701_224346",
+  "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260701_224346/metrics.json",
+  "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__electricity__official_baseline__seed2025__20260701_224346",
+  "start_time": "2026-07-01T22:43:46+08:00",
+  "status": "OOM"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "dataset": "etth1",
+  "seq_len": 384,
+  "pred_len": 96,
+  "target_channels": 7,
+  "train_mask": "deterministic random rate 0.3 base_seed 42025",
+  "validation_mask": "artifacts/gate4a_val_masks/etth1/random/rate_0.3/seed_43025.npz",
+  "validation_mask_sha256": "836377c793ec3edfe44e8cc3790392c48d4ae7ffeaf92ff1f7f7da956b326040",
+  "test_mask": "artifacts/masks/etth1/random/rate_0.3/seed_2025.npz",
+  "test_mask_sha256": "2814d0c2f8c1fc3dca854dee238f4984ff4f519f14f67b8bcbdfd688bda6bebc",
+  "validation_test_hashes_differ": true,
+  "batch_y_modified": false,
+  "future_target_used": false
+}

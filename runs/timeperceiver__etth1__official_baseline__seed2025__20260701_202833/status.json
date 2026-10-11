@@ -1,0 +1,11 @@
+{
+  "dataset": "etth1",
+  "end_time": "2026-07-01T20:29:12",
+  "error_summary": "training exited non-zero or metrics were not parsed",
+  "exit_code": 1,
+  "experiment_id": "timeperceiver__etth1__official_baseline__seed2025__20260701_202833",
+  "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__etth1__official_baseline__seed2025__20260701_202833/metrics.json",
+  "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__etth1__official_baseline__seed2025__20260701_202833",
+  "start_time": "2026-07-01T20:28:52",
+  "status": "FAILED"
+}

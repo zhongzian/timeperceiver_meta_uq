@@ -1,0 +1,67 @@
+# Gate 4b Multi-Seed Dataset Audit
+
+Status: **PASS**
+
+```json
+{
+  "status": "PASS",
+  "datasets_verified": 3,
+  "expected_datasets": 3,
+  "rows": [
+    {
+      "dataset": "etth1",
+      "status": "PASS",
+      "official_checkpoint_path": "runs/timeperceiver__etth1__official_baseline__seed2025__20260701_203054/checkpoints/ETTh1_384_96_TimePerceiver_sl384_pl96_dm256_nl32_ld64_ul1_gf1_nh4_df512_pl12_qs1_sr1.0/checkpoint.pth",
+      "official_checkpoint_sha256": "8a939fccc4942196ccc75aa76e170d8884e4670aaa666f5e7ca10b30b159f8e1",
+      "input_channels": 7,
+      "target_channels": 7,
+      "seq_len": 384,
+      "pred_len": 96,
+      "batch_size": 128,
+      "metric_space": "official_normalized",
+      "normalization_reference": "StandardScaler fit on official train split only",
+      "train_windows": 8161,
+      "validation_windows": 2785,
+      "test_windows": 2785,
+      "required_free_mib_floor": 4096,
+      "required_free_mib": 4096
+    },
+    {
+      "dataset": "weather",
+      "status": "PASS",
+      "official_checkpoint_path": "runs/timeperceiver__weather__official_baseline__seed2025__20260701_203558/checkpoints/weather_384_96_TimePerceiver_sl384_pl96_dm512_nl32_ld128_ul1_gf1_nh8_df1024_pl24_qs1_sr1.0/checkpoint.pth",
+      "official_checkpoint_sha256": "a99ec027aba651569e188a6c1ecd07d512ed6a077e3ea38f9f4db81aa8da635c",
+      "input_channels": 21,
+      "target_channels": 21,
+      "seq_len": 384,
+      "pred_len": 96,
+      "batch_size": 128,
+      "metric_space": "official_normalized",
+      "normalization_reference": "StandardScaler fit on official train split only",
+      "train_windows": 36408,
+      "validation_windows": 5175,
+      "test_windows": 10444,
+      "required_free_mib_floor": 7000,
+      "required_free_mib": 7000
+    },
+    {
+      "dataset": "electricity",
+      "status": "PASS",
+      "official_checkpoint_path": "runs/timeperceiver__electricity__official_baseline__seed2025__20260705_090044/checkpoints/electricity_384_96_TimePerceiver_sl384_pl96_dm512_nl32_ld128_ul1_gf1_nh8_df1024_pl24_qs1_sr0.0/checkpoint.pth",
+      "official_checkpoint_sha256": "93fd70e275cc3f8764e0fc404d05bb32e0431c78aa09ecc3fa83ff111b5c5f1a",
+      "input_channels": 321,
+      "target_channels": 321,
+      "seq_len": 384,
+      "pred_len": 96,
+      "batch_size": 64,
+      "metric_space": "official_normalized",
+      "normalization_reference": "StandardScaler fit on official train split only",
+      "train_windows": 17933,
+      "validation_windows": 2537,
+      "test_windows": 5165,
+      "required_free_mib_floor": 18000,
+      "required_free_mib": 18000
+    }
+  ]
+}
+```

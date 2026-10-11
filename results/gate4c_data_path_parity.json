@@ -1,0 +1,13 @@
+{
+  "stage": "Gate 4c data-path parity",
+  "status": "PASS",
+  "evaluated_batches": 8,
+  "evaluated_samples": 64,
+  "reference": "corrected Gate 4b fixed-mask official evaluator",
+  "candidate": "Gate 4c wrapper with calibration disabled",
+  "fixed_test_mask": "artifacts/masks/etth1/random/rate_0.3/seed_2025.npz",
+  "forecast_max_abs_diff": 0.0,
+  "mse_diff": 0.0,
+  "mae_diff": 0.0,
+  "rmse_diff": 0.0
+}

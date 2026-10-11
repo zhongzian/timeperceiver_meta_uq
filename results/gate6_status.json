@@ -1,0 +1,121 @@
+{
+  "status": "SUBMISSION_READY",
+  "GATE6_MANUSCRIPT_INTEGRATION_PASS": true,
+  "GATE6_CLAIM_SCAN_PASS": true,
+  "GATE6_NUMBER_VERIFICATION_PASS": true,
+  "GATE6_ANONYMIZATION_PASS": true,
+  "GATE6_SUBMISSION_ASSET_PASS": true,
+  "GATE6_FORMAL_INTEGRITY_PASS": true,
+  "GATE6_SUBMISSION_READY": true,
+  "gate5b_decision": "SECOND_BACKBONE_POINT_TRADEOFF",
+  "gate5b_nll_wins": 3,
+  "gate5b_crps_noninferior": 3,
+  "gate5b_point_noninferior": 2,
+  "gate5b_full_pair_pass": 2,
+  "paper_main_claim": "Fixed heavy-tailed probabilistic forecasting improves NLL and CRPS under the evaluated fixed-mask protocol.",
+  "paper_second_backbone_interpretation": "The probabilistic-score direction transfers, but PatchTST Electricity prevents complete multi-metric consistency.",
+  "limitations_complete": true,
+  "negative_results_retained": true,
+  "generated_at": "2026-07-22T15:16:47+08:00",
+  "checks": {
+    "gate5b": {
+      "implementation_pass": true,
+      "strict_closure_pass": true,
+      "decision": true,
+      "nll_wins_3": true,
+      "crps_noninferior_3": true,
+      "point_noninferior_2": true,
+      "full_pair_pass_2": true,
+      "second_backbone_signal_false": true,
+      "complete_direction_false": true,
+      "ready_for_paper": true
+    },
+    "registry": {
+      "invalid_legacy_paper_rows_zero": true,
+      "smoke_paper_rows_zero": true,
+      "unsupported_claims_zero": true
+    },
+    "manuscript": {
+      "abstract_protocol_complete": true,
+      "abstract_fixed_t8_and_capacity": true,
+      "abstract_timeperceiver_scope": true,
+      "abstract_patchtst_tradeoff": true,
+      "three_contributions_exact": true,
+      "setup_no_future_target_masking": true,
+      "main_results_order": true,
+      "timeperceiver_multiseed_claim_scoped": true,
+      "fixed_df_sufficient": true,
+      "gate5b_protocol_integrated": true,
+      "gate5b_decision_integrated": true,
+      "electricity_tradeoff_visible": true,
+      "tail_diagnostic_scoped": true,
+      "limitations_complete": true,
+      "gate4a_negative_retained": true,
+      "gate4c_negative_retained": true,
+      "conclusion_complete": true,
+      "table10_fields_complete": true,
+      "table10_electricity_failure_visible": true,
+      "cross_backbone_figure_complete": true,
+      "cross_backbone_figure_electricity_positive_mse": true
+    }
+  },
+  "verification_counts": {
+    "prohibited_wording": 0,
+    "number_mismatches": 0,
+    "gate_interpretation_mismatches": 0,
+    "anonymization_violations": 0,
+    "invalid_legacy_paper_rows": 0,
+    "smoke_paper_rows": 0,
+    "unsupported_claims": 0,
+    "source_hash_mismatches": 0
+  },
+  "submission_assets": {
+    "file_count": 94,
+    "actual_file_count": 94,
+    "text_sections": 6,
+    "table_files": 30,
+    "figure_files": 43,
+    "appendix_files": 15,
+    "mismatches": []
+  },
+  "formal_integrity": {
+    "pre_finalization_snapshot_recorded": true,
+    "formal_source_snapshot_count": 14,
+    "source_hash_mismatches": [],
+    "timeperceiver": {
+      "path": "upstream/TimePerceiver",
+      "commit": "7e30cc07b51c709f408409fd60a34c81ae8990be",
+      "expected_commit": "7e30cc07b51c709f408409fd60a34c81ae8990be",
+      "commit_matches": true,
+      "tracked_diff_empty": true,
+      "tracked_status": [],
+      "untracked": [
+        "?? __pycache__/run.cpython-39.pyc",
+        "?? data_provider/__pycache__/__init__.cpython-39.pyc",
+        "?? data_provider/__pycache__/data_factory.cpython-39.pyc",
+        "?? data_provider/__pycache__/data_loader.cpython-39.pyc",
+        "?? exp/__pycache__/__init__.cpython-39.pyc",
+        "?? exp/__pycache__/exp_basic.cpython-39.pyc",
+        "?? exp/__pycache__/exp_main.cpython-39.pyc",
+        "?? models/__pycache__/TimePerceiver.cpython-39.pyc",
+        "?? models/__pycache__/__init__.cpython-39.pyc",
+        "?? utils/__pycache__/__init__.cpython-39.pyc",
+        "?? utils/__pycache__/augmentation.cpython-39.pyc",
+        "?? utils/__pycache__/metrics.cpython-39.pyc",
+        "?? utils/__pycache__/print_args.cpython-39.pyc",
+        "?? utils/__pycache__/random_split.cpython-39.pyc",
+        "?? utils/__pycache__/timefeatures.cpython-39.pyc",
+        "?? utils/__pycache__/tools.cpython-39.pyc"
+      ]
+    },
+    "patchtst": {
+      "path": "upstream/PatchTST",
+      "commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+      "expected_commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+      "commit_matches": true,
+      "tracked_diff_empty": true,
+      "tracked_status": [],
+      "untracked": []
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "queue": "/mnt/data/zza/code/timeperceiver_meta_uq/configs/queues/gate4b_expanded_etth1.yaml",
+  "condition_count": 6,
+  "logical_probability_tasks": 12,
+  "result_row_target": 18,
+  "reused": 2,
+  "active": 10,
+  "required_free_mib": 4096,
+  "errors": []
+}

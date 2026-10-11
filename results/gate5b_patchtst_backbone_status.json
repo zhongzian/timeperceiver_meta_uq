@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "GATE5B_BACKBONE_PREREQUISITE_PASS": true,
+  "tasks_succeeded": "3/3",
+  "datasets": [
+    {
+      "dataset": "etth1",
+      "experiment_id": "patchtst__etth1__gate5b0_backbone__clean__seed2025__20260720_201509",
+      "best_epoch": 92,
+      "clean_validation_mse": 0.6523253550245003,
+      "clean_test_mse": 0.36806249618530273,
+      "clean_test_mae": 0.3937428891658783,
+      "clean_test_rmse": 0.6066815442926402,
+      "masked_random0.3_mse": 0.4387313723564148,
+      "masked_random0.3_mae": 0.4575420022010803,
+      "masked_random0.3_rmse": 0.662368003723319,
+      "checkpoint": "runs/patchtst__etth1__gate5b0_backbone__clean__seed2025__20260720_201509/checkpoints/best_backbone.pt",
+      "checkpoint_sha256": "de276de1767f3199ef759c0aba172f7915a8b8a619219c5db00038ddac69b203",
+      "status": "SUCCESS"
+    },
+    {
+      "dataset": "weather",
+      "experiment_id": "patchtst__weather__gate5b0_backbone__clean__seed2025__20260720_222732",
+      "best_epoch": 9,
+      "clean_validation_mse": 0.39215690958785054,
+      "clean_test_mse": 0.1502101719379425,
+      "clean_test_mae": 0.19918237626552582,
+      "clean_test_rmse": 0.38756957044889695,
+      "masked_random0.3_mse": 0.21551759541034698,
+      "masked_random0.3_mae": 0.3016101121902466,
+      "masked_random0.3_rmse": 0.4642387267455689,
+      "checkpoint": "runs/patchtst__weather__gate5b0_backbone__clean__seed2025__20260720_222732/checkpoints/best_backbone.pt",
+      "checkpoint_sha256": "e581b59dbb59fadeac18a6d0f97a49d39b1e85d64ca43a1a3d58b3b793488045",
+      "status": "SUCCESS"
+    },
+    {
+      "dataset": "electricity",
+      "experiment_id": "patchtst__electricity__gate5b0_backbone__clean__seed2025__20260720_184734",
+      "best_epoch": 55,
+      "clean_validation_mse": 0.11014649314138125,
+      "clean_test_mse": 0.13150590658187866,
+      "clean_test_mae": 0.22391805052757263,
+      "clean_test_rmse": 0.36263743130278026,
+      "masked_random0.3_mse": 0.23438218235969543,
+      "masked_random0.3_mae": 0.3535096347332001,
+      "masked_random0.3_rmse": 0.48413033612829454,
+      "checkpoint": "runs/patchtst__electricity__gate5b0_backbone__clean__seed2025__20260720_184734/checkpoints/best_backbone.pt",
+      "checkpoint_sha256": "716f715eee0798b373135b81bb70165c2df698f57534b7ae18e5b6bc03b1009d",
+      "status": "SUCCESS"
+    }
+  ]
+}

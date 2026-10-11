@@ -1,0 +1,242 @@
+{
+  "status": "PASS",
+  "read_only_artifact_audit": true,
+  "updates": {
+    "static_adapter": {
+      "all_delta_l2": 1.2067131996154785,
+      "relative_delta_l2": 0.07244186848402023,
+      "updated_tensor_count": 6,
+      "per_tensor": {
+        "adapter.norm.weight": {
+          "delta_l2": 0.13630515336990356,
+          "delta_mean_abs": 0.0067863804288208485,
+          "trained_l2": 15.945295333862305
+        },
+        "adapter.norm.bias": {
+          "delta_l2": 0.08319288492202759,
+          "delta_mean_abs": 0.004104473628103733,
+          "trained_l2": 0.08319288492202759
+        },
+        "adapter.down.weight": {
+          "delta_l2": 0.9166241884231567,
+          "delta_mean_abs": 0.005589038133621216,
+          "trained_l2": 4.7005615234375
+        },
+        "adapter.down.bias": {
+          "delta_l2": 0.03516698628664017,
+          "delta_mean_abs": 0.003673355095088482,
+          "trained_l2": 0.30691903829574585
+        },
+        "adapter.up.weight": {
+          "delta_l2": 0.755219042301178,
+          "delta_mean_abs": 0.004638317972421646,
+          "trained_l2": 0.755219042301178
+        },
+        "adapter.up.bias": {
+          "delta_l2": 0.137346088886261,
+          "delta_mean_abs": 0.008195558562874794,
+          "trained_l2": 0.137346088886261
+        }
+      }
+    },
+    "missingness_aware_adapter": {
+      "all_delta_l2": 9.96430778503418,
+      "relative_delta_l2": 0.5754282474517822,
+      "updated_tensor_count": 12,
+      "per_tensor": {
+        "adapter.norm.weight": {
+          "delta_l2": 0.4374125897884369,
+          "delta_mean_abs": 0.02111782878637314,
+          "trained_l2": 16.04952621459961
+        },
+        "adapter.norm.bias": {
+          "delta_l2": 0.2413862645626068,
+          "delta_mean_abs": 0.012677835300564766,
+          "trained_l2": 0.2413862645626068
+        },
+        "adapter.down.weight": {
+          "delta_l2": 7.09135627746582,
+          "delta_mean_abs": 0.04499126970767975,
+          "trained_l2": 5.333798885345459
+        },
+        "adapter.down.bias": {
+          "delta_l2": 0.46878257393836975,
+          "delta_mean_abs": 0.046151064336299896,
+          "trained_l2": 0.3254009783267975
+        },
+        "adapter.up.weight": {
+          "delta_l2": 1.857250690460205,
+          "delta_mean_abs": 0.010352006182074547,
+          "trained_l2": 1.857250690460205
+        },
+        "adapter.up.bias": {
+          "delta_l2": 0.18912559747695923,
+          "delta_mean_abs": 0.010651975870132446,
+          "trained_l2": 0.18912559747695923
+        },
+        "adapter.condition.weight": {
+          "delta_l2": 0.7037824988365173,
+          "delta_mean_abs": 0.007371698040515184,
+          "trained_l2": 0.7037824988365173
+        },
+        "adapter.condition.bias": {
+          "delta_l2": 0.27359911799430847,
+          "delta_mean_abs": 0.01759187877178192,
+          "trained_l2": 0.27359911799430847
+        },
+        "missingness_encoder.mlp.0.weight": {
+          "delta_l2": 4.594377517700195,
+          "delta_mean_abs": 0.24818900227546692,
+          "trained_l2": 3.2596466541290283
+        },
+        "missingness_encoder.mlp.0.bias": {
+          "delta_l2": 1.6513646841049194,
+          "delta_mean_abs": 0.230924591422081,
+          "trained_l2": 1.1181095838546753
+        },
+        "missingness_encoder.mlp.2.weight": {
+          "delta_l2": 4.49662971496582,
+          "delta_mean_abs": 0.11479047685861588,
+          "trained_l2": 3.1260790824890137
+        },
+        "missingness_encoder.mlp.2.bias": {
+          "delta_l2": 0.6484658718109131,
+          "delta_mean_abs": 0.09635187685489655,
+          "trained_l2": 0.4092438817024231
+        }
+      }
+    }
+  },
+  "validation_condition": {
+    "sample_count": 2785,
+    "raw_feature_names": [
+      "global",
+      "channel_mean",
+      "channel_std",
+      "channel_max",
+      "temporal_mean",
+      "temporal_std",
+      "temporal_max"
+    ],
+    "raw_per_dimension_std": [
+      0.008911387994885445,
+      0.008911387994885445,
+      0.005905360449105501,
+      0.014501065947115421,
+      0.008911387994885445,
+      0.0059719872660934925,
+      0.077643483877182
+    ],
+    "raw_global": {
+      "mean": 0.3226706087589264,
+      "std": 0.23390749096870422,
+      "min": 0.0043385084718465805,
+      "max": 1.0,
+      "mean_abs": 0.3226706087589264,
+      "max_abs": 1.0
+    },
+    "z_miss": {
+      "mean": 0.0020579879637807608,
+      "std": 0.019172681495547295,
+      "min": -0.040499959141016006,
+      "max": 0.07509958744049072,
+      "mean_abs": 0.014146669767796993,
+      "max_abs": 0.07509958744049072
+    },
+    "z_mean_feature_std_across_samples": 0.0035419731866568327,
+    "z_max_feature_std_across_samples": 0.009047478437423706,
+    "gamma": {
+      "mean": -0.021806316450238228,
+      "std": 0.027462199330329895,
+      "min": -0.09675738960504532,
+      "max": 0.10046372562646866,
+      "mean_abs": 0.02859613299369812,
+      "max_abs": 0.10046372562646866
+    },
+    "beta": {
+      "mean": 0.007066234480589628,
+      "std": 0.009851928800344467,
+      "min": -0.01155887357890606,
+      "max": 0.03708139434456825,
+      "mean_abs": 0.009021122939884663,
+      "max_abs": 0.03708139434456825
+    }
+  },
+  "test_condition": {
+    "sample_count": 2785,
+    "raw_feature_names": [
+      "global",
+      "channel_mean",
+      "channel_std",
+      "channel_max",
+      "temporal_mean",
+      "temporal_std",
+      "temporal_max"
+    ],
+    "raw_per_dimension_std": [
+      0.008811727166175842,
+      0.008811727166175842,
+      0.006136782933026552,
+      0.014950769953429699,
+      0.008811726234853268,
+      0.005939369089901447,
+      0.07621258497238159
+    ],
+    "raw_global": {
+      "mean": 0.32360756397247314,
+      "std": 0.23519255220890045,
+      "min": 0.0039371345192193985,
+      "max": 1.0,
+      "mean_abs": 0.32360756397247314,
+      "max_abs": 1.0
+    },
+    "z_miss": {
+      "mean": 0.0020107876043766737,
+      "std": 0.019087256863713264,
+      "min": -0.041515715420246124,
+      "max": 0.07334071397781372,
+      "mean_abs": 0.014074129983782768,
+      "max_abs": 0.07334071397781372
+    },
+    "z_mean_feature_std_across_samples": 0.003500571008771658,
+    "z_max_feature_std_across_samples": 0.008877047337591648,
+    "gamma": {
+      "mean": -0.021797265857458115,
+      "std": 0.02744952403008938,
+      "min": -0.09635034948587418,
+      "max": 0.1001243144273758,
+      "mean_abs": 0.02858513593673706,
+      "max_abs": 0.1001243144273758
+    },
+    "beta": {
+      "mean": 0.007065449375659227,
+      "std": 0.009845441207289696,
+      "min": -0.011532519944012165,
+      "max": 0.036918073892593384,
+      "mean_abs": 0.009016511030495167,
+      "max_abs": 0.036918073892593384
+    }
+  },
+  "ranking": {
+    "validation_consistent_with_test": true,
+    "static_best_epoch": 1,
+    "missing_best_epoch": 5,
+    "static_val_mse": 0.6786657517606561,
+    "missing_val_mse": 0.6797542219812219,
+    "static_test_mse": 0.36137743840067166,
+    "missing_test_mse": 0.36315558029870104
+  },
+  "diagnosis": {
+    "condition_near_constant": false,
+    "film_near_zero": false,
+    "primary_interpretation": "the fixed random-0.3 condition has limited but nonzero sample diversity, and trained FiLM modulation is measurably nonzero; the failure is therefore closer to ineffective conditioning/injection or optimization than to a completely constant condition",
+    "gradient_norms_available": false,
+    "epoch_curves_available": false,
+    "optimization_failure_not_supported": true,
+    "conditioning_generalization_gain_not_observed": true
+  },
+  "limitations": [
+    "Per-step gradient norms were not persisted.",
+    "Per-epoch train/validation curves were not persisted; only best epoch and best validation MSE are available."
+  ]
+}

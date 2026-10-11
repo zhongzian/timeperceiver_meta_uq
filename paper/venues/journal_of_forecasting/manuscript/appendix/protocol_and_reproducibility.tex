@@ -1,0 +1,9 @@
+\section{Protocol and Reproducibility}
+\label{supp:protocol}
+The chronological splits, train-only normalization statistics, fixed validation masks, fixed test masks, metric implementations, evaluation seeds, configuration files, and checkpoint hashes are retained in the project evidence registry. Input length is 384, prediction length is 96, and CRPS uses 64 Monte Carlo samples with fixed evaluation seed 52025. Test masks are never used during head training, and test labels are never used for model selection.
+
+For traceability, the project stages map to the evidence as follows: the fixed missing-history assets and deterministic evaluation precede the adapter study; probabilistic-head validation and multi-seed fixed-backbone comparisons establish the heavy-tail signal; the distribution ablation refines the final fixed-$\df$ specification; the conformal study records a negative result; and PatchTST provides the second-backbone assessment. Historical probability-head runs that did not actually apply the input mask were marked invalid and excluded without reporting their metrics.
+
+\section{Source and Mask Integrity}
+\label{supp:integrity}
+Every formal result is linked to a unique experiment record, resolved configuration, checkpoint hash, fixed-mask hash, and metric-protocol hash. The venue adaptation is a document-only transformation of the frozen evidence: it performs no training, inference, metric recomputation, mask generation, or checkpoint modification. Exact repository URLs and anonymous-review release details remain an author action.

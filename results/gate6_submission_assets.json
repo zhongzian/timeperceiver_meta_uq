@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "GATE6_SUBMISSION_ASSET_BUILD_PASS": true,
+  "generated_at": "2026-07-22T15:16:47+08:00",
+  "submission_directory": "paper/submission",
+  "manifest": "paper/submission/submission_manifest.json",
+  "counts": {
+    "text_sections": 6,
+    "table_files": 30,
+    "figure_files": 43,
+    "appendix_files": 15,
+    "total_manifest_files": 94
+  }
+}

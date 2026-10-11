@@ -1,0 +1,16 @@
+{
+  "gate": "Gate 3b-smoke",
+  "status": "PASS",
+  "timestamp": "2026-07-09T15:40:09",
+  "run_id": "timeperceiver__etth1__official_missing_eval_smoke__random_rate0.3__seed2025__20260709_153942",
+  "run_dir": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__etth1__official_missing_eval_smoke__random_rate0.3__seed2025__20260709_153942",
+  "dataset": "etth1",
+  "mask_type": "random",
+  "missing_rate": 0.3,
+  "mask_seed": 2025,
+  "smoke_only": true,
+  "not_full_gate3b_result": true,
+  "metrics_path": "/mnt/data/zza/code/timeperceiver_meta_uq/runs/timeperceiver__etth1__official_missing_eval_smoke__random_rate0.3__seed2025__20260709_153942/metrics.json",
+  "next_gate": "Gate 3b-full",
+  "error_summary": ""
+}

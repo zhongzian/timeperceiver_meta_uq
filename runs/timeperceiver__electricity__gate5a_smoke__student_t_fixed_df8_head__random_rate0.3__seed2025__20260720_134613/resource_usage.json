@@ -1,0 +1,5 @@
+{
+  "peak_gpu_memory_mib": 5017.40673828125,
+  "elapsed_seconds": 43.4086012840271,
+  "device": "cuda"
+}

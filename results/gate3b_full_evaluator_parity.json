@@ -1,0 +1,1 @@
+{"status":"PASS","reference_run":"timeperceiver__etth1__official_missing_eval_smoke__random_rate0.3__seed2025__20260709_153942","parity_run":"timeperceiver__etth1__official_missing_eval_parity__random_rate0.3__seed2025__20260711_185031","mse_diff":0.0,"mae_diff":0.0,"rmse_diff":0.0,"batches":8,"samples":256}
